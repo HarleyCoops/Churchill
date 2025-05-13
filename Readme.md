@@ -1,4 +1,6 @@
-# First Edition, First Printing, of The Second World War, with affixed Churchill Signature
+# First Edition, First Printing, The Second World War, with affixed Churchill Signature
+
+Letter is addressed to Colonel Fairfax, a WWI officer he may have known from historically significant action on the first day of the Battle of the Somme, July 1, 1916. 
 
 ![Hero Image](Images/hero.JPG)
 
@@ -20,7 +22,7 @@ I have tried to find the original letter that Fairfax sent Churchill the one lea
 
 **Churchill’s Signature Insert**  
 <img src="Images/signature.JPG" alt="Churchill Signature" width="450" />  
-*The original signed letter from Winston Churchill, dated 6 December 1946, is affixed to Volume I and is pictured here. This insert is the centerpiece of the set’s provenance and value.*
+*The original signed letter from Winston Churchill, dated 6 December 1946, is affixed to Volume I and is pictured here. The letter is addressed to Colonel Fairfax, a WWI officer he may have known from historically significant action on the first day of the Battle of the Somme, July 1, 1916.*
 
 </div>
 
@@ -59,6 +61,26 @@ The memorial marking the joint advance of Colonel Bryan Fairfax and Commandant L
 **[Click here to view the memorial’s location on Google Maps.](https://www.google.com/maps/place/49%C2%B059'15.0%22N+2%C2%B047'28.3%22E/@49.9874974,2.7910823,19z/data=!4m4!3m3!8m2!3d49.9874974!4d2.7910823?entry=ttu)**
 
 This site commemorates the historic Allied cooperation and the bravery of those who fought at the Somme.
+
+## Where was Churchill During the Somme?
+
+All the surviving evidence—Churchill’s own correspondence, his appointment diaries, and the parliamentary record—places him in London throughout 1–3 July 1916. During this period, he was living with his brother Jack and sister-in-law “Goonie” at 41 Cromwell Road, South Kensington. On Monday 3 July, he took his seat (quietly) in the House of Commons when Parliament resumed after the weekend.
+
+| Date           | Best-attested location                                                               | Documentary trail                                                                                                                                                                                                                                                                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Sat 1 Jul 1916 | 41 Cromwell Road, London SW7 (private residence)                                     | Churchill’s “places of residence” list shows he was based at 41 Cromwell Road from Oct/Nov 1915 until the **“autumn of 1916”** ([International Churchill Society][1], [International Churchill Society][2])                                                                                                                                            |
+| Sun 2 Jul 1916 | 41 Cromwell Road, London SW7                                                         | No travel entries, letters or diary notes record him leaving London; the Cromwell Road tenancy is continuous over this weekend ([International Churchill Society][1])                                                                                                                                                                                  |
+| Mon 3 Jul 1916 | Palace of Westminster (Commons chamber) in the afternoon; otherwise 41 Cromwell Road | The Commons sat on 3 July (Hansard vol. 83). Churchill is **not** listed as a speaker, but MPs’ presence is recorded only when they speak; attendance is inferred because his first recorded speech after returning from the front occurs nine days later, on 12 July, and his parliamentary duties had resumed ([Hansard][3], [UK Parliament API][4]) |
+
+- [Churchill Facts: Residences of Winston and Clementine Churchill - International Churchill Society][1]
+- [Spinning Top of Memories - International Churchill Society][2]
+- [House of Commons - Hansard - UK Parliament][3]
+- [Mr Winston Churchill: speeches in 1916 (Hansard)][4]
+
+[1]: https://winstonchurchill.org/publications/finest-hour/finest-hour-138/churchill-facts-residences-of-winston-and-clementine-churchill/
+[2]: https://winstonchurchill.org/resources/speeches/spinning-top-of-memories/?utm_source=chatgpt.com
+[3]: https://hansard.parliament.uk/Commons/1916-07-03?utm_source=chatgpt.com
+[4]: https://api.parliament.uk/historic-hansard/people/mr-winston-churchill/1916
 
 ## Chartwell, Westerham, Kent: Churchill’s Country Home
 
