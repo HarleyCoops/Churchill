@@ -42,14 +42,14 @@ Despite his distinguished service, there is no evidence of a personal or politic
 
 For a detailed biography and archival references, see his profile at the Imperial War Museum: [Bryan Charles Fairfax – Lives of the First World War](https://livesofthefirstworldwar.iwm.org.uk/lifestory/1187431)
 
-## Fairfax's Heroic Action at the Battle of the Somme
+## Fairfax's Heroic Action at the Battle of the Somme & Memorial
 
 ### Background
 The 153e Régiment d’Infanterie (RI), part of the French Army’s renowned 39th Division d’Infanterie (the Steel Division), had already seen heavy combat before the Somme offensive, including at Verdun. On July 1, 1916, the opening day of the Battle of the Somme, the French and British army fronts met at this sector. That morning, as the offensive commenced, Lieutenant Colonel Bryan Fairfax, commanding the 17th Battalion King’s Liverpool Regiment, and Commandant Lepetit of the 3rd Battalion 153e RI advanced arm in arm across no man’s land in the second wave—an act symbolizing the friendship and cooperation between the two armies.
 
 Both units succeeded in gaining their objectives. The 153e RI, under intense artillery fire, swept over five lines of enemy trenches, capturing prisoners and weaponry. Their actions earned the regiment a citation, and by war’s end, the 153e RI would be awarded the Croix de Guerre, the Croix de la Légion d’honneur, and six army-level citations, allowing its soldiers to wear the red fourragère of the légion d’honneur. Fairfax’s leadership and the joint advance stand as a testament to Allied courage and solidarity on the Somme’s bloody fields.
 
-### Churchill’s Whereabouts During the Somme Offensive
+### Churchill’s Whereabouts While Fairfax was Leading the Charge
 At the time of the Battle of the Somme (July 1, 1916), Winston Churchill was serving as a battalion commander on the Western Front. After resigning from the government following the Dardanelles campaign, Churchill joined the British Army and commanded the 6th Battalion, Royal Scots Fusiliers, from January to May 1916. 
 
 ## Location of the Somme Memorial Featuring Fairfax
@@ -60,7 +60,7 @@ The memorial marking the joint advance of Colonel Bryan Fairfax and Commandant L
 
 **[Click here to view the memorial’s location on Google Maps.](https://www.google.com/maps/place/49%C2%B059'15.0%22N+2%C2%B047'28.3%22E/@49.9874974,2.7910823,19z/data=!4m4!3m3!8m2!3d49.9874974!4d2.7910823?entry=ttu)**
 
-This site commemorates the historic Allied cooperation and the bravery of those who fought at the Somme.
+
 
 ## Where was Churchill During the Somme?
 
