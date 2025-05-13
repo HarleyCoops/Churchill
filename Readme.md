@@ -28,10 +28,8 @@ I have tried to find the original letter that Fairfax sent Churchill the one lea
 
 ## Who was Colonel Fairfax?
 
-<div align="left">
-
-<img src="Images/ColFairfax.jpeg" alt="Colonel Bryan Charles Fairfax" width="220" style="margin-right: 18px; float: left;" />
-
+<div align="center">
+  <img src="Images/ColFairfax.jpeg" alt="Colonel Bryan Charles Fairfax" width="220" style="margin-right: 18px;" />
 </div>
 
 Colonel Bryan Charles Fairfax, C.M.G. (12 September 1873 – 29 January 1950), was a distinguished British Army officer whose career spanned the late Victorian era through the First World War. He initially served as Captain in the 3rd Battalion, King's Own Yorkshire Light Infantry and later in the West India Regiment, and participated in the 1900 Boxer Uprising in China. During World War I, Fairfax commanded the Chinese Labour Corps in France, overseeing nearly 100,000 men, and subsequently led Canadian battalions, including the 199th Battalion (Duchess of Connaught's Own Irish Canadian Rangers), C.E.F., recruited in Toronto. He was awarded the Companion of the Order of St Michael and St George (C.M.G.) in 1916 for his wartime service.
@@ -165,7 +163,7 @@ Below are additional images documenting key features of this set and its authent
 
 - **Top Edge of Volume I**  
   ![Top Edge of Volume I](Images/TopEdgeVolume1.jpeg)  
-  The red top edge, a hallmark of the first printing, is shown here. Some fading is typical but the presence of the original red is important for collectors.
+  The red top edge, a hallmark of the first printing, is shown here. Some fading is typical but the presence of the original red is pronounced and bright on only two of the volumes and quite faded on the rest.
 
 - **This is the worst edge wear I could find**  
   ![Edge Wear Example](Images/WorstEdge.JPG)  
