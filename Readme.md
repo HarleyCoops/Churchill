@@ -1,4 +1,4 @@
-# The Second World War, including a note from Churchill, First Edition, First Printing, Complete Set
+# "The Second World War", including a note from Winston Churchill, First Edition, First Printing, Complete Set
 
 Letter is addressed to Colonel Fairfax, a WWI officer he may have known from historically significant action on the first day of the Battle of the Somme, July 1, 1916. 
 
