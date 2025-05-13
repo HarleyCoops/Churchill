@@ -14,7 +14,7 @@ A genuine first edition, first printing of Winston S. Churchill’s "The Second 
 - Jackets are often prone to browning and wear, that is expected. 
 - The correct price on the dust jacket is the most visible external sign of a first issue jacket.
 
-I have tried to find the original letter that Fairfax sent Churchill the one lead I had was a different Colonel Fairfax. Colonel Fairfax died in 1950, two years after the publishing of this first volume, so it is feasible that the first volume could have been Col. Fairfax's personal copy but the other volumes would have been assembled later. 
+I have tried to find the original letter that Fairfax sent Churchill the one lead I had was a different Colonel Fairfax. 
 
 <div align="center">
 
@@ -39,6 +39,16 @@ After the war, Fairfax held significant posts such as Director of Remounts at th
 Despite his distinguished service, there is no evidence of a personal or political relationship with Winston Churchill beyond a single signed letter from Churchill to Fairfax dated 6 December 1946. No other correspondence or meeting between the two men is documented in Churchill’s extensive published archives or biographies. The letter, which predates the publication of Churchill’s war memoirs, was later affixed inside Volume I of the six-volume Cassell first edition set of "The Second World War"—likely by Fairfax himself or a family member as a keepsake.
 
 For a detailed biography and archival references, see his profile at the Imperial War Museum: [Bryan Charles Fairfax – Lives of the First World War](https://livesofthefirstworldwar.iwm.org.uk/lifestory/1187431)
+
+## Fairfax's Heroic Action at the Battle of the Somme
+
+### Background
+The 153e Régiment d’Infanterie (RI), part of the French Army’s renowned 39th Division d’Infanterie (the Steel Division), had already seen heavy combat before the Somme offensive, including at Verdun. On July 1, 1916, the opening day of the Battle of the Somme, the French and British army fronts met at this sector. That morning, as the offensive commenced, Lieutenant Colonel Bryan Fairfax, commanding the 17th Battalion King’s Liverpool Regiment, and Commandant Lepetit of the 3rd Battalion 153e RI advanced arm in arm across no man’s land in the second wave—an act symbolizing the friendship and cooperation between the two armies.
+
+Both units succeeded in gaining their objectives. The 153e RI, under intense artillery fire, swept over five lines of enemy trenches, capturing prisoners and weaponry. Their actions earned the regiment a citation, and by war’s end, the 153e RI would be awarded the Croix de Guerre, the Croix de la Légion d’honneur, and six army-level citations, allowing its soldiers to wear the red fourragère of the légion d’honneur. Fairfax’s leadership and the joint advance stand as a testament to Allied courage and solidarity on the Somme’s bloody fields.
+
+### Churchill’s Whereabouts During the Somme Offensive
+At the time of the Battle of the Somme (July 1, 1916), Winston Churchill was serving as a battalion commander on the Western Front. After resigning from the government following the Dardanelles campaign, Churchill joined the British Army and commanded the 6th Battalion, Royal Scots Fusiliers, from January to May 1916. 
 
 ## Chartwell, Westerham, Kent: Churchill’s Country Home
 
