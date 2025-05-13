@@ -1,4 +1,4 @@
-# First Edition, First Printing, of The Second World War, with affixed Churchill Insert
+# First Edition, First Printing, of The Second World War, with affixed Churchill Signature
 
 ![Hero Image](Images/hero.JPG)
 
@@ -15,6 +15,14 @@ A genuine first edition, first printing of Winston S. Churchill’s "The Second 
 - The correct price on the dust jacket is the most visible external sign of a first issue jacket.
 
 I have tried to find the original letter that Fairfax sent Churchill the one lead I had was a different Colonel Fairfax. But I do know a lot out this officer and his role in the Canadian Army. 
+
+<div align="center">
+
+**Churchill’s Signature Insert**  
+<img src="Images/signature.JPG" alt="Churchill Signature" width="450" />  
+*The original signed letter from Winston Churchill, dated 6 December 1946, is affixed to Volume I and is pictured here. This insert is the centerpiece of the set’s provenance and value.*
+
+</div>
 
 ## Who was Colonel Fairfax?
 
@@ -41,7 +49,7 @@ Visitors today can tour the house and grounds, including the library and study w
 
 ## Provenance
 
-The provenance of this set is notable: it was discovered among assets held by the Canadian Federal Government as a facility on the West Coast, possibly as an unclaimed or escheated property. 
+The provenance of this set is notable: it was discovered among assets held by the Canadian Federal Government as a facility on the West Coast, possibly as an unclaimed or escheated property. The lack of aging and creasing of the covers is a testament to its' vault stored location. 
 
 ## Image Gallery
 
@@ -63,7 +71,4 @@ Below are additional images documenting key features of this set and its authent
   ![Edge Wear Example](Images/WorstEdge.JPG)  
   This photo documents the absence of aging or browning on the covers. 
 
-- **Churchill’s Signature Insert**  
-  ![Churchill Signature](Images/signature.JPG)  
-  The original signed letter from Winston Churchill, dated 6 December 1946, is affixed to Volume I and is pictured here. This insert is the centerpiece of the set’s provenance and value.
 
