@@ -1,4 +1,4 @@
-# The Second World War, including a note from Churchill, First Edition, First Printing, Ccomplete Set
+# The Second World War, including a note from Churchill, First Edition, First Printing, Complete Set
 
 Letter is addressed to Colonel Fairfax, a WWI officer he may have known from historically significant action on the first day of the Battle of the Somme, July 1, 1916. 
 
@@ -21,7 +21,7 @@ I have tried to find the original letter that Fairfax sent Churchill the one lea
 <div align="center">
 
 **Churchill’s Signature Insert**  
-<img src="Images/signature.JPG" alt="Churchill Signature" width="450" />  
+<img src="Images/Signature2.JPG" alt="Churchill Signature" width="450" />  
 *The original signed letter from Winston Churchill, dated 6 December 1946, is affixed to Volume I and is pictured here. The letter is addressed to Colonel Fairfax, a WWI officer he may have known from historically significant action on the first day of the Battle of the Somme, July 1, 1916.*
 
 </div>
