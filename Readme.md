@@ -38,11 +38,11 @@ Colonel Bryan Charles Fairfax, C.M.G. (12 September 1873 – 29 January 1950), w
 
 After the war, Fairfax held significant posts such as Director of Remounts at the War Office and stood as a Conservative candidate in the 1919 Spen Valley by-election. He retired in the 1920s and spent his later years at his estate, Whitwell Hall in Yorkshire, and in Toronto, Canada, where he married Ethel Margaret (Esmé) Gooderham of the prominent Gooderham family. Fairfax died in Toronto in 1950.
 
-Despite his distinguished service, there is no evidence of a personal or political relationship with Winston Churchill beyond a single signed letter from Churchill to Fairfax dated 6 December 1946. No other correspondence or meeting between the two men is documented in Churchill’s extensive published archives or biographies. The letter, which predates the publication of Churchill’s war memoirs, was later affixed inside Volume I of the six-volume Cassell first edition set of "The Second World War"—likely by Fairfax himself or a family member as a keepsake.
+ The letter, which predates the publication of Churchill’s war memoirs, was later affixed inside Volume I of the six-volume Cassell first edition set of "The Second World War"—likely by Fairfax himself or a family member as a keepsake. Fairfax died in Toronto in 1950, so the later volumes would have been assembled after his death. 
 
 For a detailed biography and archival references, see his profile at the Imperial War Museum: [Bryan Charles Fairfax – Lives of the First World War](https://livesofthefirstworldwar.iwm.org.uk/lifestory/1187431)
 
-## Fairfax's Heroic Action at the Battle of the Somme & Memorial
+## Fairfax's Action at the Battle of the Somme & Memorial
 
 ### Background
 The 153e Régiment d’Infanterie (RI), part of the French Army’s renowned 39th Division d’Infanterie (the Steel Division), had already seen heavy combat before the Somme offensive, including at Verdun. On July 1, 1916, the opening day of the Battle of the Somme, the French and British army fronts met at this sector. That morning, as the offensive commenced, Lieutenant Colonel Bryan Fairfax, commanding the 17th Battalion King’s Liverpool Regiment, and Commandant Lepetit of the 3rd Battalion 153e RI advanced arm in arm across no man’s land in the second wave—an act symbolizing the friendship and cooperation between the two armies.
@@ -109,9 +109,6 @@ After his demobilisation he joined **MI6** on **18 October 1916** in the General
 
 The **Battle of Maricourt** began on **1 July 1916** and drew to a close in the last days of **November 1916**.  
 It is a battle that still ranks as one of the bloodiest in the history of warfare.  
-Each and every day, the sight of so many military cemeteries in this region serves as a reminder of the ultimate sacrifice made by so many soldiers.
-
-> *We will remember them.*
 
 **[Click here to view the memorial’s location on Google Maps.](https://www.google.com/maps/place/49%C2%B059'15.0%22N+2%C2%B047'28.3%22E/@49.9874974,2.7910823,19z/data=!4m4!3m3!8m2!3d49.9874974!4d2.7910823?entry=ttu)**
 
@@ -119,7 +116,9 @@ Each and every day, the sight of so many military cemeteries in this region serv
 
 
 
-## Chartwell, Westerham, Kent: Churchill’s Country Home
+## Chartwell, Westerham, Kent: Churchill’s Country Home the Note is From
+
+*Note the location of the return address on the stationary*
 
 Chartwell, located near Westerham in Kent, was the beloved country home of Sir Winston Churchill from 1922 until shortly before his death in 1965. The estate served as both a family retreat and a vital workspace, where Churchill wrote, painted, and entertained guests. The property’s panoramic views over the Weald of Kent were a source of inspiration for Churchill, who famously said, “A day away from Chartwell is a day wasted.”
 
