@@ -54,9 +54,45 @@ At the time of the Battle of the Somme (July 1, 1916), Winston Churchill was ser
 
 ## Location of the Somme Memorial Featuring Fairfax
 
-The memorial marking the joint advance of Colonel Bryan Fairfax and Commandant Lepetit is located at the historic front line where the British and French armies met on July 1, 1916, near Maricourt, France.
+<div align="center">
+  <img src="MonumenImages/memorial2.jpg" alt="Somme Memorial - Plaque" width="500" />  
+  <br/>
+  <img src="MonumenImages/memorial.jpg" alt="Somme Memorial - Site" width="500" />  
+</div>
 
+<br/>
 
+**MARICOURT, 1916**  
+*Where the British and French front-lines met*
+
+At dawn on **1 July 1916** two officers were planning a joint attack.  
+One was **Lieutenant-Colonel Bryan Charles Fairfax**, in command of the **1st Battalion of The King’s Liverpool Regiment**;  
+the other was the French **Commandant Lapon**, in charge of the **1st Battalion of the 113ᵗʰ Infantry Regiment**.  
+To highlight the extent of their cooperation in the forthcoming battle, the two officers left the trench together and crossed **No-Man’s-Land** in unison as part of the first attacking wave.  
+This act of bravery in the face of adversity, and their military expertise, were praised by **General Stanley** of the French **39ᵗʰ Division, 117ᵗʰ Brigade** and also by **Colonel Cochard** of the French **39ᵗʰ Infantry Division, 77ᵗʰ Brigade**.
+
+---
+
+### The French citation concerning the 1ˢᵗ Battalion 113ᵗʰ RI reads as follows
+
+The 1ˢᵗ Battalion of the 113ᵗʰ Infantry Regiment began its rigorous assault under violent artillery fire, despite having seen its jumping-off positions damaged by the enemy’s artillery on two occasions.  
+The battalion, led by Commandant Lapon, moved forward in perfect attack formation and managed to occupy the enemy trenches, securing an eight-hundred-metre stretch.  
+German prisoners and weaponry were taken.  
+On this day the battalion displayed the same courage in reaching its objectives in the minimum space of time and in spite of [illegible] counter-attacks launched by the enemy.
+
+---
+
+**Lieutenant-Colonel Bryan Fairfax** was wounded during the night of **1–2 July** near **Guillemont** then evacuated to England at the beginning of **August 1916**.  
+His wound later got him an appointment with the **Chinese Labour Corps** in France.  
+After his demobilisation he joined **MI6** on **18 October 1916** in the General Staff at the [illegible] Ministry of Defence.
+
+---
+
+The **Battle of Maricourt** began on **1 July 1916** and drew to a close in the last days of **November 1916**.  
+It is a battle that still ranks as one of the bloodiest in the history of warfare.  
+Each and every day, the sight of so many military cemeteries in this region serves as a reminder of the ultimate sacrifice made by so many soldiers.
+
+> *We will remember them.*
 
 **[Click here to view the memorial’s location on Google Maps.](https://www.google.com/maps/place/49%C2%B059'15.0%22N+2%C2%B047'28.3%22E/@49.9874974,2.7910823,19z/data=!4m4!3m3!8m2!3d49.9874974!4d2.7910823?entry=ttu)**
 
