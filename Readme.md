@@ -47,6 +47,8 @@ The 153e Régiment d’Infanterie (RI), part of the French Army’s renowned 39t
 
 Both units succeeded in gaining their objectives. The 153e RI, under intense artillery fire, swept over five lines of enemy trenches, capturing prisoners and weaponry. Their actions earned the regiment a citation, and by war’s end, the 153e RI would be awarded the Croix de Guerre, the Croix de la Légion d’honneur, and six army-level citations, allowing its soldiers to wear the red fourragère of the légion d’honneur. Fairfax’s leadership and the joint advance stand as a testament to Allied courage and solidarity on the Somme’s bloody fields.
 
+[Download the History of the 89th Brigade (PDF)](https://github.com/HarleyCoops/Churchill/blob/main/89thBrigadeStanley.pdf?raw=true)
+
 ### Churchill’s Whereabouts While Fairfax was Leading the Charge
 
 
