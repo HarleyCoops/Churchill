@@ -167,7 +167,7 @@ Below are additional images documenting key features of this set and its authent
   ![Top Edge of Volume I](Images/TopEdgeVolume1.jpeg)  
   The red top edge, a hallmark of the first printing, is shown here. Some fading is typical but the presence of the original red is important for collectors.
 
-- **Example of Edge Wear**  
+- **This is the worst edge wear I could find**  
   ![Edge Wear Example](Images/WorstEdge.JPG)  
   This photo documents the absence of aging or browning on the covers. 
 
