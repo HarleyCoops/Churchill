@@ -111,7 +111,9 @@ It is a battle that still ranks as one of the bloodiest in the history of warfar
 **[Click here to view the memorial’s location on Google Maps.](https://www.google.com/maps/place/49%C2%B059'15.0%22N+2%C2%B047'28.3%22E/@49.9874974,2.7910823,19z/data=!4m4!3m3!8m2!3d49.9874974!4d2.7910823?entry=ttu)**
 
 
+Incredibly, there is a contemporary account from 1919 about the actions of Colonel Fairfax on the day and you can download the full book from here: 
 
+[Download the History of the 89th Brigade (PDF)](https://github.com/HarleyCoops/Churchill/blob/main/89thBrigadeStanley.pdf?raw=true)
 
 
 ## Chartwell, Westerham, Kent: Churchill’s Country Home the Note is From
