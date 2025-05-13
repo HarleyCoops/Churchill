@@ -50,6 +50,16 @@ Both units succeeded in gaining their objectives. The 153e RI, under intense art
 ### Churchill’s Whereabouts During the Somme Offensive
 At the time of the Battle of the Somme (July 1, 1916), Winston Churchill was serving as a battalion commander on the Western Front. After resigning from the government following the Dardanelles campaign, Churchill joined the British Army and commanded the 6th Battalion, Royal Scots Fusiliers, from January to May 1916. 
 
+## Location of the Somme Memorial Featuring Fairfax
+
+The memorial marking the joint advance of Colonel Bryan Fairfax and Commandant Lepetit is located at the historic front line where the British and French armies met on July 1, 1916, near Maricourt, France.
+
+
+
+**[Click here to view the memorial’s location on Google Maps.](https://www.google.com/maps/place/49%C2%B059'15.0%22N+2%C2%B047'28.3%22E/@49.9874974,2.7910823,19z/data=!4m4!3m3!8m2!3d49.9874974!4d2.7910823?entry=ttu)**
+
+This site commemorates the historic Allied cooperation and the bravery of those who fought at the Somme.
+
 ## Chartwell, Westerham, Kent: Churchill’s Country Home
 
 Chartwell, located near Westerham in Kent, was the beloved country home of Sir Winston Churchill from 1922 until shortly before his death in 1965. The estate served as both a family retreat and a vital workspace, where Churchill wrote, painted, and entertained guests. The property’s panoramic views over the Weald of Kent were a source of inspiration for Churchill, who famously said, “A day away from Chartwell is a day wasted.”
