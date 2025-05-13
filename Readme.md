@@ -127,7 +127,7 @@ Chartwell, located near Westerham in Kent, was the beloved country home of Sir W
 <div align="center">
   <img src="Images/Chartwell_House,_rear.JPG" alt="Rear view of Chartwell House, Kent" width="500" />  
   <br/>
-  <span style="font-size: 1em; color: #555;">Rear view of Chartwell House, showing the gardens and the architecture that inspired Churchill’s creative and political work.</span>
+  <span style="font-size: 1em; color: #555;">Rear view of Chartwell House, showing the gardens and the architecture .</span>
 </div>
 
 <br/>
