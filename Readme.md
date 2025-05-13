@@ -14,7 +14,7 @@ A genuine first edition, first printing of Winston S. Churchill’s "The Second 
 - Jackets are often prone to browning and wear, that is expected. 
 - The correct price on the dust jacket is the most visible external sign of a first issue jacket.
 
-I have tried to find the original letter that Fairfax sent Churchill the one lead I had was a different Colonel Fairfax. But I do know a lot out this officer and his role in the Canadian Army. 
+I have tried to find the original letter that Fairfax sent Churchill the one lead I had was a different Colonel Fairfax. 
 
 <div align="center">
 
