@@ -4,7 +4,7 @@ Letter is addressed to Colonel Fairfax, a WWI officer he may have known from his
 
 ![Hero Image](Images/hero.JPG)
 
-## Identifying a True First Edition
+## The First Edition
 
 A genuine first edition, first printing of Winston S. Churchill’s "The Second World War" (Cassell, UK) is distinguished by several key attributes this set has:
 
@@ -149,7 +149,7 @@ Visitors today can tour the house and grounds, including the library and study w
 
 ## Provenance
 
-The provenance of this set is notable: it was discovered among assets held by the Canadian Federal Government as a facility on the West Coast, possibly as an unclaimed or escheated property. The lack of aging and creasing of the covers is a testament to its' vault stored location. 
+The provenance of this set is notable: it was purchased from the Canadian Federal Government and it was held at afacility in British Columbia, possibly as an unclaimed or escheated property. The lack of aging and creasing of the covers is a testament to its' vault stored location but no other details are available from the federal government.
 
 ## Image Gallery
 
