@@ -86,6 +86,20 @@ All the surviving evidence—Churchill’s own correspondence, his appointment d
 
 Chartwell, located near Westerham in Kent, was the beloved country home of Sir Winston Churchill from 1922 until shortly before his death in 1965. The estate served as both a family retreat and a vital workspace, where Churchill wrote, painted, and entertained guests. The property’s panoramic views over the Weald of Kent were a source of inspiration for Churchill, who famously said, “A day away from Chartwell is a day wasted.”
 
+<div align="center">
+  <img src="Images/Chartwell_House,_rear.JPG" alt="Rear view of Chartwell House, Kent" width="500" />  
+  <br/>
+  <span style="font-size: 1em; color: #555;">Rear view of Chartwell House, showing the gardens and the architecture that inspired Churchill’s creative and political work.</span>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="Images/Chartwell_UK_relief_location_map.jpg" alt="Location map of Chartwell in the UK" width="400" />  
+  <br/>
+  <span style="font-size: 1em; color: #555;">Relief map indicating the location of Chartwell in Kent, southeast England.</span>
+</div>
+
 During his years at Chartwell, Churchill used the house’s library and study as his primary workspaces. It was here that he drafted much of his correspondence and many of his major works, including his war memoirs. The library, in particular, was the intellectual heart of Chartwell, lined with books and personal papers, while the bedrooms offered privacy for personal reflection and letter writing. Although the precise room where Churchill signed the letter to Colonel Fairfax on 6 December 1946 is not documented, it is highly likely it was written in either his study or the library, both of which remain preserved today.
 
 In December 1946, Churchill was deeply engaged in writing and political commentary, having recently delivered the “Iron Curtain” speech and begun work on "The Second World War." He was also extending his landholdings at Chartwell, acquiring additional farmland in 1946–47. No major public event is recorded at Chartwell on 6 December 1946, but Churchill’s routine at the time would have included extensive correspondence and literary work at his country home.
