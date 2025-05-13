@@ -6,7 +6,7 @@ Letter is addressed to Colonel Fairfax, a WWI officer he may have known from his
 
 ## The First Edition
 
-A genuine first edition, first printing of Winston S. Churchill’s "The Second World War" (Cassell, UK) is distinguished by several key attributes this set has:
+A first edition, first printing of Winston S. Churchill’s "The Second World War" (Cassell, UK) is distinguished by several key attributes this set has:
 
 - Published by Cassell and Company Ltd., London, with black cloth boards and gilt spine titles.
 - The top edge of the text block is red, though some fading may occur over time.
