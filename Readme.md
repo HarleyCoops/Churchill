@@ -157,7 +157,7 @@ The provenance of this set is notable: it was purchased from the Canadian Federa
 
 Below are additional images documenting key features of this set and its authenticity:
 
-- **The Original Churchill Signature Insert**  
+- **The Original Churchill Signature Insert- This is fixed to the page**  
   ![Churchill Signature Insert](Images/signature.JPG)  
   The original signed letter from Winston Churchill, dated 6 December 1946, addressed to Colonel Fairfax. This letter is affixed to Volume I and is the centerpiece of the set’s provenance and value.
 
