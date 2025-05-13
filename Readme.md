@@ -14,7 +14,7 @@ A genuine first edition, first printing of Winston S. Churchill’s "The Second 
 - Jackets are often prone to browning and wear, that is expected. 
 - The correct price on the dust jacket is the most visible external sign of a first issue jacket.
 
-I have tried to find the original letter that Fairfax sent Churchill the one lead I had was a different Colonel Fairfax. 
+I have tried to find the original letter that Fairfax sent Churchill the one lead I had was a different Colonel Fairfax. Colonel Fairfax died in 1950, two years after the publishing of this first volume, so it is feasible that the first volume could have been Col. Fairfax's personal copy but the other volumes would have been assembled later. 
 
 <div align="center">
 
@@ -26,11 +26,19 @@ I have tried to find the original letter that Fairfax sent Churchill the one lea
 
 ## Who was Colonel Fairfax?
 
+<div align="left">
+
+<img src="https://livesofthefirstworldwar.iwm.org.uk/api/images/1187431/portrait" alt="Colonel Bryan Charles Fairfax" width="220" style="margin-right: 18px; float: left;" />
+
+</div>
+
 Colonel Bryan Charles Fairfax, C.M.G. (12 September 1873 – 29 January 1950), was a distinguished British Army officer whose career spanned the late Victorian era through the First World War. He initially served as Captain in the 3rd Battalion, King's Own Yorkshire Light Infantry and later in the West India Regiment, and participated in the 1900 Boxer Uprising in China. During World War I, Fairfax commanded the Chinese Labour Corps in France, overseeing nearly 100,000 men, and subsequently led Canadian battalions, including the 199th Battalion (Duchess of Connaught's Own Irish Canadian Rangers), C.E.F., recruited in Toronto. He was awarded the Companion of the Order of St Michael and St George (C.M.G.) in 1916 for his wartime service.
 
 After the war, Fairfax held significant posts such as Director of Remounts at the War Office and stood as a Conservative candidate in the 1919 Spen Valley by-election. He retired in the 1920s and spent his later years at his estate, Whitwell Hall in Yorkshire, and in Toronto, Canada, where he married Ethel Margaret (Esmé) Gooderham of the prominent Gooderham family. Fairfax died in Toronto in 1950.
 
 Despite his distinguished service, there is no evidence of a personal or political relationship with Winston Churchill beyond a single signed letter from Churchill to Fairfax dated 6 December 1946. No other correspondence or meeting between the two men is documented in Churchill’s extensive published archives or biographies. The letter, which predates the publication of Churchill’s war memoirs, was later affixed inside Volume I of the six-volume Cassell first edition set of "The Second World War"—likely by Fairfax himself or a family member as a keepsake.
+
+For a detailed biography and archival references, see his profile at the Imperial War Museum: [Bryan Charles Fairfax – Lives of the First World War](https://livesofthefirstworldwar.iwm.org.uk/lifestory/1187431)
 
 ## Chartwell, Westerham, Kent: Churchill’s Country Home
 
