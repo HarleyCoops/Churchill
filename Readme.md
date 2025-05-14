@@ -1,4 +1,3 @@
-# Churchill Archive Research Tools
 
 ## "The Second World War", including a note from Winston Churchill, First Edition, First Printing, Complete Set
 ### Purchased from the Canadian Federal Government at Auction
