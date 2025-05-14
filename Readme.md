@@ -1,7 +1,45 @@
-# "The Second World War", including a note from Winston Churchill, First Edition, First Printing, Complete Set
+# Churchill Archive Research Tools
+
+## "The Second World War", including a note from Winston Churchill, First Edition, First Printing, Complete Set
 ### Purchased from the Canadian Federal Government at Auction
 
-Letter is addressed to Colonel Fairfax, a WWI officer he may have known from historically significant action on the first day of the Battle of the Somme, July 1, 1916. 
+Letter is addressed to Colonel Fairfax, a WWI officer he may have known from historically significant action on the first day of the Battle of the Somme, July 1, 1916.
+
+## Fairfax Letter Finder Agent
+
+This repository includes a specialized research tool designed to search for the original letter from Colonel Bryan Charles Fairfax to Winston Churchill that prompted Churchill's December 6, 1946 reply.
+
+### Features
+
+- Connects to real archive endpoints (Churchill Archives Centre, Library and Archives Canada, University of Toronto Archives)
+- Implements OCR capabilities for document processing (requires Tesseract OCR)
+- Analyzes extracted text for relevance to the Fairfax-Churchill correspondence
+- Provides guidance on navigating actual archive access requirements
+
+### Usage
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Install Tesseract OCR - required for OCR capabilities
+# Windows: https://github.com/UB-Mannheim/tesseract/wiki
+# Mac: brew install tesseract
+# Linux: apt-get install tesseract-ocr
+
+# Run basic search (no OCR)
+python fairfax_letter_finder.py
+
+# Run full search with OCR processing
+python fairfax_letter_finder.py --full
+
+# Run OCR on previously downloaded documents
+python fairfax_letter_finder.py --ocr-only downloaded_documents/
+```
+
+### Real Archive Access
+
+This tool attempts to connect to actual archives, but most require formal research access. Researchers should contact archives directly with specific requests. 
 
 ![Hero Image](Images/hero.JPG)
 
