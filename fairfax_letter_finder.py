@@ -11,11 +11,30 @@ import os
 import time
 import io
 import re
+import shutil
 import concurrent.futures
 import logging
 from datetime import datetime, timedelta
 from urllib.parse import urljoin
 from typing import List, Dict, Any, Optional, Tuple
+
+# HTTP client configuration
+DEFAULT_TIMEOUT = 15  # seconds
+DEFAULT_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/123.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json, text/html;q=0.9, */*;q=0.1",
+}
+MAX_RESPONSE_SNIPPET = 400  # characters logged when response cannot be parsed
+
+# Common installation paths for Tesseract on Windows (auto-detection helper)
+WINDOWS_TESSERACT_PATHS = [
+    r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+    r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+]
 
 # Try to import optional dependencies, with fallbacks for graceful degradation
 try:
@@ -138,8 +157,11 @@ class ArchiveAPIClient:
         self.api_key = os.environ.get(archive_config["api_key_env"], None)
         
         self.session = requests.Session()
+        self.session.headers.update(DEFAULT_HEADERS)
         if self.api_key:
             self.session.headers.update({"Authorization": f"Bearer {self.api_key}"})
+        
+        self.timeout = DEFAULT_TIMEOUT
             
         # For Churchill Archives specifically, many resources require subscription
         if self.name == "Churchill Archives Centre" and self.api_key:
@@ -167,37 +189,180 @@ class ArchiveAPIClient:
         logger.info(f"Searching {self.name} with query: {query}")
         
         try:
-            # Construct the appropriate parameters for this specific archive
             search_params = self._prepare_search_params(query, params)
-            
-            response = self.session.get(endpoint, params=search_params)
-            response.raise_for_status()
-            
-            return response.json()
+        except Exception as exc:
+            logger.warning(f"Failed to prepare search parameters for {self.name}: {exc}")
+            return self._build_error_response(
+                f"Parameter preparation failed: {exc}",
+            )
+        
+        try:
+            response = self.session.get(
+                endpoint,
+                params=search_params,
+                timeout=self.timeout,
+                allow_redirects=False,
+            )
         except requests.RequestException as e:
-            logger.error(f"Error searching {self.name}: {str(e)}")
-            return {"error": str(e), "results": []}
+            logger.warning(f"Network error while searching {self.name}: {str(e)}")
+            return self._build_error_response(
+                f"Network error while querying {self.name}: {e}",
+            )
+        
+        status_code = response.status_code
+        try:
+            if status_code == 403:
+                logger.warning(
+                    f"{self.name} returned HTTP 403. Manual researcher access is likely required."
+                )
+                return self._build_error_response(
+                    "Access forbidden (HTTP 403). The archive likely requires manual sign-in or paid access.",
+                    status=status_code,
+                    url=response.url,
+                    notes=[
+                        "Try signing in through a browser session or requesting research credentials."
+                    ],
+                )
+            
+            if 300 <= status_code < 400:
+                location = response.headers.get("Location", "")
+                logger.warning(
+                    f"{self.name} redirected the request to '{location or 'an unsupported location'}'. "
+                    "Automated follow-up is disabled to avoid bad redirects."
+                )
+                notes = []
+                if location:
+                    notes.append(f"Redirect target: {location}")
+                notes.append("Follow the redirect manually in a browser session.")
+                return self._build_error_response(
+                    f"Received HTTP {status_code} redirect that requires interactive handling.",
+                    status=status_code,
+                    url=response.url,
+                    notes=notes,
+                )
+            
+            response.raise_for_status()
+            parsed = self._parse_response(response)
+            return parsed
+        except requests.HTTPError as http_err:
+            logger.warning(
+                f"{self.name} returned HTTP {status_code} during search: {http_err}"
+            )
+            snippet = ""
+            try:
+                snippet = response.text[:MAX_RESPONSE_SNIPPET].strip()
+            except Exception:
+                snippet = ""
+            return self._build_error_response(
+                f"HTTP {status_code} returned by {self.name}: {http_err}",
+                status=status_code,
+                url=response.url,
+                notes=["The requested endpoint may not provide API access. Try the archive's web interface."],
+                snippet=snippet or None,
+            )
+        finally:
+            response.close()
     
     def _prepare_search_params(self, query: str, params: Dict[str, Any]) -> Dict[str, Any]:
         """Prepare search parameters for the specific archive API."""
-        # This would be customized for each archive's API
-        search_params = {
+        search_params: Dict[str, Any] = {
             "q": query,
             "page": params.get("page", 1),
-            "limit": params.get("limit", 20)
         }
         
-        # Add date range if provided
-        if "start_date" in params and "end_date" in params:
-            # Format depends on the specific API
-            search_params["date_from"] = params["start_date"].strftime("%Y-%m-%d")
-            search_params["date_to"] = params["end_date"].strftime("%Y-%m-%d")
+        if "limit" in params and params["limit"] is not None:
+            search_params["limit"] = params["limit"]
         
-        # Add collection filter if applicable
-        if "collection" in params:
-            search_params["collection"] = params["collection"]
+        if "start_date" in params and "end_date" in params:
+            start_date = params["start_date"]
+            end_date = params["end_date"]
+            if hasattr(start_date, "strftime") and hasattr(end_date, "strftime"):
+                search_params["date_from"] = start_date.strftime("%Y-%m-%d")
+                search_params["date_to"] = end_date.strftime("%Y-%m-%d")
+        
+        # Archive-specific adjustments
+        if self.name == "Churchill Archives Centre":
+            if params.get("collection"):
+                search_params["collection"] = params["collection"]
+            search_params.setdefault("limit", 20)
+        elif self.name == "Library and Archives Canada":
+            search_params.setdefault("limit", 10)
+            search_params.setdefault("format", "json")
+            search_params.setdefault("language", "eng")
+            if "date_from" in search_params and "date_to" in search_params:
+                search_params["dateFrom"] = search_params.pop("date_from")
+                search_params["dateTo"] = search_params.pop("date_to")
+        elif self.name == "University of Toronto Archives":
+            if params.get("collection"):
+                search_params["collection"] = params["collection"]
+            search_params.setdefault("sort", "relevance")
         
         return search_params
+    
+    def _parse_response(self, response: requests.Response) -> Dict[str, Any]:
+        """Parse the archive response, gracefully handling non-JSON payloads."""
+        payload: Optional[Any] = None
+        json_error: Optional[str] = None
+        
+        try:
+            payload = response.json()
+        except ValueError as exc:
+            json_error = str(exc)
+        
+        if isinstance(payload, dict):
+            return payload
+        
+        if payload is not None:
+            # Some endpoints may return a bare list of records
+            return {"results": payload}
+        
+        content_type = response.headers.get("Content-Type", "").lower()
+        notes = [
+            "The archive returned non-JSON data. Manual inspection in a browser is likely required."
+        ]
+        if json_error:
+            notes.append(f"JSON decode error: {json_error}")
+        if content_type:
+            notes.append(f"Content-Type reported: {content_type}")
+        
+        snippet = response.text[:MAX_RESPONSE_SNIPPET].strip()
+        return self._build_error_response(
+            "Unsupported response format encountered.",
+            status=response.status_code,
+            url=response.url,
+            notes=notes,
+            snippet=snippet,
+        )
+    
+    def _build_error_response(
+        self,
+        message: str,
+        status: Optional[int] = None,
+        url: Optional[str] = None,
+        notes: Optional[List[str]] = None,
+        snippet: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """Standard structure for returning handled errors to the caller."""
+        payload: Dict[str, Any] = {"error": message, "results": []}
+        
+        if status is not None:
+            payload["status_code"] = status
+        if url:
+            payload["url"] = url
+        
+        combined_notes: List[str] = []
+        if notes:
+            combined_notes.extend(notes)
+        if snippet:
+            flat_snippet = snippet.replace("\n", " ").strip()
+            if len(flat_snippet) > MAX_RESPONSE_SNIPPET:
+                flat_snippet = flat_snippet[:MAX_RESPONSE_SNIPPET].rstrip() + "..."
+            combined_notes.append(f"Response snippet: {flat_snippet}")
+        
+        if combined_notes:
+            payload["notes"] = combined_notes
+        
+        return payload
     
     def get_document(self, doc_id: str) -> Dict[str, Any]:
         """Retrieve document metadata using the archive's API."""
@@ -207,12 +372,47 @@ class ArchiveAPIClient:
         logger.info(f"Retrieving document {doc_id} from {self.name}")
         
         try:
-            response = self.session.get(endpoint)
-            response.raise_for_status()
-            return response.json()
+            response = self.session.get(
+                endpoint,
+                timeout=self.timeout,
+                allow_redirects=False,
+            )
         except requests.RequestException as e:
-            logger.error(f"Error retrieving document {doc_id} from {self.name}: {str(e)}")
-            return {"error": str(e)}
+            logger.warning(f"Network error retrieving document {doc_id} from {self.name}: {str(e)}")
+            return self._build_error_response(
+                f"Network error while retrieving document {doc_id}: {e}",
+            )
+        
+        try:
+            if response.status_code == 403:
+                logger.warning(f"Access forbidden when requesting document {doc_id} from {self.name}.")
+                return self._build_error_response(
+                    "Access forbidden (HTTP 403). Credentials or on-site access are required.",
+                    status=response.status_code,
+                    url=response.url,
+                )
+            
+            if 300 <= response.status_code < 400:
+                location = response.headers.get("Location", "")
+                logger.warning(
+                    f"{self.name} redirected document request for {doc_id} to '{location or 'an unsupported location'}'."
+                )
+                return self._build_error_response(
+                    f"Document request redirected with HTTP {response.status_code}. Manual follow-up recommended.",
+                    status=response.status_code,
+                    url=response.url,
+                    notes=[f"Redirect target: {location}"] if location else None,
+                )
+            
+            response.raise_for_status()
+            return self._parse_response(response)
+        except requests.RequestException as e:
+            logger.warning(f"Error retrieving document {doc_id} from {self.name}: {str(e)}")
+            return self._build_error_response(
+                f"Failed to retrieve document {doc_id}: {e}",
+            )
+        finally:
+            response.close()
     
     def download_document_image(self, image_url: str, output_path: str) -> bool:
         """Download a document image from the archive."""
@@ -261,17 +461,54 @@ class OCRProcessor:
             logger.warning("Please install required packages: pip install -r requirements.txt")
             logger.warning("And ensure Tesseract OCR is installed on your system.")
         
-        # Set up pytesseract configuration if available
+        self.tesseract_cmd: Optional[str] = None
+        
         if self.ocr_available:
-            # You may need to specify the path to tesseract executable on some systems
-            # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-            # Check if Tesseract is available
+            # Attempt to locate the Tesseract executable automatically
+            candidates: List[str] = []
+            env_cmd = os.environ.get("TESSERACT_CMD")
+            if env_cmd:
+                candidates.append(env_cmd)
+            
+            detected = shutil.which("tesseract")
+            if detected:
+                candidates.append(detected)
+            
+            if os.name == "nt":
+                candidates.extend(WINDOWS_TESSERACT_PATHS)
+            
+            seen_paths = set()
+            for candidate in candidates:
+                if not candidate:
+                    continue
+                normalized = os.path.normpath(candidate)
+                if normalized in seen_paths:
+                    continue
+                seen_paths.add(normalized)
+                if os.path.exists(normalized):
+                    pytesseract.pytesseract.tesseract_cmd = normalized
+                    self.tesseract_cmd = normalized
+                    break
+            
+            if self.tesseract_cmd:
+                logger.info(f"Using Tesseract executable: {self.tesseract_cmd}")
+            
+            not_found_cls = getattr(pytesseract.pytesseract, "TesseractNotFoundError", RuntimeError)
+            
             try:
-                pytesseract.get_tesseract_version()
-                logger.info(f"Tesseract OCR version: {pytesseract.get_tesseract_version()}")
-            except Exception as e:
-                logger.error(f"Tesseract OCR is not correctly installed: {str(e)}")
-                logger.error("Please install Tesseract OCR: https://github.com/tesseract-ocr/tesseract")
+                version = pytesseract.get_tesseract_version()
+                logger.info(f"Tesseract OCR version detected: {version}")
+            except Exception as exc:
+                if isinstance(exc, not_found_cls):
+                    logger.warning("Tesseract executable not found. OCR features will remain disabled.")
+                else:
+                    logger.warning(f"Tesseract OCR check failed: {exc}")
+                if os.name == "nt":
+                    logger.info(
+                        "On Windows, install Tesseract OCR and ensure the executable is added to PATH "
+                        "or set TESSERACT_CMD. Common locations: "
+                        + "; ".join(WINDOWS_TESSERACT_PATHS)
+                    )
                 self.ocr_available = False
     
     def process_image(self, image_path: str) -> str:
@@ -389,6 +626,11 @@ class FairfaxLetterAgent:
         # Create download directory
         os.makedirs(DOWNLOAD_DIR, exist_ok=True)
     
+    def _add_location_if_missing(self, description: str) -> None:
+        """Deduplicate location suggestions before adding them to the summary list."""
+        if description not in self.most_likely_locations:
+            self.most_likely_locations.append(description)
+    
     def search_churchill_archives(self, query=None):
         """Search the Churchill Archives Centre at Churchill College, Cambridge."""
         logger.info(f"Searching Churchill Archives for: {query or 'Fairfax correspondence'}")
@@ -417,37 +659,45 @@ class FairfaxLetterAgent:
         try:
             results = churchill_client.search(query, **search_params)
             
-            if "error" in results:
-                logger.error(f"Search error: {results['error']}")
-                # Return empty list on error
+            for note in results.get("notes", []):
+                logger.info(f"Churchill Archives note: {note}")
+            
+            if results.get("error"):
+                logger.warning(f"Churchill Archives search returned: {results['error']}")
+                self._add_location_if_missing(
+                    "Churchill Archives Centre (manual follow-up required; automated search blocked)"
+                )
                 return []
-            else:
-                # Process real results
-                possible_locations = []
-                for item in results.get("results", []):
-                    # Format would depend on actual API response
-                    reference = item.get("reference", "Unknown")
-                    title = item.get("title", "Untitled")
-                    date = item.get("date", "")
-                    possible_locations.append(f"{reference} - {title}, {date}")
-                    
-                    # Save document metadata for later retrieval
-                    self.search_results.append({
-                        "archive": "Churchill Archives Centre",
-                        "reference": reference,
-                        "title": title,
-                        "date": date,
-                        "item_id": item.get("id"),
-                        "image_urls": item.get("images", [])
-                    })
+            
+            possible_locations = []
+            for item in results.get("results", []):
+                # Format would depend on actual API response
+                reference = item.get("reference", "Unknown")
+                title = item.get("title", "Untitled")
+                date = item.get("date", "")
+                location_entry = f"{reference} - {title}, {date}"
+                possible_locations.append(location_entry)
+                
+                # Save document metadata for later retrieval
+                self.search_results.append({
+                    "archive": "Churchill Archives Centre",
+                    "reference": reference,
+                    "title": title,
+                    "date": date,
+                    "item_id": item.get("id"),
+                    "image_urls": item.get("images", [])
+                })
             
             logger.info(f"Found {len(possible_locations)} potential documents")
-            self.most_likely_locations.extend(possible_locations)
+            for location in possible_locations:
+                self._add_location_if_missing(location)
             return possible_locations
             
         except Exception as e:
-            logger.error(f"Error searching Churchill Archives: {str(e)}")
-            # Return empty list on error
+            logger.warning(f"Error searching Churchill Archives: {str(e)}")
+            self._add_location_if_missing(
+                "Churchill Archives Centre (manual follow-up recommended; automated search encountered an error)"
+            )
             return []
     
     def search_canadian_archives(self):
@@ -482,25 +732,38 @@ class FairfaxLetterAgent:
                 try:
                     results = lac_client.search(query, **search_params)
                     
-                    if "error" not in results:
-                        for item in results.get("results", []):
-                            # Format would depend on actual API response
-                            reference = item.get("reference", "Unknown")
-                            title = item.get("title", "Untitled")
-                            date = item.get("date", "")
-                            potential_sources.append(f"LAC: {reference} - {title}, {date}")
-                            
-                            # Save document metadata
-                            self.search_results.append({
-                                "archive": "Library and Archives Canada",
-                                "reference": reference,
-                                "title": title,
-                                "date": date,
-                                "item_id": item.get("id"),
-                                "image_urls": item.get("images", [])
-                            })
+                    for note in results.get("notes", []):
+                        logger.info(f"LAC note: {note}")
+                    
+                    if results.get("error"):
+                        logger.warning(f"LAC search for '{query}' returned: {results['error']}")
+                        self._add_location_if_missing(
+                            "Library and Archives Canada (manual follow-up required; automated search blocked)"
+                        )
+                        continue
+                    
+                    for item in results.get("results", []):
+                        # Format would depend on actual API response
+                        reference = item.get("reference", "Unknown")
+                        title = item.get("title", "Untitled")
+                        date = item.get("date", "")
+                        location_entry = f"LAC: {reference} - {title}, {date}"
+                        potential_sources.append(location_entry)
+                        
+                        # Save document metadata
+                        self.search_results.append({
+                            "archive": "Library and Archives Canada",
+                            "reference": reference,
+                            "title": title,
+                            "date": date,
+                            "item_id": item.get("id"),
+                            "image_urls": item.get("images", [])
+                        })
                 except Exception as e:
-                    logger.error(f"Error searching LAC with query '{query}': {str(e)}")
+                    logger.warning(f"Error searching LAC with query '{query}': {str(e)}")
+                    self._add_location_if_missing(
+                        "Library and Archives Canada (manual follow-up recommended; automated search encountered an error)"
+                    )
         
         # Search University of Toronto Archives
         if toronto_client:
@@ -520,32 +783,54 @@ class FairfaxLetterAgent:
                 try:
                     results = toronto_client.search(query, **search_params)
                     
-                    if "error" not in results:
-                        for item in results.get("results", []):
-                            # Format would depend on actual API response
-                            reference = item.get("reference", "Unknown")
-                            title = item.get("title", "Untitled")
-                            date = item.get("date", "")
-                            potential_sources.append(f"UofT: {reference} - {title}, {date}")
-                            
-                            # Save document metadata
-                            self.search_results.append({
-                                "archive": "University of Toronto Archives",
-                                "reference": reference,
-                                "title": title,
-                                "date": date,
-                                "item_id": item.get("id"),
-                                "image_urls": item.get("images", [])
-                            })
+                    for note in results.get("notes", []):
+                        logger.info(f"University of Toronto Archives note: {note}")
+                    
+                    if results.get("error"):
+                        logger.warning(f"University of Toronto Archives search for '{query}' returned: {results['error']}")
+                        self._add_location_if_missing(
+                            "University of Toronto Archives (manual follow-up required; automated search blocked)"
+                        )
+                        continue
+                    
+                    for item in results.get("results", []):
+                        # Format would depend on actual API response
+                        reference = item.get("reference", "Unknown")
+                        title = item.get("title", "Untitled")
+                        date = item.get("date", "")
+                        location_entry = f"UofT: {reference} - {title}, {date}"
+                        potential_sources.append(location_entry)
+                        
+                        # Save document metadata
+                        self.search_results.append({
+                            "archive": "University of Toronto Archives",
+                            "reference": reference,
+                            "title": title,
+                            "date": date,
+                            "item_id": item.get("id"),
+                            "image_urls": item.get("images", [])
+                        })
                 except Exception as e:
-                    logger.error(f"Error searching UofT Archives with query '{query}': {str(e)}")
+                    logger.warning(f"Error searching UofT Archives with query '{query}': {str(e)}")
+                    self._add_location_if_missing(
+                        "University of Toronto Archives (manual follow-up recommended; automated search encountered an error)"
+                    )
         
         # Log if no results were found
         if not potential_sources:
             logger.warning("No results found in Canadian archives")
+            if lac_client:
+                self._add_location_if_missing(
+                    "Library and Archives Canada (contact reference services for manual catalogue assistance)"
+                )
+            if toronto_client:
+                self._add_location_if_missing(
+                    "University of Toronto Archives (request a research appointment to review Fairfax material)"
+                )
         
         logger.info(f"Found {len(potential_sources)} potential sources in Canadian archives")
-        self.most_likely_locations.extend(potential_sources)
+        for source in potential_sources:
+            self._add_location_if_missing(source)
         return potential_sources
     
     def download_documents(self, max_docs=5):

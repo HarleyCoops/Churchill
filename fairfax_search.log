@@ -1,0 +1,441 @@
+2025-10-25 14:51:13,367 - fairfax_finder - ERROR - Tesseract OCR is not correctly installed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-10-25 14:51:13,368 - fairfax_finder - ERROR - Please install Tesseract OCR: https://github.com/tesseract-ocr/tesseract
+2025-10-25 14:51:13,368 - fairfax_finder - INFO - 
+================================================================================
+2025-10-25 14:51:13,370 - fairfax_finder - INFO - FAIRFAX LETTER FINDER AGENT
+2025-10-25 14:51:13,370 - fairfax_finder - INFO - Searching for the original letter from Colonel Bryan Charles Fairfax, C.M.G.
+2025-10-25 14:51:13,370 - fairfax_finder - INFO - to Winston Churchill (likely written November 1946)
+2025-10-25 14:51:13,370 - fairfax_finder - INFO - ================================================================================
+2025-10-25 14:51:13,370 - fairfax_finder - INFO - Running basic search without OCR processing
+2025-10-25 14:51:13,370 - fairfax_finder - INFO - 
+[1] Searching Churchill Archives Centre...
+2025-10-25 14:51:13,370 - fairfax_finder - INFO - Searching Churchill Archives for: Fairfax correspondence
+2025-10-25 14:51:13,370 - fairfax_finder - INFO - Searching Churchill Archives Centre with query: Fairfax correspondence
+2025-10-25 14:51:14,513 - fairfax_finder - ERROR - Error searching Churchill Archives Centre: 403 Client Error: Forbidden for url: https://archives.chu.cam.ac.uk/search?q=Fairfax+correspondence&page=1&limit=50&date_from=1946-10-01&date_to=1946-12-05&collection=CHAR
+2025-10-25 14:51:14,513 - fairfax_finder - ERROR - Search error: 403 Client Error: Forbidden for url: https://archives.chu.cam.ac.uk/search?q=Fairfax+correspondence&page=1&limit=50&date_from=1946-10-01&date_to=1946-12-05&collection=CHAR
+2025-10-25 14:51:14,513 - fairfax_finder - INFO - 
+[2] Searching Canadian Archives...
+2025-10-25 14:51:14,513 - fairfax_finder - INFO - Searching Canadian archives for Fairfax papers
+2025-10-25 14:51:14,513 - fairfax_finder - INFO - Searching Library and Archives Canada
+2025-10-25 14:51:14,513 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Bryan Charles Fairfax Churchill
+2025-10-25 14:51:15,478 - fairfax_finder - ERROR - Error searching Library and Archives Canada: Expecting value: line 3 column 1 (char 5)
+2025-10-25 14:51:15,515 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Colonel Fairfax correspondence
+2025-10-25 14:51:15,613 - fairfax_finder - ERROR - Error searching Library and Archives Canada: Expecting value: line 3 column 1 (char 5)
+2025-10-25 14:51:16,518 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Fairfax Winston Churchill
+2025-10-25 14:51:16,622 - fairfax_finder - ERROR - Error searching Library and Archives Canada: Expecting value: line 3 column 1 (char 5)
+2025-10-25 14:51:16,622 - fairfax_finder - INFO - Searching University of Toronto Archives
+2025-10-25 14:51:16,622 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Fairfax Churchill
+2025-10-25 14:51:18,820 - fairfax_finder - ERROR - Error searching University of Toronto Archives: HTTPSConnectionPool(host='informationobject', port=443): Max retries exceeded with url: /browse?q=Fairfax+Churchill&page=1&limit=30&collection=B1994-0002 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026B23A9AF30>: Failed to resolve 'informationobject' ([Errno 11001] getaddrinfo failed)"))
+2025-10-25 14:51:18,821 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Bryan Charles Fairfax correspondence
+2025-10-25 14:51:20,023 - fairfax_finder - ERROR - Error searching University of Toronto Archives: HTTPSConnectionPool(host='informationobject', port=443): Max retries exceeded with url: /browse?q=Bryan+Charles+Fairfax+correspondence&page=1&limit=30&collection=B1994-0002 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026B23A9B770>: Failed to resolve 'informationobject' ([Errno 11001] getaddrinfo failed)"))
+2025-10-25 14:51:20,024 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Fairfax Winston
+2025-10-25 14:51:21,231 - fairfax_finder - ERROR - Error searching University of Toronto Archives: HTTPSConnectionPool(host='informationobject', port=443): Max retries exceeded with url: /browse?q=Fairfax+Winston&page=1&limit=30&collection=B1994-0002 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026B23AC4110>: Failed to resolve 'informationobject' ([Errno 11001] getaddrinfo failed)"))
+2025-10-25 14:51:21,233 - fairfax_finder - WARNING - No results found in Canadian archives
+2025-10-25 14:51:21,233 - fairfax_finder - INFO - Found 0 potential sources in Canadian archives
+2025-10-25 14:51:21,233 - fairfax_finder - INFO - 
+[3] Analyzing possible letter content...
+2025-10-25 14:51:21,234 - fairfax_finder - INFO - Analyzing likely letter content based on historical context
+2025-10-25 14:51:21,234 - fairfax_finder - INFO - Potential topic: Reflections on Churchill's 'Iron Curtain' speech (March 1946)
+2025-10-25 14:51:21,234 - fairfax_finder - INFO - Potential topic: Comments on Churchill's opposition leadership in Parliament
+2025-10-25 14:51:21,234 - fairfax_finder - INFO - Potential topic: Shared memories from military service
+2025-10-25 14:51:21,234 - fairfax_finder - INFO - Potential topic: Discussion of post-war international relations
+2025-10-25 14:51:21,235 - fairfax_finder - INFO - Potential topic: Possible mention of Churchill's upcoming history of WWII
+2025-10-25 14:51:21,235 - fairfax_finder - INFO - Potential topic: News of Toronto social and political circles
+2025-10-25 14:51:21,235 - fairfax_finder - INFO - Potential topic: Personal reflections on Fairfax's military career and Churchill's leadership
+2025-10-25 14:51:21,235 - fairfax_finder - INFO - 
+[4] Generating comprehensive search plan...
+2025-10-25 14:51:21,236 - fairfax_finder - INFO - 
+================================================================================
+2025-10-25 14:51:21,236 - fairfax_finder - INFO - SEARCH RESULTS SUMMARY
+2025-10-25 14:51:21,236 - fairfax_finder - INFO - ================================================================================
+2025-10-25 14:51:21,236 - fairfax_finder - INFO - 
+Most likely locations for Fairfax's original letter:
+2025-10-25 14:51:21,236 - fairfax_finder - INFO - 
+Next steps for archival research:
+2025-10-25 14:51:21,236 - fairfax_finder - INFO - 1. Query Churchill Archives CALM catalogue for correspondence from Fairfax, Oct-Dec 1946
+2025-10-25 14:51:21,236 - fairfax_finder - INFO - 2. Request specific CHAR files containing personal correspondence from this period
+2025-10-25 14:51:21,238 - fairfax_finder - INFO - 3. Search Canadian archives for Fairfax's personal papers or letter copies
+2025-10-25 14:51:21,238 - fairfax_finder - INFO - 4. Contact Fairfax/Gooderham family descendants for private collections
+2025-10-25 14:51:21,238 - fairfax_finder - INFO - 5. Search newspaper archives for any mention of communication between the two
+2025-10-25 14:51:21,240 - fairfax_finder - INFO - 
+OCR processing capabilities:
+2025-10-25 14:51:21,240 - fairfax_finder - INFO - 1. Download document images from archive APIs
+2025-10-25 14:51:21,242 - fairfax_finder - INFO - 2. Process images with OCR to extract text
+2025-10-25 14:51:21,242 - fairfax_finder - INFO - 3. Analyze text for relevance to Fairfax-Churchill correspondence
+2025-10-25 14:51:21,242 - fairfax_finder - INFO - 4. Extract letter components (date, salutation, body, signature)
+2025-10-25 14:51:21,242 - fairfax_finder - INFO - 5. Validate letter content against historical context
+2025-10-25 14:51:21,242 - fairfax_finder - INFO - 
+To execute full search with OCR processing, run:
+2025-10-25 14:51:21,242 - fairfax_finder - INFO - python fairfax_letter_finder.py --full
+2025-10-25 14:51:21,242 - fairfax_finder - INFO - 
+===== REAL-WORLD ARCHIVE ACCESS INFORMATION =====
+2025-10-25 14:51:21,242 - fairfax_finder - INFO - This agent attempts to connect to actual archives, but most require formal access:
+2025-10-25 14:51:21,246 - fairfax_finder - INFO - 
+2025-10-25 14:51:21,246 - fairfax_finder - INFO - 1. Churchill Archives Centre:
+2025-10-25 14:51:21,246 - fairfax_finder - INFO -    - Requires reader's ticket application: https://archives.chu.cam.ac.uk/researchers
+2025-10-25 14:51:21,246 - fairfax_finder - INFO -    - Commercial access via subscription: https://www.churchillarchive.com/
+2025-10-25 14:51:21,247 - fairfax_finder - INFO -    - Email for research inquiries: archives@chu.cam.ac.uk
+2025-10-25 14:51:21,248 - fairfax_finder - INFO - 
+2025-10-25 14:51:21,248 - fairfax_finder - INFO - 2. Library and Archives Canada:
+2025-10-25 14:51:21,248 - fairfax_finder - INFO -    - Access request form: https://www.bac-lac.gc.ca/eng/services/access-request/Pages/access-request.aspx
+2025-10-25 14:51:21,248 - fairfax_finder - INFO -    - Email: bac.reference.lac@canada.ca
+2025-10-25 14:51:21,250 - fairfax_finder - INFO - 
+2025-10-25 14:51:21,250 - fairfax_finder - INFO - 3. University of Toronto Archives:
+2025-10-25 14:51:21,251 - fairfax_finder - INFO -    - Research appointment form: https://utarms.library.utoronto.ca/contact-us
+2025-10-25 14:51:21,251 - fairfax_finder - INFO -    - Email: utarms@utoronto.ca
+2025-10-25 14:51:21,251 - fairfax_finder - INFO - 
+2025-10-25 14:51:21,251 - fairfax_finder - INFO - For best results, researchers should:
+2025-10-25 14:51:21,251 - fairfax_finder - INFO - 1. Contact archives directly with specific reference numbers
+2025-10-25 14:51:21,252 - fairfax_finder - INFO - 2. Explain your research purpose and request access to Fairfax correspondence
+2025-10-25 14:51:21,252 - fairfax_finder - INFO - 3. Ask specifically about letters between Colonel Bryan Fairfax and Churchill from late 1946
+2025-10-25 15:01:02,218 - fairfax_finder - INFO - Using Tesseract executable: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-25 15:01:02,991 - fairfax_finder - INFO - Tesseract OCR version detected: 5.5.0.20241111
+2025-10-25 15:01:02,992 - fairfax_finder - INFO - 
+================================================================================
+2025-10-25 15:01:02,992 - fairfax_finder - INFO - FAIRFAX LETTER FINDER AGENT
+2025-10-25 15:01:02,994 - fairfax_finder - INFO - Searching for the original letter from Colonel Bryan Charles Fairfax, C.M.G.
+2025-10-25 15:01:02,994 - fairfax_finder - INFO - to Winston Churchill (likely written November 1946)
+2025-10-25 15:01:02,994 - fairfax_finder - INFO - ================================================================================
+2025-10-25 15:01:02,994 - fairfax_finder - INFO - Running basic search without OCR processing
+2025-10-25 15:01:02,994 - fairfax_finder - INFO - 
+[1] Searching Churchill Archives Centre...
+2025-10-25 15:01:02,994 - fairfax_finder - INFO - Searching Churchill Archives for: Fairfax correspondence
+2025-10-25 15:01:02,994 - fairfax_finder - INFO - Searching Churchill Archives Centre with query: Fairfax correspondence
+2025-10-25 15:01:04,429 - fairfax_finder - WARNING - Error searching Churchill Archives: 404 Client Error: Not Found for url: https://archives.chu.cam.ac.uk/search?q=Fairfax+correspondence&page=1&limit=50&date_from=1946-10-01&date_to=1946-12-05&collection=CHAR
+2025-10-25 15:01:04,430 - fairfax_finder - INFO - 
+[2] Searching Canadian Archives...
+2025-10-25 15:01:04,430 - fairfax_finder - INFO - Searching Canadian archives for Fairfax papers
+2025-10-25 15:01:04,430 - fairfax_finder - INFO - Searching Library and Archives Canada
+2025-10-25 15:01:04,430 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Bryan Charles Fairfax Churchill
+2025-10-25 15:01:05,340 - fairfax_finder - INFO - LAC note: The archive returned non-JSON data. Manual inspection in a browser is likely required.
+2025-10-25 15:01:05,341 - fairfax_finder - INFO - LAC note: JSON decode error: Expecting value: line 3 column 1 (char 5)
+2025-10-25 15:01:05,341 - fairfax_finder - INFO - LAC note: Content-Type reported: text/html; charset=utf-8
+2025-10-25 15:01:05,341 - fairfax_finder - INFO - LAC note: Response snippet: <!DOCTYPE html> <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]--> <head>     <meta charset="utf-8">     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->     <
+2025-10-25 15:01:05,342 - fairfax_finder - WARNING - LAC search for 'Bryan Charles Fairfax Churchill' returned: Unsupported response format encountered.
+2025-10-25 15:01:05,431 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Colonel Fairfax correspondence
+2025-10-25 15:01:05,531 - fairfax_finder - INFO - LAC note: The archive returned non-JSON data. Manual inspection in a browser is likely required.
+2025-10-25 15:01:05,531 - fairfax_finder - INFO - LAC note: JSON decode error: Expecting value: line 3 column 1 (char 5)
+2025-10-25 15:01:05,532 - fairfax_finder - INFO - LAC note: Content-Type reported: text/html; charset=utf-8
+2025-10-25 15:01:05,532 - fairfax_finder - INFO - LAC note: Response snippet: <!DOCTYPE html> <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]--> <head>     <meta charset="utf-8">     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->     <
+2025-10-25 15:01:05,532 - fairfax_finder - WARNING - LAC search for 'Colonel Fairfax correspondence' returned: Unsupported response format encountered.
+2025-10-25 15:01:06,431 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Fairfax Winston Churchill
+2025-10-25 15:01:06,533 - fairfax_finder - INFO - LAC note: The archive returned non-JSON data. Manual inspection in a browser is likely required.
+2025-10-25 15:01:06,533 - fairfax_finder - INFO - LAC note: JSON decode error: Expecting value: line 3 column 1 (char 5)
+2025-10-25 15:01:06,533 - fairfax_finder - INFO - LAC note: Content-Type reported: text/html; charset=utf-8
+2025-10-25 15:01:06,533 - fairfax_finder - INFO - LAC note: Response snippet: <!DOCTYPE html> <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]--> <head>     <meta charset="utf-8">     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->     <
+2025-10-25 15:01:06,533 - fairfax_finder - WARNING - LAC search for 'Fairfax Winston Churchill' returned: Unsupported response format encountered.
+2025-10-25 15:01:06,533 - fairfax_finder - INFO - Searching University of Toronto Archives
+2025-10-25 15:01:06,533 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Fairfax Churchill
+2025-10-25 15:01:07,467 - fairfax_finder - WARNING - University of Toronto Archives redirected the request to '//informationobject/browse?q=Fairfax+Churchill&page=1&limit=30&collection=B1994-0002&sort=relevance'. Automated follow-up is disabled to avoid bad redirects.
+2025-10-25 15:01:07,467 - fairfax_finder - INFO - University of Toronto Archives note: Redirect target: //informationobject/browse?q=Fairfax+Churchill&page=1&limit=30&collection=B1994-0002&sort=relevance
+2025-10-25 15:01:07,467 - fairfax_finder - INFO - University of Toronto Archives note: Follow the redirect manually in a browser session.
+2025-10-25 15:01:07,467 - fairfax_finder - WARNING - University of Toronto Archives search for 'Fairfax Churchill' returned: Received HTTP 302 redirect that requires interactive handling.
+2025-10-25 15:01:07,534 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Bryan Charles Fairfax correspondence
+2025-10-25 15:01:07,590 - fairfax_finder - WARNING - University of Toronto Archives redirected the request to '//informationobject/browse?q=Bryan+Charles+Fairfax+correspondence&page=1&limit=30&collection=B1994-0002&sort=relevance'. Automated follow-up is disabled to avoid bad redirects.
+2025-10-25 15:01:07,591 - fairfax_finder - INFO - University of Toronto Archives note: Redirect target: //informationobject/browse?q=Bryan+Charles+Fairfax+correspondence&page=1&limit=30&collection=B1994-0002&sort=relevance
+2025-10-25 15:01:07,591 - fairfax_finder - INFO - University of Toronto Archives note: Follow the redirect manually in a browser session.
+2025-10-25 15:01:07,591 - fairfax_finder - WARNING - University of Toronto Archives search for 'Bryan Charles Fairfax correspondence' returned: Received HTTP 302 redirect that requires interactive handling.
+2025-10-25 15:01:08,536 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Fairfax Winston
+2025-10-25 15:01:08,594 - fairfax_finder - WARNING - University of Toronto Archives redirected the request to '//informationobject/browse?q=Fairfax+Winston&page=1&limit=30&collection=B1994-0002&sort=relevance'. Automated follow-up is disabled to avoid bad redirects.
+2025-10-25 15:01:08,595 - fairfax_finder - INFO - University of Toronto Archives note: Redirect target: //informationobject/browse?q=Fairfax+Winston&page=1&limit=30&collection=B1994-0002&sort=relevance
+2025-10-25 15:01:08,595 - fairfax_finder - INFO - University of Toronto Archives note: Follow the redirect manually in a browser session.
+2025-10-25 15:01:08,596 - fairfax_finder - WARNING - University of Toronto Archives search for 'Fairfax Winston' returned: Received HTTP 302 redirect that requires interactive handling.
+2025-10-25 15:01:08,596 - fairfax_finder - WARNING - No results found in Canadian archives
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - Found 0 potential sources in Canadian archives
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - 
+[3] Analyzing possible letter content...
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - Analyzing likely letter content based on historical context
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - Potential topic: Reflections on Churchill's 'Iron Curtain' speech (March 1946)
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - Potential topic: Comments on Churchill's opposition leadership in Parliament
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - Potential topic: Shared memories from military service
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - Potential topic: Discussion of post-war international relations
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - Potential topic: Possible mention of Churchill's upcoming history of WWII
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - Potential topic: News of Toronto social and political circles
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - Potential topic: Personal reflections on Fairfax's military career and Churchill's leadership
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - 
+[4] Generating comprehensive search plan...
+2025-10-25 15:01:08,596 - fairfax_finder - INFO - 
+================================================================================
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - SEARCH RESULTS SUMMARY
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - ================================================================================
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 
+Most likely locations for Fairfax's original letter:
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 1. Churchill Archives Centre (manual follow-up recommended; automated search encountered an error)
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 2. Library and Archives Canada (manual follow-up required; automated search blocked)
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 3. University of Toronto Archives (manual follow-up required; automated search blocked)
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 4. Library and Archives Canada (contact reference services for manual catalogue assistance)
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 5. University of Toronto Archives (request a research appointment to review Fairfax material)
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 
+Next steps for archival research:
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 1. Query Churchill Archives CALM catalogue for correspondence from Fairfax, Oct-Dec 1946
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 2. Request specific CHAR files containing personal correspondence from this period
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 3. Search Canadian archives for Fairfax's personal papers or letter copies
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 4. Contact Fairfax/Gooderham family descendants for private collections
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 5. Search newspaper archives for any mention of communication between the two
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 
+OCR processing capabilities:
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 1. Download document images from archive APIs
+2025-10-25 15:01:08,597 - fairfax_finder - INFO - 2. Process images with OCR to extract text
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 3. Analyze text for relevance to Fairfax-Churchill correspondence
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 4. Extract letter components (date, salutation, body, signature)
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 5. Validate letter content against historical context
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 
+To execute full search with OCR processing, run:
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - python fairfax_letter_finder.py --full
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 
+===== REAL-WORLD ARCHIVE ACCESS INFORMATION =====
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - This agent attempts to connect to actual archives, but most require formal access:
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 1. Churchill Archives Centre:
+2025-10-25 15:01:08,598 - fairfax_finder - INFO -    - Requires reader's ticket application: https://archives.chu.cam.ac.uk/researchers
+2025-10-25 15:01:08,598 - fairfax_finder - INFO -    - Commercial access via subscription: https://www.churchillarchive.com/
+2025-10-25 15:01:08,598 - fairfax_finder - INFO -    - Email for research inquiries: archives@chu.cam.ac.uk
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 2. Library and Archives Canada:
+2025-10-25 15:01:08,598 - fairfax_finder - INFO -    - Access request form: https://www.bac-lac.gc.ca/eng/services/access-request/Pages/access-request.aspx
+2025-10-25 15:01:08,598 - fairfax_finder - INFO -    - Email: bac.reference.lac@canada.ca
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 3. University of Toronto Archives:
+2025-10-25 15:01:08,598 - fairfax_finder - INFO -    - Research appointment form: https://utarms.library.utoronto.ca/contact-us
+2025-10-25 15:01:08,598 - fairfax_finder - INFO -    - Email: utarms@utoronto.ca
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - For best results, researchers should:
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 1. Contact archives directly with specific reference numbers
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 2. Explain your research purpose and request access to Fairfax correspondence
+2025-10-25 15:01:08,598 - fairfax_finder - INFO - 3. Ask specifically about letters between Colonel Bryan Fairfax and Churchill from late 1946
+2025-10-25 15:01:42,284 - fairfax_finder - INFO - Using Tesseract executable: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-25 15:01:42,345 - fairfax_finder - INFO - Tesseract OCR version detected: 5.5.0.20241111
+2025-10-25 15:01:42,346 - fairfax_finder - INFO - 
+================================================================================
+2025-10-25 15:01:42,346 - fairfax_finder - INFO - FAIRFAX LETTER FINDER AGENT
+2025-10-25 15:01:42,347 - fairfax_finder - INFO - Searching for the original letter from Colonel Bryan Charles Fairfax, C.M.G.
+2025-10-25 15:01:42,347 - fairfax_finder - INFO - to Winston Churchill (likely written November 1946)
+2025-10-25 15:01:42,347 - fairfax_finder - INFO - ================================================================================
+2025-10-25 15:01:42,347 - fairfax_finder - INFO - Running basic search without OCR processing
+2025-10-25 15:01:42,347 - fairfax_finder - INFO - 
+[1] Searching Churchill Archives Centre...
+2025-10-25 15:01:42,347 - fairfax_finder - INFO - Searching Churchill Archives for: Fairfax correspondence
+2025-10-25 15:01:42,347 - fairfax_finder - INFO - Searching Churchill Archives Centre with query: Fairfax correspondence
+2025-10-25 15:01:43,620 - fairfax_finder - WARNING - Churchill Archives Centre returned HTTP 404 during search: 404 Client Error: Not Found for url: https://archives.chu.cam.ac.uk/search?q=Fairfax+correspondence&page=1&limit=50&date_from=1946-10-01&date_to=1946-12-05&collection=CHAR
+2025-10-25 15:01:43,620 - fairfax_finder - INFO - Churchill Archives note: The requested endpoint may not provide API access. Try the archive's web interface.
+2025-10-25 15:01:43,620 - fairfax_finder - INFO - Churchill Archives note: Response snippet: <!DOCTYPE html> <html lang="en-GB"> <head> 	<meta charset="UTF-8" /> 	<meta name="viewport" content="width=device-width, initial-scale=1" /> <meta name='robots' content='noindex, follow' /> 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style> 	    <script>         window.searchAndFilter = window.searchAndFilter || {};     </script>      	<!-- Th
+2025-10-25 15:01:43,620 - fairfax_finder - WARNING - Churchill Archives search returned: HTTP 404 returned by Churchill Archives Centre: 404 Client Error: Not Found for url: https://archives.chu.cam.ac.uk/search?q=Fairfax+correspondence&page=1&limit=50&date_from=1946-10-01&date_to=1946-12-05&collection=CHAR
+2025-10-25 15:01:43,621 - fairfax_finder - INFO - 
+[2] Searching Canadian Archives...
+2025-10-25 15:01:43,621 - fairfax_finder - INFO - Searching Canadian archives for Fairfax papers
+2025-10-25 15:01:43,621 - fairfax_finder - INFO - Searching Library and Archives Canada
+2025-10-25 15:01:43,621 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Bryan Charles Fairfax Churchill
+2025-10-25 15:01:44,583 - fairfax_finder - INFO - LAC note: The archive returned non-JSON data. Manual inspection in a browser is likely required.
+2025-10-25 15:01:44,583 - fairfax_finder - INFO - LAC note: JSON decode error: Expecting value: line 3 column 1 (char 5)
+2025-10-25 15:01:44,583 - fairfax_finder - INFO - LAC note: Content-Type reported: text/html; charset=utf-8
+2025-10-25 15:01:44,583 - fairfax_finder - INFO - LAC note: Response snippet: <!DOCTYPE html> <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]--> <head>     <meta charset="utf-8">     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->     <
+2025-10-25 15:01:44,584 - fairfax_finder - WARNING - LAC search for 'Bryan Charles Fairfax Churchill' returned: Unsupported response format encountered.
+2025-10-25 15:01:44,622 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Colonel Fairfax correspondence
+2025-10-25 15:01:44,780 - fairfax_finder - INFO - LAC note: The archive returned non-JSON data. Manual inspection in a browser is likely required.
+2025-10-25 15:01:44,780 - fairfax_finder - INFO - LAC note: JSON decode error: Expecting value: line 3 column 1 (char 5)
+2025-10-25 15:01:44,780 - fairfax_finder - INFO - LAC note: Content-Type reported: text/html; charset=utf-8
+2025-10-25 15:01:44,780 - fairfax_finder - INFO - LAC note: Response snippet: <!DOCTYPE html> <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]--> <head>     <meta charset="utf-8">     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->     <
+2025-10-25 15:01:44,780 - fairfax_finder - WARNING - LAC search for 'Colonel Fairfax correspondence' returned: Unsupported response format encountered.
+2025-10-25 15:01:45,623 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Fairfax Winston Churchill
+2025-10-25 15:01:45,784 - fairfax_finder - INFO - LAC note: The archive returned non-JSON data. Manual inspection in a browser is likely required.
+2025-10-25 15:01:45,785 - fairfax_finder - INFO - LAC note: JSON decode error: Expecting value: line 3 column 1 (char 5)
+2025-10-25 15:01:45,785 - fairfax_finder - INFO - LAC note: Content-Type reported: text/html; charset=utf-8
+2025-10-25 15:01:45,785 - fairfax_finder - INFO - LAC note: Response snippet: <!DOCTYPE html> <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]--> <head>     <meta charset="utf-8">     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->     <
+2025-10-25 15:01:45,785 - fairfax_finder - WARNING - LAC search for 'Fairfax Winston Churchill' returned: Unsupported response format encountered.
+2025-10-25 15:01:45,785 - fairfax_finder - INFO - Searching University of Toronto Archives
+2025-10-25 15:01:45,785 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Fairfax Churchill
+2025-10-25 15:01:46,573 - fairfax_finder - WARNING - University of Toronto Archives redirected the request to '//informationobject/browse?q=Fairfax+Churchill&page=1&limit=30&collection=B1994-0002&sort=relevance'. Automated follow-up is disabled to avoid bad redirects.
+2025-10-25 15:01:46,573 - fairfax_finder - INFO - University of Toronto Archives note: Redirect target: //informationobject/browse?q=Fairfax+Churchill&page=1&limit=30&collection=B1994-0002&sort=relevance
+2025-10-25 15:01:46,573 - fairfax_finder - INFO - University of Toronto Archives note: Follow the redirect manually in a browser session.
+2025-10-25 15:01:46,573 - fairfax_finder - WARNING - University of Toronto Archives search for 'Fairfax Churchill' returned: Received HTTP 302 redirect that requires interactive handling.
+2025-10-25 15:01:46,786 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Bryan Charles Fairfax correspondence
+2025-10-25 15:01:46,842 - fairfax_finder - WARNING - University of Toronto Archives redirected the request to '//informationobject/browse?q=Bryan+Charles+Fairfax+correspondence&page=1&limit=30&collection=B1994-0002&sort=relevance'. Automated follow-up is disabled to avoid bad redirects.
+2025-10-25 15:01:46,843 - fairfax_finder - INFO - University of Toronto Archives note: Redirect target: //informationobject/browse?q=Bryan+Charles+Fairfax+correspondence&page=1&limit=30&collection=B1994-0002&sort=relevance
+2025-10-25 15:01:46,843 - fairfax_finder - INFO - University of Toronto Archives note: Follow the redirect manually in a browser session.
+2025-10-25 15:01:46,843 - fairfax_finder - WARNING - University of Toronto Archives search for 'Bryan Charles Fairfax correspondence' returned: Received HTTP 302 redirect that requires interactive handling.
+2025-10-25 15:01:47,787 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Fairfax Winston
+2025-10-25 15:01:47,845 - fairfax_finder - WARNING - University of Toronto Archives redirected the request to '//informationobject/browse?q=Fairfax+Winston&page=1&limit=30&collection=B1994-0002&sort=relevance'. Automated follow-up is disabled to avoid bad redirects.
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - University of Toronto Archives note: Redirect target: //informationobject/browse?q=Fairfax+Winston&page=1&limit=30&collection=B1994-0002&sort=relevance
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - University of Toronto Archives note: Follow the redirect manually in a browser session.
+2025-10-25 15:01:47,847 - fairfax_finder - WARNING - University of Toronto Archives search for 'Fairfax Winston' returned: Received HTTP 302 redirect that requires interactive handling.
+2025-10-25 15:01:47,847 - fairfax_finder - WARNING - No results found in Canadian archives
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - Found 0 potential sources in Canadian archives
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 
+[3] Analyzing possible letter content...
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - Analyzing likely letter content based on historical context
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - Potential topic: Reflections on Churchill's 'Iron Curtain' speech (March 1946)
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - Potential topic: Comments on Churchill's opposition leadership in Parliament
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - Potential topic: Shared memories from military service
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - Potential topic: Discussion of post-war international relations
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - Potential topic: Possible mention of Churchill's upcoming history of WWII
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - Potential topic: News of Toronto social and political circles
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - Potential topic: Personal reflections on Fairfax's military career and Churchill's leadership
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 
+[4] Generating comprehensive search plan...
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 
+================================================================================
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - SEARCH RESULTS SUMMARY
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - ================================================================================
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 
+Most likely locations for Fairfax's original letter:
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 1. Churchill Archives Centre (manual follow-up required; automated search blocked)
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 2. Library and Archives Canada (manual follow-up required; automated search blocked)
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 3. University of Toronto Archives (manual follow-up required; automated search blocked)
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 4. Library and Archives Canada (contact reference services for manual catalogue assistance)
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 5. University of Toronto Archives (request a research appointment to review Fairfax material)
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 
+Next steps for archival research:
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 1. Query Churchill Archives CALM catalogue for correspondence from Fairfax, Oct-Dec 1946
+2025-10-25 15:01:47,847 - fairfax_finder - INFO - 2. Request specific CHAR files containing personal correspondence from this period
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 3. Search Canadian archives for Fairfax's personal papers or letter copies
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 4. Contact Fairfax/Gooderham family descendants for private collections
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 5. Search newspaper archives for any mention of communication between the two
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 
+OCR processing capabilities:
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 1. Download document images from archive APIs
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 2. Process images with OCR to extract text
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 3. Analyze text for relevance to Fairfax-Churchill correspondence
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 4. Extract letter components (date, salutation, body, signature)
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 5. Validate letter content against historical context
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 
+To execute full search with OCR processing, run:
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - python fairfax_letter_finder.py --full
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 
+===== REAL-WORLD ARCHIVE ACCESS INFORMATION =====
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - This agent attempts to connect to actual archives, but most require formal access:
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 
+2025-10-25 15:01:47,849 - fairfax_finder - INFO - 1. Churchill Archives Centre:
+2025-10-25 15:01:47,849 - fairfax_finder - INFO -    - Requires reader's ticket application: https://archives.chu.cam.ac.uk/researchers
+2025-10-25 15:01:47,849 - fairfax_finder - INFO -    - Commercial access via subscription: https://www.churchillarchive.com/
+2025-10-25 15:01:47,849 - fairfax_finder - INFO -    - Email for research inquiries: archives@chu.cam.ac.uk
+2025-10-25 15:01:47,850 - fairfax_finder - INFO - 
+2025-10-25 15:01:47,850 - fairfax_finder - INFO - 2. Library and Archives Canada:
+2025-10-25 15:01:47,850 - fairfax_finder - INFO -    - Access request form: https://www.bac-lac.gc.ca/eng/services/access-request/Pages/access-request.aspx
+2025-10-25 15:01:47,850 - fairfax_finder - INFO -    - Email: bac.reference.lac@canada.ca
+2025-10-25 15:01:47,850 - fairfax_finder - INFO - 
+2025-10-25 15:01:47,850 - fairfax_finder - INFO - 3. University of Toronto Archives:
+2025-10-25 15:01:47,850 - fairfax_finder - INFO -    - Research appointment form: https://utarms.library.utoronto.ca/contact-us
+2025-10-25 15:01:47,850 - fairfax_finder - INFO -    - Email: utarms@utoronto.ca
+2025-10-25 15:01:47,850 - fairfax_finder - INFO - 
+2025-10-25 15:01:47,850 - fairfax_finder - INFO - For best results, researchers should:
+2025-10-25 15:01:47,850 - fairfax_finder - INFO - 1. Contact archives directly with specific reference numbers
+2025-10-25 15:01:47,850 - fairfax_finder - INFO - 2. Explain your research purpose and request access to Fairfax correspondence
+2025-10-25 15:01:47,850 - fairfax_finder - INFO - 3. Ask specifically about letters between Colonel Bryan Fairfax and Churchill from late 1946
+2025-10-25 15:03:26,755 - fairfax_finder - INFO - Using Tesseract executable: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-25 15:03:26,834 - fairfax_finder - INFO - Tesseract OCR version detected: 5.5.0.20241111
+2025-10-25 15:03:26,835 - fairfax_finder - INFO - 
+================================================================================
+2025-10-25 15:03:26,835 - fairfax_finder - INFO - FAIRFAX LETTER FINDER AGENT
+2025-10-25 15:03:26,835 - fairfax_finder - INFO - Searching for the original letter from Colonel Bryan Charles Fairfax, C.M.G.
+2025-10-25 15:03:26,835 - fairfax_finder - INFO - to Winston Churchill (likely written November 1946)
+2025-10-25 15:03:26,837 - fairfax_finder - INFO - ================================================================================
+2025-10-25 15:03:26,837 - fairfax_finder - INFO - Running basic search without OCR processing
+2025-10-25 15:03:26,837 - fairfax_finder - INFO - 
+[1] Searching Churchill Archives Centre...
+2025-10-25 15:03:26,837 - fairfax_finder - INFO - Searching Churchill Archives for: Fairfax correspondence
+2025-10-25 15:03:26,837 - fairfax_finder - INFO - Searching Churchill Archives Centre with query: Fairfax correspondence
+2025-10-25 15:03:28,039 - fairfax_finder - WARNING - Churchill Archives Centre returned HTTP 404 during search: 404 Client Error: Not Found for url: https://archives.chu.cam.ac.uk/search?q=Fairfax+correspondence&page=1&limit=50&date_from=1946-10-01&date_to=1946-12-05&collection=CHAR
+2025-10-25 15:03:28,039 - fairfax_finder - INFO - Churchill Archives note: The requested endpoint may not provide API access. Try the archive's web interface.
+2025-10-25 15:03:28,040 - fairfax_finder - INFO - Churchill Archives note: Response snippet: <!DOCTYPE html> <html lang="en-GB"> <head> 	<meta charset="UTF-8" /> 	<meta name="viewport" content="width=device-width, initial-scale=1" /> <meta name='robots' content='noindex, follow' /> 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style> 	    <script>         window.searchAndFilter = window.searchAndFilter || {};     </script>      	<!-- Th
+2025-10-25 15:03:28,040 - fairfax_finder - WARNING - Churchill Archives search returned: HTTP 404 returned by Churchill Archives Centre: 404 Client Error: Not Found for url: https://archives.chu.cam.ac.uk/search?q=Fairfax+correspondence&page=1&limit=50&date_from=1946-10-01&date_to=1946-12-05&collection=CHAR
+2025-10-25 15:03:28,040 - fairfax_finder - INFO - 
+[2] Searching Canadian Archives...
+2025-10-25 15:03:28,040 - fairfax_finder - INFO - Searching Canadian archives for Fairfax papers
+2025-10-25 15:03:28,041 - fairfax_finder - INFO - Searching Library and Archives Canada
+2025-10-25 15:03:28,041 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Bryan Charles Fairfax Churchill
+2025-10-25 15:03:28,951 - fairfax_finder - INFO - LAC note: The archive returned non-JSON data. Manual inspection in a browser is likely required.
+2025-10-25 15:03:28,951 - fairfax_finder - INFO - LAC note: JSON decode error: Expecting value: line 3 column 1 (char 5)
+2025-10-25 15:03:28,952 - fairfax_finder - INFO - LAC note: Content-Type reported: text/html; charset=utf-8
+2025-10-25 15:03:28,952 - fairfax_finder - INFO - LAC note: Response snippet: <!DOCTYPE html> <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]--> <head>     <meta charset="utf-8">     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->     <
+2025-10-25 15:03:28,953 - fairfax_finder - WARNING - LAC search for 'Bryan Charles Fairfax Churchill' returned: Unsupported response format encountered.
+2025-10-25 15:03:29,042 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Colonel Fairfax correspondence
+2025-10-25 15:03:29,139 - fairfax_finder - INFO - LAC note: The archive returned non-JSON data. Manual inspection in a browser is likely required.
+2025-10-25 15:03:29,140 - fairfax_finder - INFO - LAC note: JSON decode error: Expecting value: line 3 column 1 (char 5)
+2025-10-25 15:03:29,140 - fairfax_finder - INFO - LAC note: Content-Type reported: text/html; charset=utf-8
+2025-10-25 15:03:29,140 - fairfax_finder - INFO - LAC note: Response snippet: <!DOCTYPE html> <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]--> <head>     <meta charset="utf-8">     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->     <
+2025-10-25 15:03:29,140 - fairfax_finder - WARNING - LAC search for 'Colonel Fairfax correspondence' returned: Unsupported response format encountered.
+2025-10-25 15:03:30,044 - fairfax_finder - INFO - Searching Library and Archives Canada with query: Fairfax Winston Churchill
+2025-10-25 15:03:30,142 - fairfax_finder - INFO - LAC note: The archive returned non-JSON data. Manual inspection in a browser is likely required.
+2025-10-25 15:03:30,143 - fairfax_finder - INFO - LAC note: JSON decode error: Expecting value: line 3 column 1 (char 5)
+2025-10-25 15:03:30,143 - fairfax_finder - INFO - LAC note: Content-Type reported: text/html; charset=utf-8
+2025-10-25 15:03:30,143 - fairfax_finder - INFO - LAC note: Response snippet: <!DOCTYPE html> <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]--> <head>     <meta charset="utf-8">     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->     <
+2025-10-25 15:03:30,143 - fairfax_finder - WARNING - LAC search for 'Fairfax Winston Churchill' returned: Unsupported response format encountered.
+2025-10-25 15:03:30,143 - fairfax_finder - INFO - Searching University of Toronto Archives
+2025-10-25 15:03:30,144 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Fairfax Churchill
+2025-10-25 15:03:31,040 - fairfax_finder - WARNING - University of Toronto Archives redirected the request to '//informationobject/browse?q=Fairfax+Churchill&page=1&limit=30&collection=B1994-0002&sort=relevance'. Automated follow-up is disabled to avoid bad redirects.
+2025-10-25 15:03:31,040 - fairfax_finder - INFO - University of Toronto Archives note: Redirect target: //informationobject/browse?q=Fairfax+Churchill&page=1&limit=30&collection=B1994-0002&sort=relevance
+2025-10-25 15:03:31,041 - fairfax_finder - INFO - University of Toronto Archives note: Follow the redirect manually in a browser session.
+2025-10-25 15:03:31,041 - fairfax_finder - WARNING - University of Toronto Archives search for 'Fairfax Churchill' returned: Received HTTP 302 redirect that requires interactive handling.
+2025-10-25 15:03:31,145 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Bryan Charles Fairfax correspondence
+2025-10-25 15:03:31,200 - fairfax_finder - WARNING - University of Toronto Archives redirected the request to '//informationobject/browse?q=Bryan+Charles+Fairfax+correspondence&page=1&limit=30&collection=B1994-0002&sort=relevance'. Automated follow-up is disabled to avoid bad redirects.
+2025-10-25 15:03:31,200 - fairfax_finder - INFO - University of Toronto Archives note: Redirect target: //informationobject/browse?q=Bryan+Charles+Fairfax+correspondence&page=1&limit=30&collection=B1994-0002&sort=relevance
+2025-10-25 15:03:31,200 - fairfax_finder - INFO - University of Toronto Archives note: Follow the redirect manually in a browser session.
+2025-10-25 15:03:31,200 - fairfax_finder - WARNING - University of Toronto Archives search for 'Bryan Charles Fairfax correspondence' returned: Received HTTP 302 redirect that requires interactive handling.
+2025-10-25 15:03:32,146 - fairfax_finder - INFO - Searching University of Toronto Archives with query: Fairfax Winston
+2025-10-25 15:03:32,202 - fairfax_finder - WARNING - University of Toronto Archives redirected the request to '//informationobject/browse?q=Fairfax+Winston&page=1&limit=30&collection=B1994-0002&sort=relevance'. Automated follow-up is disabled to avoid bad redirects.
+2025-10-25 15:03:32,202 - fairfax_finder - INFO - University of Toronto Archives note: Redirect target: //informationobject/browse?q=Fairfax+Winston&page=1&limit=30&collection=B1994-0002&sort=relevance
+2025-10-25 15:03:32,202 - fairfax_finder - INFO - University of Toronto Archives note: Follow the redirect manually in a browser session.
+2025-10-25 15:03:32,202 - fairfax_finder - WARNING - University of Toronto Archives search for 'Fairfax Winston' returned: Received HTTP 302 redirect that requires interactive handling.
+2025-10-25 15:03:32,203 - fairfax_finder - WARNING - No results found in Canadian archives
+2025-10-25 15:03:32,203 - fairfax_finder - INFO - Found 0 potential sources in Canadian archives
+2025-10-25 15:03:32,203 - fairfax_finder - INFO - 
+[3] Analyzing possible letter content...
+2025-10-25 15:03:32,203 - fairfax_finder - INFO - Analyzing likely letter content based on historical context
+2025-10-25 15:03:32,203 - fairfax_finder - INFO - Potential topic: Reflections on Churchill's 'Iron Curtain' speech (March 1946)
+2025-10-25 15:03:32,203 - fairfax_finder - INFO - Potential topic: Comments on Churchill's opposition leadership in Parliament
+2025-10-25 15:03:32,203 - fairfax_finder - INFO - Potential topic: Shared memories from military service
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - Potential topic: Discussion of post-war international relations
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - Potential topic: Possible mention of Churchill's upcoming history of WWII
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - Potential topic: News of Toronto social and political circles
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - Potential topic: Personal reflections on Fairfax's military career and Churchill's leadership
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - 
+[4] Generating comprehensive search plan...
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - 
+================================================================================
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - SEARCH RESULTS SUMMARY
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - ================================================================================
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - 
+Most likely locations for Fairfax's original letter:
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - 1. Churchill Archives Centre (manual follow-up required; automated search blocked)
+2025-10-25 15:03:32,204 - fairfax_finder - INFO - 2. Library and Archives Canada (manual follow-up required; automated search blocked)
+2025-10-25 15:03:32,205 - fairfax_finder - INFO - 3. University of Toronto Archives (manual follow-up required; automated search blocked)
+2025-10-25 15:03:32,205 - fairfax_finder - INFO - 4. Library and Archives Canada (contact reference services for manual catalogue assistance)
+2025-10-25 15:03:32,205 - fairfax_finder - INFO - 5. University of Toronto Archives (request a research appointment to review Fairfax material)
+2025-10-25 15:03:32,205 - fairfax_finder - INFO - 
+Next steps for archival research:
+2025-10-25 15:03:32,205 - fairfax_finder - INFO - 1. Query Churchill Archives CALM catalogue for correspondence from Fairfax, Oct-Dec 1946
+2025-10-25 15:03:32,205 - fairfax_finder - INFO - 2. Request specific CHAR files containing personal correspondence from this period
+2025-10-25 15:03:32,205 - fairfax_finder - INFO - 3. Search Canadian archives for Fairfax's personal papers or letter copies
+2025-10-25 15:03:32,205 - fairfax_finder - INFO - 4. Contact Fairfax/Gooderham family descendants for private collections
+2025-10-25 15:03:32,205 - fairfax_finder - INFO - 5. Search newspaper archives for any mention of communication between the two
+2025-10-25 15:03:32,207 - fairfax_finder - INFO - 
+OCR processing capabilities:
+2025-10-25 15:03:32,207 - fairfax_finder - INFO - 1. Download document images from archive APIs
+2025-10-25 15:03:32,207 - fairfax_finder - INFO - 2. Process images with OCR to extract text
+2025-10-25 15:03:32,207 - fairfax_finder - INFO - 3. Analyze text for relevance to Fairfax-Churchill correspondence
+2025-10-25 15:03:32,207 - fairfax_finder - INFO - 4. Extract letter components (date, salutation, body, signature)
+2025-10-25 15:03:32,210 - fairfax_finder - INFO - 5. Validate letter content against historical context
+2025-10-25 15:03:32,212 - fairfax_finder - INFO - 
+To execute full search with OCR processing, run:
+2025-10-25 15:03:32,214 - fairfax_finder - INFO - python fairfax_letter_finder.py --full
+2025-10-25 15:03:32,214 - fairfax_finder - INFO - 
+===== REAL-WORLD ARCHIVE ACCESS INFORMATION =====
+2025-10-25 15:03:32,214 - fairfax_finder - INFO - This agent attempts to connect to actual archives, but most require formal access:
+2025-10-25 15:03:32,215 - fairfax_finder - INFO - 
+2025-10-25 15:03:32,215 - fairfax_finder - INFO - 1. Churchill Archives Centre:
+2025-10-25 15:03:32,215 - fairfax_finder - INFO -    - Requires reader's ticket application: https://archives.chu.cam.ac.uk/researchers
+2025-10-25 15:03:32,215 - fairfax_finder - INFO -    - Commercial access via subscription: https://www.churchillarchive.com/
+2025-10-25 15:03:32,218 - fairfax_finder - INFO -    - Email for research inquiries: archives@chu.cam.ac.uk
+2025-10-25 15:03:32,218 - fairfax_finder - INFO - 
+2025-10-25 15:03:32,218 - fairfax_finder - INFO - 2. Library and Archives Canada:
+2025-10-25 15:03:32,220 - fairfax_finder - INFO -    - Access request form: https://www.bac-lac.gc.ca/eng/services/access-request/Pages/access-request.aspx
+2025-10-25 15:03:32,220 - fairfax_finder - INFO -    - Email: bac.reference.lac@canada.ca
+2025-10-25 15:03:32,221 - fairfax_finder - INFO - 
+2025-10-25 15:03:32,221 - fairfax_finder - INFO - 3. University of Toronto Archives:
+2025-10-25 15:03:32,221 - fairfax_finder - INFO -    - Research appointment form: https://utarms.library.utoronto.ca/contact-us
+2025-10-25 15:03:32,222 - fairfax_finder - INFO -    - Email: utarms@utoronto.ca
+2025-10-25 15:03:32,222 - fairfax_finder - INFO - 
+2025-10-25 15:03:32,222 - fairfax_finder - INFO - For best results, researchers should:
+2025-10-25 15:03:32,223 - fairfax_finder - INFO - 1. Contact archives directly with specific reference numbers
+2025-10-25 15:03:32,223 - fairfax_finder - INFO - 2. Explain your research purpose and request access to Fairfax correspondence
+2025-10-25 15:03:32,223 - fairfax_finder - INFO - 3. Ask specifically about letters between Colonel Bryan Fairfax and Churchill from late 1946
