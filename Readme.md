@@ -19,6 +19,14 @@ Letter is addressed to Colonel Fairfax, a WWI officer Churchill knew through ove
   <em>Camera flythrough of the Somme battlefield following Fairfax's documented route — Brigade HQ to Guillemont, July 1916. 1916 trench map on real Copernicus 30m terrain data.</em>
 </div>
 
+<div align="center">
+
+**Interactive Visuals**
+
+[**Provenance Timeline**](https://harleycoops.github.io/Churchill/research/provenance-timeline.html) · [**Artifact Gallery**](https://harleycoops.github.io/Churchill/research/artifact-gallery.html)
+
+</div>
+
 ## The First Edition
 
 A first edition, first printing of Winston S. Churchill's "The Second World War" (Cassell, UK) is distinguished by several key attributes this set has:
