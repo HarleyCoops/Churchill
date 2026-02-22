@@ -28,6 +28,7 @@ terrain_data/*
 !terrain_data/trench_render_wide.png
 !terrain_data/somme_dem_meta.json
 !terrain_data/fairfax_flythrough.mp4
+!terrain_data/fairfax_flythrough.gif
 
 # Large binary files
 *.pdf
