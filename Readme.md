@@ -13,6 +13,13 @@
 
 Letter is addressed to Colonel Fairfax, a WWI officer Churchill knew through overlapping military service, War Office hierarchy, and Conservative political circles — and whose celebrated actions on the first day of the Battle of the Somme, July 1, 1916, were among the most famous episodes of Anglo-French solidarity in the entire war.
 
+<div align="center">
+
+https://github.com/HarleyCoops/Churchill/raw/main/terrain_data/fairfax_flythrough.mp4
+
+<em>Camera flythrough of the Somme battlefield following Fairfax's documented route — Brigade HQ to Guillemont, July 1916. 1916 trench map on real Copernicus 30m terrain data.</em>
+</div>
+
 ## The First Edition
 
 A first edition, first printing of Winston S. Churchill's "The Second World War" (Cassell, UK) is distinguished by several key attributes this set has:
