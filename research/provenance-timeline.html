@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colonel Bryan Charles Fairfax — Provenance Timeline</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1a1714;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .timeline-card {
+    width: 1200px;
+    min-height: 480px;
+    background: linear-gradient(135deg, #f5f0e6 0%, #ebe3d3 40%, #e8dfc9 100%);
+    border-radius: 4px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+    position: relative;
+    overflow: hidden;
+    padding: 32px 40px 28px;
+  }
+
+  /* Parchment texture overlay */
+  .timeline-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent, transparent 2px,
+      rgba(139,119,90,0.03) 2px, rgba(139,119,90,0.03) 4px
+    );
+    pointer-events: none;
+  }
+
+  /* Subtle aged border */
+  .timeline-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(139,119,90,0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 0 60px rgba(139,119,90,0.15);
+    pointer-events: none;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c2418;
+    letter-spacing: 0.5px;
+  }
+
+  .card-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    color: #6b5d4a;
+    margin-top: 3px;
+  }
+
+  .card-dates {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #8b7760;
+    text-align: right;
+  }
+
+  /* Zone labels */
+  .zone-labels {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .zone-label {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 2px;
+  }
+
+  .zone-military {
+    background: rgba(139,69,19,0.12);
+    color: #8b4513;
+    margin-left: 80px;
+  }
+
+  .zone-churchill {
+    background: rgba(25,60,110,0.10);
+    color: #193c6e;
+    margin-left: auto;
+    margin-right: 60px;
+  }
+
+  /* Main timeline track */
+  .timeline-track {
+    position: relative;
+    height: 300px;
+    margin: 0 20px;
+    z-index: 1;
+  }
+
+  .track-line {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg,
+      #c4a87c 0%, #8b4513 10%, #8b4513 55%,
+      #4a6580 70%, #193c6e 85%, #193c6e 100%
+    );
+    border-radius: 2px;
+  }
+
+  /* Military zone highlight */
+  .track-zone-military {
+    position: absolute;
+    top: 115px;
+    left: 8%;
+    width: 47%;
+    height: 13px;
+    background: rgba(139,69,19,0.06);
+    border-radius: 6px;
+  }
+
+  .track-zone-churchill {
+    position: absolute;
+    top: 115px;
+    left: 72%;
+    width: 26%;
+    height: 13px;
+    background: rgba(25,60,110,0.05);
+    border-radius: 6px;
+  }
+
+  /* Milestone dots and labels */
+  .milestone {
+    position: absolute;
+    top: 112px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .milestone .dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid #f5f0e6;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2;
+  }
+
+  .dot-military { background: #8b4513; }
+  .dot-churchill { background: #193c6e; }
+  .dot-birth { background: #5a7d5a; }
+  .dot-death { background: #4a4a4a; }
+  .dot-highlight {
+    background: #b22222;
+    width: 22px;
+    height: 22px;
+    margin-top: -2px;
+    border: 3px solid #f5f0e6;
+    box-shadow: 0 0 8px rgba(178,34,34,0.3), 0 1px 4px rgba(0,0,0,0.2);
+  }
+
+  /* Date above the line */
+  .milestone .date-label {
+    position: absolute;
+    bottom: 24px;
+    white-space: nowrap;
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #3d3122;
+  }
+
+  /* Event text below the line */
+  .milestone .event-text {
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    color: #3d3122;
+    line-height: 1.35;
+  }
+
+  .milestone .event-text em {
+    display: block;
+    font-style: italic;
+    font-size: 9px;
+    color: #8b7760;
+    margin-top: 3px;
+    line-height: 1.25;
+  }
+
+  .milestone .source-cite {
+    margin-top: 3px;
+    font-size: 7px;
+    font-variant: small-caps;
+    letter-spacing: 0.5px;
+    color: #a0927e;
+    text-align: center;
+    width: 100px;
+  }
+
+  /* Wide events get more space */
+  .milestone.wide .event-text,
+  .milestone.wide .source-cite { width: 130px; }
+
+  .milestone.extra-wide .event-text,
+  .milestone.extra-wide .source-cite { width: 160px; }
+
+  /* Alternating top/bottom layout */
+  .milestone.above {
+    top: 18px;
+    flex-direction: column-reverse;
+  }
+
+  .milestone.above .date-label {
+    bottom: auto;
+    top: auto;
+    position: relative;
+    margin-bottom: 6px;
+    order: -2;
+  }
+
+  .milestone.above .event-text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    order: -3;
+  }
+
+  .milestone.above .source-cite {
+    margin-top: 0;
+    margin-bottom: 2px;
+    order: -4;
+  }
+
+  /* Connector line from dot to event */
+  .milestone .connector {
+    width: 1px;
+    height: 8px;
+    background: rgba(139,119,90,0.4);
+  }
+
+  .milestone.above .connector {
+    order: -1;
+  }
+
+  /* Footer */
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 8px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-footer .attribution {
+    font-size: 8px;
+    color: #a0927e;
+    letter-spacing: 0.5px;
+  }
+
+  .card-footer .ledger-ref {
+    font-size: 8px;
+    color: #a0927e;
+    font-variant: small-caps;
+  }
+</style>
+</head>
+<body>
+
+<div class="timeline-card">
+
+  <div class="card-header">
+    <div>
+      <div class="card-title">Colonel Bryan Charles Fairfax, C.M.G.</div>
+      <div class="card-subtitle">Provenance Timeline &mdash; Churchill First Edition Set</div>
+    </div>
+    <div class="card-dates">
+      12 September 1873<br>
+      &mdash; 29 January 1950
+    </div>
+  </div>
+
+  <div class="zone-labels">
+    <span class="zone-label zone-military">Military Service</span>
+    <span class="zone-label zone-churchill">Churchill Connection</span>
+  </div>
+
+  <div class="timeline-track">
+    <div class="track-zone-military"></div>
+    <div class="track-zone-churchill"></div>
+    <div class="track-line"></div>
+
+    <!-- 1: Born 1873 — left=2% -->
+    <div class="milestone above" style="left: 2%;">
+      <div class="date-label">1873</div>
+      <div class="event-text">
+        Born, 12 September
+      </div>
+      <div class="source-cite">Ledger #1 &middot; Readme.md</div>
+      <div class="connector"></div>
+      <div class="dot dot-birth"></div>
+    </div>
+
+    <!-- 2: Boxer Uprising 1900 — left=12% -->
+    <div class="milestone" style="left: 12%;">
+      <div class="date-label">1900</div>
+      <div class="dot dot-military"></div>
+      <div class="connector"></div>
+      <div class="event-text">
+        Boxer Uprising, China
+      </div>
+      <div class="source-cite">Ledger #4 &middot; Readme.md</div>
+    </div>
+
+    <!-- 3: Congreve's visit 28 Jun 1916 — left=28% -->
+    <div class="milestone above" style="left: 26%;">
+      <div class="date-label">28 Jun 1916</div>
+      <div class="event-text">
+        Gen. Congreve: &ldquo;if you cannot manage it, no other troops can&rdquo;
+      </div>
+      <div class="source-cite">Ledger #43 &middot; 89th Bde p.129</div>
+      <div class="connector"></div>
+      <div class="dot dot-military"></div>
+    </div>
+
+    <!-- 4: July 1st Attack — left=32% -->
+    <div class="milestone wide" style="left: 33%;">
+      <div class="date-label">1 Jul 1916</div>
+      <div class="dot dot-highlight"></div>
+      <div class="connector"></div>
+      <div class="event-text">
+        6:25am &mdash; leads attack at Maricourt arm-in-arm with Cdt. Lepetit
+      </div>
+      <div class="source-cite">Ledger #12, #14 &middot; 89th Bde p.131</div>
+    </div>
+
+    <!-- 5: French citation 11 Jul — left=38% -->
+    <div class="milestone above wide" style="left: 40%;">
+      <div class="date-label">11 Jul 1916</div>
+      <div class="event-text">
+        Col. de Coutard names Fairfax: <em>&ldquo;ses hautes qualit&eacute;s militaires&rdquo;</em>
+      </div>
+      <div class="source-cite">Ledger #15 &middot; 89th Bde p.134</div>
+      <div class="connector"></div>
+      <div class="dot dot-military"></div>
+    </div>
+
+    <!-- 6: Trones Wood mid-Jul — left=43% -->
+    <div class="milestone" style="left: 47%;">
+      <div class="date-label">Mid-Jul</div>
+      <div class="dot dot-military"></div>
+      <div class="connector"></div>
+      <div class="event-text">
+        Holds Trones Wood: <em>&ldquo;could hold on&rdquo;</em>
+      </div>
+      <div class="source-cite">Ledger #16 &middot; 89th Bde p.143</div>
+    </div>
+
+    <!-- 7: Gassed 29 Jul — left=48% -->
+    <div class="milestone above extra-wide" style="left: 53%;">
+      <div class="date-label">29 Jul 1916</div>
+      <div class="event-text">
+        Gassed on way to Guillemont assembly position
+      </div>
+      <div class="source-cite">Ledger #17 &middot; TextExtract.md:29</div>
+      <div class="connector"></div>
+      <div class="dot dot-highlight"></div>
+    </div>
+
+    <!-- 8: Guillemont + evacuation 30 Jul — left=55% -->
+    <div class="milestone extra-wide" style="left: 59%;">
+      <div class="date-label">30 Jul 1916</div>
+      <div class="dot dot-highlight"></div>
+      <div class="connector"></div>
+      <div class="event-text">
+        Attacks Guillemont despite gas; &ldquo;went to an absolute shadow&rdquo; &mdash; ordered to leave
+      </div>
+      <div class="source-cite">Ledger #18, #19 &middot; TextExtract.md:49</div>
+    </div>
+
+    <!-- 9: C.M.G. awarded 1916 — left=62% -->
+    <div class="milestone above" style="left: 66%;">
+      <div class="date-label">1916</div>
+      <div class="event-text">
+        Awarded C.M.G.
+      </div>
+      <div class="source-cite">Ledger #7 &middot; Readme.md</div>
+      <div class="connector"></div>
+      <div class="dot dot-military"></div>
+    </div>
+
+    <!-- 10: Churchill letter 6 Dec 1946 — left=78% -->
+    <div class="milestone wide" style="left: 78%;">
+      <div class="date-label">6 Dec 1946</div>
+      <div class="dot dot-churchill"></div>
+      <div class="connector"></div>
+      <div class="event-text">
+        Churchill writes from Chartwell: <em>&ldquo;Dear Colonel Fairfax&rdquo;</em>
+      </div>
+      <div class="source-cite">Ledger #26, #27 &middot; signature.JPG</div>
+    </div>
+
+    <!-- 11: Gathering Storm published 1948 — left=84% -->
+    <div class="milestone above" style="left: 86%;">
+      <div class="date-label">1948</div>
+      <div class="event-text">
+        <em>The Gathering Storm</em> first published, Cassell
+      </div>
+      <div class="source-cite">Ledger #28 &middot; FirstPublished.JPG</div>
+      <div class="connector"></div>
+      <div class="dot dot-churchill"></div>
+    </div>
+
+    <!-- 12: Fairfax dies 1950 — left=95% -->
+    <div class="milestone" style="left: 95%;">
+      <div class="date-label">29 Jan 1950</div>
+      <div class="dot dot-death"></div>
+      <div class="connector"></div>
+      <div class="event-text">
+        Dies in Toronto, age 76
+      </div>
+      <div class="source-cite">Ledger #39 &middot; Readme.md</div>
+    </div>
+
+  </div>
+
+  <div class="card-footer">
+    <span class="attribution">Sources: 89th Brigade History (Stanley, 1916) &middot; Readme.md &middot; Fairfax-Churchill.md &middot; Original artefact photography</span>
+    <span class="ledger-ref">All events traced to Ground Truth Ledger &middot; Churchill&ndash;Fairfax First Edition Set</span>
+  </div>
+
+</div>
+
+</body>
+</html>
