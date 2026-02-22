@@ -2,7 +2,7 @@
 
 ## The Legacy of Colonel Bryan Charles Fairfax, C.M.G.
 
-Colonel Bryan Charles Fairfax, C.M.G. (1873–1956), was a distinguished figure whose life bridged the worlds of British aristocracy, Canadian military service, and the social elite of Toronto. As a direct descendant of the Barons Fairfax of Cameron, his family’s legacy stretched from the Scottish peerage to the heart of colonial America and, ultimately, to Canada.
+Colonel Bryan Charles Fairfax, C.M.G. (1873–1950), was a distinguished figure whose life bridged the worlds of British aristocracy, Canadian military service, and the social elite of Toronto. As a direct descendant of the Barons Fairfax of Cameron, his family’s legacy stretched from the Scottish peerage to the heart of colonial America and, ultimately, to Canada.
 
 ### A Life of Service and Distinction
 
@@ -35,7 +35,7 @@ The item in question is a first edition Cassell printing of Winston S. Churchill
 
 1. Background of Colonel Bryan Fairfax, C.M.G.
 
-The most likely individual is Colonel Bryan Charles Fairfax, C.M.G. (1873 – 30 January 1956).
+The most likely individual is Colonel Bryan Charles Fairfax, C.M.G. (1873 – 29 January 1950).
 
 Lineage: He was the son of Thomas Ferdinand Fairfax and a descendant of the Barons Fairfax of Cameron, a Scottish peerage with historic ties to America. His son, Thomas Bryan McKell Fairfax (1923-1963), eventually became the 14th Lord Fairfax of Cameron.
 
@@ -53,7 +53,7 @@ His command of Canadian battalions during WWI is a primary link.
 
 He married Ethel Margaret (Esmé) Gooderham (1882-1971), daughter of Charles Horace Gooderham of the prominent Gooderham family of Toronto (co-founders of the Gooderham & Worts distillery).
 
-Colonel Fairfax resided in Toronto, Canada, for many years, with listed addresses including "Playter's Hill" and later 28 Drumsnab Road in Rosedale. He died in Toronto in 1956.
+Colonel Fairfax resided in Toronto, Canada, for many years, with listed addresses including "Playter's Hill" and later 28 Drumsnab Road in Rosedale. He died in Toronto on 29 January 1950.
 
 Significance of Rank Discrepancy: Churchill addressing him as "Dear Captain Fairfax" while the typed addressee is "Colonel Bryan Fairfax, C.M.G." is likely due to Churchill using an older, perhaps more familiar rank. By 1946, Fairfax was indeed a Colonel, but Churchill might have known him earlier in his career as Captain.
 

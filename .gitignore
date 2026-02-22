@@ -1,0 +1,47 @@
+# Environment and secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+fairfax_search.log
+
+# Generated output directories
+downloaded_documents/
+ocr_results/
+terrain_data/
+
+# Large binary files
+*.pdf
+
+# Windows artifacts
+nul
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS artifacts
+.DS_Store
+._*
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Blender addon (not part of core project)
+blender_mcp_addon.py
