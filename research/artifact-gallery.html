@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Churchill–Fairfax First Edition — Artifact Close-Up Sequence</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #111;
+    color: #e8e0d4;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  .gallery-header {
+    text-align: center;
+    padding: 60px 40px 20px;
+  }
+
+  .gallery-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #f0e8d8;
+    letter-spacing: 1px;
+  }
+
+  .gallery-header .subtitle {
+    font-size: 13px;
+    color: #8b7f6e;
+    margin-top: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .gallery-header .divider {
+    width: 60px;
+    height: 1px;
+    background: #6b5d4a;
+    margin: 20px auto 0;
+  }
+
+  /* Carousel container */
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 0;
+    padding: 40px 0 20px;
+    scrollbar-width: none;
+  }
+
+  .carousel::-webkit-scrollbar { display: none; }
+
+  /* Each frame */
+  .frame {
+    flex: 0 0 100vw;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+    min-height: 75vh;
+  }
+
+  .frame-inner {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Frame number */
+  .frame-number {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b5d4a;
+    margin-bottom: 24px;
+  }
+
+  /* Image container */
+  .frame-image {
+    width: 100%;
+    max-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .frame-image img {
+    max-width: 100%;
+    max-height: 55vh;
+    object-fit: contain;
+    border-radius: 2px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+
+  /* Text-only frame (frame 8) */
+  .frame-quote {
+    background: linear-gradient(135deg, #f5f0e6 0%, #ebe3d3 100%);
+    color: #2c2418;
+    padding: 40px 48px;
+    border-radius: 2px;
+    max-width: 700px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+    position: relative;
+  }
+
+  .frame-quote::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(139,119,90,0.3);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+
+  .frame-quote .quote-mark {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    color: #c4a87c;
+    line-height: 0.5;
+    margin-bottom: 16px;
+  }
+
+  .frame-quote blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.7;
+    color: #3d3122;
+    margin-bottom: 16px;
+  }
+
+  .frame-quote .quote-attribution {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b5d4a;
+    text-align: right;
+  }
+
+  /* Caption area */
+  .frame-caption {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .frame-caption .caption-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f0e8d8;
+    margin-bottom: 8px;
+  }
+
+  .frame-caption .caption-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.65;
+    color: #b8ad9c;
+  }
+
+  .frame-caption .caption-ledger {
+    margin-top: 12px;
+    font-size: 10px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    color: #6b5d4a;
+  }
+
+  /* Navigation dots */
+  .nav-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 0 40px;
+  }
+
+  .nav-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3a3428;
+    border: 1px solid #6b5d4a;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .nav-dots .dot.active,
+  .nav-dots .dot:hover {
+    background: #c4a87c;
+    border-color: #c4a87c;
+  }
+
+  /* Swipe hint */
+  .swipe-hint {
+    text-align: center;
+    font-size: 11px;
+    color: #4a4239;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+  }
+
+  /* Footer */
+  .gallery-footer {
+    text-align: center;
+    padding: 20px 40px 40px;
+    font-size: 9px;
+    color: #4a4239;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="gallery-header">
+  <h1>The Churchill&ndash;Fairfax First Edition</h1>
+  <div class="subtitle">Authenticated Artifact Sequence</div>
+  <div class="divider"></div>
+</div>
+
+<div class="carousel" id="carousel">
+
+  <!-- Frame 1: Churchill's Signature Letter -->
+  <div class="frame">
+    <div class="frame-inner">
+      <div class="frame-number">I of VIII</div>
+      <div class="frame-image">
+        <img src="../Images/signature.JPG" alt="Churchill's signed letter to Colonel Fairfax">
+      </div>
+      <div class="frame-caption">
+        <div class="caption-title">Churchill&rsquo;s Letter to Colonel Fairfax</div>
+        <div class="caption-text">
+          &ldquo;Chartwell, Westerham, Kent. 6 December, 1946. Dear Colonel Fairfax&hellip;&rdquo;
+          Original signed letter from Winston Churchill, affixed to Volume I of the first edition set.
+        </div>
+        <div class="caption-ledger">Ledger #26, #27 &middot; signature.JPG &middot; Fairfax-Churchill.md line 34</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frame 2: First Edition Copyright Page -->
+  <div class="frame">
+    <div class="frame-inner">
+      <div class="frame-number">II of VIII</div>
+      <div class="frame-image">
+        <img src="../Images/FirstPublished.JPG" alt="First Published 1948 copyright page">
+      </div>
+      <div class="frame-caption">
+        <div class="caption-title">First Edition Copyright Page</div>
+        <div class="caption-text">
+          &ldquo;First Published 1948. Cassell and Company Ltd.&rdquo;
+          No mention of later printings &mdash; confirms first edition, first printing.
+        </div>
+        <div class="caption-ledger">Ledger #28, #34 &middot; FirstPublished.JPG &middot; FirstEditionChecklist.md</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frame 3: First Issue Dust Jacket Price -->
+  <div class="frame">
+    <div class="frame-inner">
+      <div class="frame-number">III of VIII</div>
+      <div class="frame-image">
+        <img src="../Images/Price.JPG" alt="Dust jacket showing 25s. NET price">
+      </div>
+      <div class="frame-caption">
+        <div class="caption-title">First Issue Dust Jacket Price</div>
+        <div class="caption-text">
+          &ldquo;25s. NET&rdquo; &mdash; the correct price for Volumes I&ndash;IV,
+          the most visible external indicator of a first issue jacket.
+        </div>
+        <div class="caption-ledger">Ledger #29 &middot; Price.JPG &middot; FirstEditionChecklist.md line 15</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frame 4: Complete Six-Volume Set -->
+  <div class="frame">
+    <div class="frame-inner">
+      <div class="frame-number">IV of VIII</div>
+      <div class="frame-image">
+        <img src="../Images/hero.JPG" alt="Complete six-volume Churchill first edition set">
+      </div>
+      <div class="frame-caption">
+        <div class="caption-title">Complete Six-Volume Set</div>
+        <div class="caption-text">
+          Cassell first edition, black cloth boards with gilt spine titles.
+          All volumes present with original dust jackets.
+        </div>
+        <div class="caption-ledger">Ledger #31 &middot; hero.JPG &middot; FirstEditionChecklist.md</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frame 5: Red Top Edge -->
+  <div class="frame">
+    <div class="frame-inner">
+      <div class="frame-number">V of VIII</div>
+      <div class="frame-image">
+        <img src="../Images/TopEdgeVolume1.jpeg" alt="Red top edge of Volume I">
+      </div>
+      <div class="frame-caption">
+        <div class="caption-title">Red Top Edge, Volume I</div>
+        <div class="caption-text">
+          Hallmark of first printing. Some fading is typical;
+          this copy retains pronounced colour.
+        </div>
+        <div class="caption-ledger">Ledger #32 &middot; TopEdgeVolume1.jpeg &middot; FirstEditionChecklist.md</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frame 6: Colonel Fairfax Obituary -->
+  <div class="frame">
+    <div class="frame-inner">
+      <div class="frame-number">VI of VIII</div>
+      <div class="frame-image">
+        <img src="../Images/ColFairfax.jpeg" alt="Colonel Fairfax obituary">
+      </div>
+      <div class="frame-caption">
+        <div class="caption-title">Colonel Bryan Charles Fairfax, C.M.G.</div>
+        <div class="caption-text">
+          Obituary confirming rank, decorations, and identity.
+          Born 12 September 1873, died 29 January 1950, Toronto.
+        </div>
+        <div class="caption-ledger">Ledger #39, #47 &middot; ColFairfax.jpeg</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frame 7: Maricourt Memorial -->
+  <div class="frame">
+    <div class="frame-inner">
+      <div class="frame-number">VII of VIII</div>
+      <div class="frame-image">
+        <img src="../MonumenImages/memorial2.jpg" alt="Maricourt memorial plaque, 1er juillet 1916">
+      </div>
+      <div class="frame-caption">
+        <div class="caption-title">Maricourt Memorial Plaque</div>
+        <div class="caption-text">
+          &ldquo;1er juillet 1916&rdquo; &mdash; at the site where Fairfax and Commandant Lepetit
+          advanced arm-in-arm. Coordinates: 49&deg;59&prime;15.0&Prime;N 2&deg;47&prime;28.3&Prime;E.
+        </div>
+        <div class="caption-ledger">Ledger #40, #41, #14 &middot; memorial2.jpg &middot; Readme.md line 114</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frame 8: French Citation (Text Panel) -->
+  <div class="frame">
+    <div class="frame-inner">
+      <div class="frame-number">VIII of VIII</div>
+      <div class="frame-quote">
+        <div class="quote-mark">&ldquo;</div>
+        <blockquote>
+          &hellip;les relations si cordiales entretenues avec leur chef le Colonel Fairfax
+          ont permis de remarquer ses hautes qualit&eacute;s militaires et ont fait
+          regretter l&rsquo;&eacute;loignement de ce chef brillant et de son magnifique Bataillon.
+        </blockquote>
+        <div class="quote-attribution">
+          &mdash; Colonel de Coutard, 11 July 1916<br>
+          89th Brigade History, p.134
+        </div>
+      </div>
+      <div class="frame-caption" style="margin-top: 28px;">
+        <div class="caption-title">French Citation Naming Fairfax</div>
+        <div class="caption-text">
+          &ldquo;&hellip;the cordial relations maintained with their commander Colonel Fairfax
+          have allowed us to observe his high military qualities and have made us regret
+          the departure of this brilliant commander and his magnificent Battalion.&rdquo;
+        </div>
+        <div class="caption-ledger">Ledger #15 &middot; 89th Brigade History (Stanley) p.134</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Navigation dots -->
+<div class="nav-dots" id="navDots">
+  <div class="dot active" data-index="0"></div>
+  <div class="dot" data-index="1"></div>
+  <div class="dot" data-index="2"></div>
+  <div class="dot" data-index="3"></div>
+  <div class="dot" data-index="4"></div>
+  <div class="dot" data-index="5"></div>
+  <div class="dot" data-index="6"></div>
+  <div class="dot" data-index="7"></div>
+</div>
+
+<div class="swipe-hint">Swipe or scroll to navigate &rarr;</div>
+
+<div class="gallery-footer">
+  All captions traced to Ground Truth Ledger &middot; Churchill&ndash;Fairfax First Edition Set &middot; No speculation
+</div>
+
+<script>
+  const carousel = document.getElementById('carousel');
+  const dots = document.querySelectorAll('.dot');
+  const frames = document.querySelectorAll('.frame');
+
+  // Update active dot on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const index = [...frames].indexOf(entry.target);
+        dots.forEach((d, i) => d.classList.toggle('active', i === index));
+      }
+    });
+  }, { root: carousel, threshold: 0.6 });
+
+  frames.forEach(f => observer.observe(f));
+
+  // Click dot to navigate
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const i = parseInt(dot.dataset.index);
+      frames[i].scrollIntoView({ behavior: 'smooth', inline: 'center' });
+    });
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    const active = document.querySelector('.dot.active');
+    const idx = parseInt(active?.dataset.index || 0);
+    if (e.key === 'ArrowRight' && idx < 7) {
+      frames[idx + 1].scrollIntoView({ behavior: 'smooth', inline: 'center' });
+    } else if (e.key === 'ArrowLeft' && idx > 0) {
+      frames[idx - 1].scrollIntoView({ behavior: 'smooth', inline: 'center' });
+    }
+  });
+</script>
+
+</body>
+</html>
