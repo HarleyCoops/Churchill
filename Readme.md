@@ -1,4 +1,12 @@
 
+<div align="center">
+  <img src="SommeHero.png" alt="1916 British Trench Map — Somme Battlefield" width="800" />
+  <br/>
+  <em>British 1:20,000 trench map, Sheet 62C.NW, 3 September 1916 — the Maricourt–Guillemont sector where Colonel Fairfax fought. Source: National Library of Scotland, CC-BY.</em>
+</div>
+
+<br/>
+
 # "The Second World War", including a note from Winston Churchill, First Edition, First Printing, Complete Set
 
 ### Purchased from the Canadian Federal Government at Auction
@@ -108,6 +116,12 @@ The devastation Fairfax left behind speaks to what he had held together. After h
 
 Fairfax was evacuated to England at the beginning of August 1916.
 
+<div align="center">
+  <img src="Images/SommeTrenchMap3D.png" alt="3D Somme Battlefield — Fairfax's Route" width="700" />
+  <br/>
+  <em>Fairfax's documented route across the Somme battlefield, July 1916. Pins mark each location from the 89th Brigade history: Brigade HQ southwest of Maricourt, through Montauban and Briqueterie (1 July), Trones Wood (mid-July), to the Guillemont assembly position where he was gassed (night of 29 July). 1916 trench map overlaid on Copernicus 30m terrain data.</em>
+</div>
+
 ---
 
 ## Why Churchill Knew Fairfax: Five Documented Threads
@@ -166,6 +180,12 @@ All surviving evidence — Churchill's correspondence, appointment diaries, and 
 **MARICOURT, 1916** — *Where the British and French front-lines met*
 
 A memorial at Maricourt (coordinates: [49°59'15.0"N 2°47'28.3"E](https://www.google.com/maps/place/49%C2%B059'15.0%22N+2%C2%B047'28.3%22E/@49.9874974,2.7910823,19z/data=!4m4!3m3!8m2!3d49.9874974!4d2.7910823?entry=ttu)) commemorates the joint Anglo-French attack of 1 July 1916 and names Fairfax's advance with his French counterpart. The Battle of Maricourt began on 1 July 1916 and drew to a close in the last days of November 1916. It remains one of the bloodiest engagements in the history of warfare.
+
+<div align="center">
+  <img src="terrain_data/trench_mosaic.png" alt="1916 Trench Map — Maricourt to Guillemont" width="700" />
+  <br/>
+  <em>Georeferenced British trench map, Sheet 62C.NW, dated 3 September 1916 — weeks after Fairfax was evacuated. Shows Maricourt (left), Montauban, Trones Wood, and Guillemont (right) with trench positions marked. Source: National Library of Scotland, CC-BY.</em>
+</div>
 
 ### The French Citation Concerning the 1ˢᵗ Battalion 113ᵗʰ RI
 

@@ -42,6 +42,17 @@ Data flow: Agent searches archives → downloads document images → OCR extract
 - **ground-truth-ledger.md** — every provable claim with source file, page/line, and verbatim quote
 - **sales-visual-spec.md** — production specs for 3 sales visuals (timeline, map, artifact close-ups), each referencing ledger entries
 
+**terrain_data/** — Somme battlefield 3D visualization assets:
+
+- **somme_dem.tif** — Copernicus GLO-30 DEM GeoTIFF (30m resolution, bbox 49.97-50.01N, 2.75-2.86E)
+- **somme_elevations.json** — 144x396 grid of raw elevation values in metres
+- **somme_dem_meta.json** — DEM metadata (rows, cols, min/max elevation, bounding box)
+- **somme_satellite.jpg** — ESRI World Imagery mosaic (1536x1024, zoom 14)
+- **somme_heightmap.png** — 16-bit PNG heightmap converted from GeoTIFF
+- **trench_mosaic.png** — Georeferenced NLS trench map mosaic, sheet 62C.NW, 3 Sept 1916 (1536x768)
+- **trench_tiles/** — Raw NLS S3 tiles at zoom 14 from `mapseries-tilesets.s3.amazonaws.com`
+- **trench_render_*.png** — Blender renders of the 3D terrain with trench map overlay
+
 ## Code Style (Python)
 
 - Type hints on function signatures
