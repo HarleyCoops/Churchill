@@ -1,10 +1,27 @@
 {
+  "source": "Copernicus GLO-30 DEM (ESA)",
+  "tiles": [
+    "Copernicus_DSM_COG_10_N49_00_E002_00_DEM",
+    "Copernicus_DSM_COG_10_N50_00_E002_00_DEM"
+  ],
+  "resolution_m": 30,
+  "crs": "EPSG:4326",
   "rows": 144,
   "cols": 396,
-  "min_elev": 58.10560607910156,
-  "max_elev": 171.3890380859375,
-  "south": 49.970138899999995,
-  "north": 50.010138899999994,
-  "west": 2.749861100000004,
-  "east": 2.859861100000004
+  "min_elev": 58.2457,
+  "max_elev": 170.5821,
+  "south": 49.97,
+  "north": 50.01,
+  "west": 2.75,
+  "east": 2.86,
+  "pixel_size_deg": 0.0002777778,
+  "nodata": null,
+  "resampling": "bilinear",
+  "files": {
+    "dem": "somme_dem.tif",
+    "heightmap": "somme_heightmap.png",
+    "elevations": "somme_elevations.json",
+    "satellite": "somme_satellite.jpg",
+    "metadata": "somme_dem_meta.json"
+  }
 }
