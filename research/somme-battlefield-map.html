@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fairfax's Route — Somme Battlefield, July 1916</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1a1714;
+    font-family: 'Inter', sans-serif;
+    color: #e8e0d4;
+  }
+
+  .page-header {
+    text-align: center;
+    padding: 32px 24px 16px;
+  }
+
+  .page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f0e8d8;
+    letter-spacing: 0.5px;
+  }
+
+  .page-header .subtitle {
+    font-size: 12px;
+    color: #8b7f6e;
+    margin-top: 6px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .map-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 16px auto;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+    border: 1px solid rgba(139,119,90,0.3);
+  }
+
+  #map {
+    height: 600px;
+    width: 100%;
+    background: #2a2520;
+  }
+
+  /* Leaflet popup styling */
+  .leaflet-popup-content-wrapper {
+    background: linear-gradient(135deg, #f5f0e6, #ebe3d3);
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    border: 1px solid rgba(139,119,90,0.3);
+  }
+
+  .leaflet-popup-content {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #2c2418;
+    line-height: 1.5;
+    margin: 12px 16px;
+    max-width: 280px;
+  }
+
+  .leaflet-popup-tip {
+    background: #ebe3d3;
+  }
+
+  .popup-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #2c2418;
+    margin-bottom: 6px;
+  }
+
+  .popup-date {
+    font-size: 11px;
+    font-weight: 600;
+    color: #8b4513;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  .popup-quote {
+    font-style: italic;
+    color: #5a4d3a;
+    font-size: 12px;
+    border-left: 2px solid #c4a87c;
+    padding-left: 10px;
+    margin: 8px 0;
+  }
+
+  .popup-source {
+    font-size: 9px;
+    font-variant: small-caps;
+    letter-spacing: 0.5px;
+    color: #a0927e;
+    margin-top: 8px;
+  }
+
+  /* Custom marker styling */
+  .marker-military {
+    background: #8b4513;
+    border: 2px solid #f5f0e6;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #f5f0e6;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+
+  .marker-highlight {
+    background: #b22222;
+    border: 2px solid #f5f0e6;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #f5f0e6;
+    box-shadow: 0 0 10px rgba(178,34,34,0.4), 0 2px 6px rgba(0,0,0,0.4);
+  }
+
+  .marker-churchill {
+    background: #193c6e;
+    border: 2px solid #f5f0e6;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #f5f0e6;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+
+  /* Legend */
+  .map-legend {
+    background: linear-gradient(135deg, #f5f0e6, #ebe3d3);
+    border-radius: 4px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    border: 1px solid rgba(139,119,90,0.3);
+    font-size: 11px;
+    color: #3d3122;
+    line-height: 1.8;
+  }
+
+  .map-legend h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #2c2418;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1.5px solid #f5f0e6;
+    flex-shrink: 0;
+  }
+
+  .legend-line {
+    width: 24px;
+    height: 3px;
+    flex-shrink: 0;
+  }
+
+  /* Route sidebar */
+  .route-panel {
+    width: 95%;
+    max-width: 1200px;
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .route-card {
+    background: linear-gradient(135deg, #f5f0e6 0%, #ebe3d3 100%);
+    border-radius: 4px;
+    padding: 20px 24px;
+    border: 1px solid rgba(139,119,90,0.3);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+
+  .route-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2c2418;
+    margin-bottom: 12px;
+  }
+
+  .route-step {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+
+  .route-step .step-marker {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #8b4513;
+    color: #f5f0e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .route-step .step-marker.highlight {
+    background: #b22222;
+  }
+
+  .route-step .step-text {
+    font-size: 12px;
+    color: #3d3122;
+    line-height: 1.5;
+  }
+
+  .route-step .step-text .step-date {
+    font-weight: 600;
+    color: #8b4513;
+  }
+
+  .route-step .step-text .step-source {
+    font-size: 9px;
+    font-variant: small-caps;
+    color: #a0927e;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .context-card {
+    font-size: 13px;
+    color: #3d3122;
+    line-height: 1.65;
+  }
+
+  .context-card p {
+    margin-bottom: 10px;
+  }
+
+  .context-card .highlight-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #5a4d3a;
+    border-left: 3px solid #c4a87c;
+    padding-left: 14px;
+    margin: 14px 0;
+  }
+
+  .page-footer {
+    text-align: center;
+    padding: 20px 24px 32px;
+    font-size: 9px;
+    color: #4a4239;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 768px) {
+    .route-panel { grid-template-columns: 1fr; }
+    #map { height: 450px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Fairfax&rsquo;s Route &mdash; Somme Battlefield, July 1916</h1>
+  <div class="subtitle">Unit &amp; Location Map with Cited Markers</div>
+</div>
+
+<div class="map-container">
+  <div id="map"></div>
+</div>
+
+<div class="route-panel">
+  <div class="route-card">
+    <h3>Fairfax&rsquo;s Documented Route</h3>
+
+    <div class="route-step">
+      <div class="step-marker">A</div>
+      <div class="step-text">
+        <span class="step-date">June 1916</span> &mdash; Brigade HQ, pit southwest of Maricourt
+        <span class="step-source">Ledger #10 &middot; 89th Bde p.121</span>
+      </div>
+    </div>
+
+    <div class="route-step">
+      <div class="step-marker highlight">B</div>
+      <div class="step-text">
+        <span class="step-date">1 July 1916, 6:25am</span> &mdash; Attack launched at Maricourt; advances arm-in-arm with Cdt. Lepetit
+        <span class="step-source">Ledger #12, #14 &middot; 89th Bde p.131</span>
+      </div>
+    </div>
+
+    <div class="route-step">
+      <div class="step-marker">D</div>
+      <div class="step-text">
+        <span class="step-date">1 July 1916</span> &mdash; Through Montauban
+        <span class="step-source">89th Bde context</span>
+      </div>
+    </div>
+
+    <div class="route-step">
+      <div class="step-marker highlight">E</div>
+      <div class="step-text">
+        <span class="step-date">1 July 1916</span> &mdash; Briqueterie objective taken
+        <span class="step-source">Ledger #13 &middot; 89th Bde p.131</span>
+      </div>
+    </div>
+
+    <div class="route-step">
+      <div class="step-marker">G</div>
+      <div class="step-text">
+        <span class="step-date">Mid-July 1916</span> &mdash; Holds Trones Wood under fire
+        <span class="step-source">Ledger #16 &middot; 89th Bde p.143</span>
+      </div>
+    </div>
+
+    <div class="route-step">
+      <div class="step-marker highlight">H</div>
+      <div class="step-text">
+        <span class="step-date">Night of 29 July</span> &mdash; Gassed at assembly position near Guillemont
+        <span class="step-source">Ledger #17 &middot; TextExtract.md:29</span>
+      </div>
+    </div>
+
+    <div class="route-step">
+      <div class="step-marker highlight">I</div>
+      <div class="step-text">
+        <span class="step-date">30 July 1916</span> &mdash; Attacks Guillemont despite gas; &ldquo;went to an absolute shadow&rdquo;
+        <span class="step-source">Ledger #18, #19, #21 &middot; TextExtract.md:49</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="route-card context-card">
+    <h3>The Chartwell Connection</h3>
+
+    <p>Thirty years after these events, on 6 December 1946, Winston Churchill wrote from Chartwell in Kent to Colonel Fairfax, thanking him for a &ldquo;kind letter.&rdquo; The reply was not a courtesy to a stranger &mdash; Churchill and Fairfax shared overlapping spheres across three decades of military service, War Office hierarchy, and Conservative politics.</p>
+
+    <div class="highlight-quote">
+      &ldquo;He went to an absolute shadow of himself, and although he wanted to stop on with the Battalion, I had to be quite firm and told him that it was out of the question.&rdquo;
+    </div>
+
+    <p>The letter was later affixed inside Volume I of Churchill&rsquo;s &ldquo;The Second World War&rdquo; first edition set &mdash; likely by Fairfax himself or a family member as a keepsake. The set was eventually purchased from the Canadian Federal Government at auction.</p>
+
+    <p>The Chartwell marker (J) on the map inset connects this battlefield route to the December 1946 letter, bridging the Somme of 1916 to Churchill&rsquo;s study at Chartwell three decades later.</p>
+  </div>
+</div>
+
+<div class="page-footer">
+  Sources: 89th Brigade History (Stanley, 1919) &middot; TextExtract.md &middot; Readme.md &middot; Ground Truth Ledger<br>
+  All markers traced to ledger entries &middot; Churchill&ndash;Fairfax First Edition Set &middot; No speculation
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function() {
+  // --- Map initialization ---
+  const map = L.map('map', {
+    center: [49.988, 2.810],
+    zoom: 14,
+    zoomControl: true,
+    attributionControl: true
+  });
+
+  // Base layers
+  const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+    maxZoom: 19
+  });
+
+  const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '&copy; Esri &mdash; Sources: Esri, Maxar, Earthstar',
+    maxZoom: 19
+  });
+
+  // NLS Trench map overlay (1916)
+  const trenchOverlay = L.tileLayer('https://mapseries-tilesets.s3.amazonaws.com/trench/101465287/{z}/{x}/{y}.png', {
+    attribution: '1916 trench map &copy; National Library of Scotland, CC-BY',
+    maxZoom: 17,
+    opacity: 0.7,
+    tms: false
+  });
+
+  // Add default layers
+  osmLayer.addTo(map);
+
+  // Layer control
+  const baseLayers = {
+    'OpenStreetMap': osmLayer,
+    'Satellite': satelliteLayer
+  };
+
+  const overlays = {
+    '1916 Trench Map (NLS)': trenchOverlay
+  };
+
+  L.control.layers(baseLayers, overlays, { position: 'topright' }).addTo(map);
+
+  // --- Custom marker factory ---
+  function makeIcon(label, type) {
+    const cls = type === 'highlight' ? 'marker-highlight'
+              : type === 'churchill' ? 'marker-churchill'
+              : 'marker-military';
+    return L.divIcon({
+      className: '',
+      html: '<div class="' + cls + '">' + label + '</div>',
+      iconSize: type === 'highlight' ? [28, 28] : [24, 24],
+      iconAnchor: type === 'highlight' ? [14, 14] : [12, 12],
+      popupAnchor: [0, -16]
+    });
+  }
+
+  // --- Markers from sales-visual-spec.md ---
+  const markers = [
+    {
+      id: 'A', lat: 49.985, lng: 2.785, type: 'military',
+      title: 'Brigade HQ',
+      date: 'June 1916',
+      desc: 'Pit southwest of Maricourt. 89th Brigade headquarters position before the great offensive.',
+      source: 'Ledger #10 &middot; 89th Bde p.121'
+    },
+    {
+      id: 'B', lat: 49.9875, lng: 2.7912, type: 'highlight',
+      title: 'Maricourt &mdash; Attack Launch',
+      date: '1 July 1916, 6:25am',
+      desc: 'Fairfax and Commandant Lepetit advance arm-in-arm across no man&rsquo;s land in the second wave. Intense bombardment at 6:25am; over the parapet after 65 minutes.',
+      quote: '&ldquo;The 89th Brigade occupies the most honourable position in the whole of the British Army.&rdquo;',
+      source: 'Ledger #12, #14 &middot; 89th Bde p.131'
+    },
+    {
+      id: 'C', lat: 49.98750, lng: 2.79128, type: 'military',
+      title: 'Maricourt Memorial',
+      date: '',
+      desc: 'Memorial commemorating the joint Anglo-French attack of 1 July 1916. 49&deg;59&prime;15.0&Prime;N 2&deg;47&prime;28.3&Prime;E.',
+      source: 'Ledger #40, #41 &middot; Readme.md line 114'
+    },
+    {
+      id: 'D', lat: 49.993, lng: 2.806, type: 'military',
+      title: 'Montauban',
+      date: '1 July 1916',
+      desc: 'Village taken on the first day. Part of the route of advance from Maricourt.',
+      source: '89th Bde context'
+    },
+    {
+      id: 'E', lat: 49.990, lng: 2.810, type: 'highlight',
+      title: 'Briqueterie',
+      date: '1 July 1916',
+      desc: 'Key objective taken on the first day of the attack. The brick factory was a German strongpoint.',
+      source: 'Ledger #13 &middot; 89th Bde p.131'
+    },
+    {
+      id: 'F', lat: 49.993, lng: 2.825, type: 'military',
+      title: 'Bernafay Wood',
+      date: 'July 1916',
+      desc: 'Wood in the advance corridor between Montauban and Trones Wood.',
+      source: 'TextExtract.md line 115'
+    },
+    {
+      id: 'G', lat: 49.990, lng: 2.830, type: 'military',
+      title: 'Trones Wood',
+      date: 'Mid-July 1916',
+      desc: 'Fairfax holds position in the wood under intense fire.',
+      quote: '&ldquo;Brinson&hellip; said that Fairfax was in the wood. They had had an awful time, but had not lost many men, were all dug down, and could hold on.&rdquo;',
+      source: 'Ledger #16 &middot; 89th Bde p.143'
+    },
+    {
+      id: 'H', lat: 49.983, lng: 2.840, type: 'highlight',
+      title: 'Assembly Position &mdash; Gassed',
+      date: 'Night of 29 July 1916',
+      desc: 'On the approach march to Guillemont, German gas shells hit the column. Fairfax was among those affected.',
+      quote: '&ldquo;The Boche started with a new kind of gas shell&hellip; a lot of them were very seedy, including Poyntz and Fairfax.&rdquo;',
+      source: 'Ledger #17 &middot; TextExtract.md:29'
+    },
+    {
+      id: 'I', lat: 49.982, lng: 2.845, type: 'highlight',
+      title: 'Guillemont',
+      date: '30 July 1916',
+      desc: 'Despite gas poisoning, Fairfax leads the 17th Battalion into the attack. Fog reduces visibility to ten yards. Brigade losses: 1,450 men. After the battle, Stanley orders Fairfax evacuated.',
+      quote: '&ldquo;He went to an absolute shadow of himself&hellip; If he had not gone then I don&rsquo;t think that his life would be worth anything at all.&rdquo;',
+      source: 'Ledger #18, #19, #21 &middot; TextExtract.md:49'
+    }
+  ];
+
+  // Place markers and build route polyline
+  const routeCoords = [];
+
+  markers.forEach(function(m) {
+    const icon = makeIcon(m.id, m.type);
+    const marker = L.marker([m.lat, m.lng], { icon: icon }).addTo(map);
+
+    let html = '<div class="popup-title">' + m.title + '</div>';
+    if (m.date) {
+      html += '<div class="popup-date">' + m.date + '</div>';
+    }
+    html += '<div>' + m.desc + '</div>';
+    if (m.quote) {
+      html += '<div class="popup-quote">' + m.quote + '</div>';
+    }
+    html += '<div class="popup-source">' + m.source + '</div>';
+
+    marker.bindPopup(html);
+
+    // Only add to route line for the movement markers (not C memorial)
+    if (m.id !== 'C') {
+      routeCoords.push([m.lat, m.lng]);
+    }
+  });
+
+  // Draw route polyline (dashed)
+  L.polyline(routeCoords, {
+    color: '#b22222',
+    weight: 3,
+    opacity: 0.7,
+    dashArray: '8, 6',
+    lineCap: 'round'
+  }).addTo(map);
+
+  // --- Chartwell inset marker (minimap concept via a separate marker group) ---
+  // Since Leaflet doesn't do true insets natively, add Chartwell as a note in the legend
+  // and provide a "fly to Chartwell" button
+
+  // --- Legend control ---
+  const legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function() {
+    const div = L.DomUtil.create('div', 'map-legend');
+    div.innerHTML = `
+      <h4>Legend</h4>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#8b4513;"></div>
+        <span>Position / location</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#b22222;"></div>
+        <span>Major engagement</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background:#b22222; opacity:0.7; border-top:2px dashed #b22222; height:0;"></div>
+        <span>Fairfax's route (A&rarr;I)</span>
+      </div>
+      <div style="margin-top:8px; font-size:10px; color:#6b5d4a;">
+        <a href="#" id="flyChartwell" style="color:#193c6e; text-decoration:underline; cursor:pointer;">
+          Fly to Chartwell, Kent (J)
+        </a>
+        <br><span style="font-size:9px;">Churchill's letter, 6 Dec 1946</span>
+      </div>
+    `;
+    return div;
+  };
+  legend.addTo(map);
+
+  // Chartwell marker (far from Somme)
+  const chartwellIcon = makeIcon('J', 'churchill');
+  const chartwellMarker = L.marker([51.2537, 0.0814], { icon: chartwellIcon });
+  chartwellMarker.bindPopup(
+    '<div class="popup-title">Chartwell, Westerham, Kent</div>' +
+    '<div class="popup-date">6 December 1946</div>' +
+    '<div>Churchill writes to Colonel Fairfax from his country home, thanking him for a &ldquo;kind letter.&rdquo; The reply was written here, eighteen months before <em>The Gathering Storm</em> was published.</div>' +
+    '<div class="popup-source">Ledger #26, #27 &middot; signature.JPG &middot; Readme.md</div>'
+  );
+
+  // Fly to Chartwell handler
+  document.addEventListener('click', function(e) {
+    if (e.target && e.target.id === 'flyChartwell') {
+      e.preventDefault();
+      chartwellMarker.addTo(map);
+      map.flyTo([51.2537, 0.0814], 13, { duration: 2 });
+      setTimeout(function() { chartwellMarker.openPopup(); }, 2200);
+    }
+  });
+
+  // Add a "return to Somme" control after flying
+  map.on('moveend', function() {
+    const center = map.getCenter();
+    const returnBtn = document.getElementById('returnSomme');
+    if (center.lat > 50.5 && !returnBtn) {
+      const ctrl = L.control({ position: 'topleft' });
+      ctrl.onAdd = function() {
+        const btn = L.DomUtil.create('button');
+        btn.id = 'returnSomme';
+        btn.innerHTML = '&larr; Return to Somme';
+        btn.style.cssText = 'background:#f5f0e6; border:1px solid #8b7760; border-radius:4px; padding:6px 12px; font-family:Inter,sans-serif; font-size:12px; color:#2c2418; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.3);';
+        btn.onclick = function() {
+          map.flyTo([49.988, 2.810], 14, { duration: 2 });
+          setTimeout(function() {
+            if (returnBtn) returnBtn.parentElement.remove();
+          }, 2500);
+        };
+        return btn;
+      };
+      ctrl.addTo(map);
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
