@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Fairfax Letter — A Somme Reconstruction</title>
+<link rel="stylesheet" href="deck.css" />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
+<script src="deck-stage.js"></script>
+<style>
+  /* A few page-specific tweaks */
+  .hero-img {
+    position: absolute; inset: 0;
+    background: #1a1612;
+  }
+  .hero-img img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: saturate(0.92) contrast(1.02);
+  }
+  .hero-veil {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(180deg, rgba(12,10,8,.55) 0%, rgba(12,10,8,.25) 40%, rgba(12,10,8,.82) 100%);
+  }
+  .hero-text {
+    position: absolute;
+    left: var(--s-px); right: var(--s-px); bottom: 130px;
+    color: oklch(0.96 0.008 85);
+  }
+  .hero-text .title { color: inherit; max-width: 1500px; }
+  .hero-text .eyebrow { color: oklch(0.86 0.06 35); }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: stretch; flex: 1; min-height: 0;}
+  .three { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 56px; flex: 1; min-height: 0;}
+
+  .section-opener {
+    background:
+      radial-gradient(ellipse 1400px 900px at 15% 110%, oklch(0.34 0.04 28) 0%, transparent 60%),
+      oklch(0.14 0.014 55);
+    color: oklch(0.94 0.008 82);
+  }
+
+  .stamp {
+    display: inline-flex; align-items: center; gap: 14px;
+    border: 1.5px solid var(--accent-deep);
+    padding: 10px 22px;
+    font-family: var(--mono);
+    font-size: 18px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    transform: rotate(-1.5deg);
+  }
+  .stamp .x { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<deck-stage width="1920" height="1080">
+
+<!-- ================= 01  COVER ================= -->
+<section data-label="01 Cover">
+  <div class="hero-img">
+    <img src="assets/SommeHero.png" alt="1916 British trench map, Sheet 62C.NW, Somme" />
+  </div>
+  <div class="hero-veil"></div>
+  <div class="chrome-top" style="color: oklch(0.84 0.008 82);">
+    <span><span class="dot"></span>Artifact Dossier · Vol. I of VI</span>
+    <span>Churchill / Fairfax · 6 December 1946</span>
+  </div>
+  <div class="hero-text">
+    <div class="eyebrow">A six-volume set · Cassell, 1948–1954 · First edition, first printing</div>
+    <h1 class="title display">The letter Churchill wrote<br/><em>to the man who went arm in arm<br/>across No Man's Land.</em></h1>
+    <p class="small" style="color: oklch(0.86 0.008 82); margin-top: 36px; max-width: 1200px; font-family: var(--serif); font-size: 32px; font-style: italic; line-height: 1.35;">
+      A reconstruction of the artifact, the battle, and the ground beneath it — from the 89th Brigade's pit southwest of Maricourt to the fog at Guillemont.
+    </p>
+  </div>
+  <div class="chrome-bot" style="color: oklch(0.84 0.008 82);">
+    <span>Primary source: History of the 89th Brigade 1914–1918 (Stanley, 1919)</span>
+    <span>Trench map © National Library of Scotland · CC-BY</span>
+  </div>
+</section>
+
+<!-- ================= 02  THE SET ================= -->
+<section data-label="02 The Set" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>01 · The Artifact</span><span>Purchased from the Canadian Federal Government at auction</span></div>
+  <div class="frame">
+    <div class="eyebrow">The Set</div>
+    <h2 class="title">A complete six-volume set of <em>The Second World War</em>,<br/>with a letter from Churchill affixed inside Volume I.</h2>
+
+    <div class="two" style="margin-top: 72px;">
+      <div>
+        <div class="dossier">
+          <div class="row"><div class="k">Publisher</div><div class="v">Cassell and Company Ltd., London</div></div>
+          <div class="row"><div class="k">Edition</div><div class="v"><em>First edition, first printing</em></div></div>
+          <div class="row"><div class="k">Volumes</div><div class="v">I–VI · published 1948 – 1954</div></div>
+          <div class="row"><div class="k">Binding</div><div class="v">Black cloth boards · gilt spine titles · red top edge</div></div>
+          <div class="row"><div class="k">Dust jackets</div><div class="v">25s. NET (Vols I–IV) · 30s. NET (Vols V–VI)</div></div>
+          <div class="row"><div class="k">Provenance</div><div class="v">Canadian Federal Government auction · vault-stored, British Columbia</div></div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        <div class="media" style="flex: 1.3;"><img src="assets/signature.jpg" style="object-position: center;" alt="The signed letter from Churchill, affixed inside Volume I"/></div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 22px; flex: 1;">
+          <div class="media"><img src="assets/TopEdgeVolume1.jpeg" alt="Red top edge, Volume I"/></div>
+          <div class="media"><img src="assets/Price.jpg" alt="Dust jacket price 25s. NET"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Ref: Readme.md · FirstEditionChecklist.md · Ledger #28–35</span><span>Maricourt ⟶ Chartwell ⟶ British Columbia</span></div>
+</section>
+
+<!-- ================= 03  THE LETTER ================= -->
+<section data-label="03 The Letter" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>02 · The Letter</span><span>Chartwell, Westerham, Kent</span></div>
+  <div class="frame">
+    <div class="two" style="gap: 70px;">
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <div class="eyebrow">Enclosed in Volume I</div>
+        <h2 class="title">Five sentences.<br/><em>One of them, a name.</em></h2>
+        <p class="body" style="margin-top: 40px;">
+          Dated 6 December 1946, on Chartwell stationery, written eighteen months before the first volume
+          reached print. The set the letter now lives inside was not yet a set. Cassell had
+          not yet typeset Volume I.
+        </p>
+        <div class="dossier" style="margin-top: 36px; padding: 28px 32px;">
+          <div class="row" style="grid-template-columns: 180px 1fr;"><div class="k">Date</div><div class="v">6 December 1946</div></div>
+          <div class="row" style="grid-template-columns: 180px 1fr;"><div class="k">Origin</div><div class="v">Chartwell, Westerham, Kent</div></div>
+          <div class="row" style="grid-template-columns: 180px 1fr;"><div class="k">Addressee</div><div class="v"><em>Colonel Bryan Fairfax, C.M.G.</em></div></div>
+          <div class="row" style="grid-template-columns: 180px 1fr;"><div class="k">Signatory</div><div class="v">Winston S. Churchill</div></div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <div class="letterpaper" style="width: 680px; transform: rotate(-1deg);">
+          <div class="stationery">
+            <span>Westerham 65</span>
+            <span class="chart">Chartwell.<br/>Westerham.<br/>Kent.</span>
+          </div>
+          <div class="date">6 December, 1946</div>
+          <div class="salut">Dear Captain Fairfax,</div>
+          <div class="thanks">Thank you for your kind letter.</div>
+          <div class="sig" style="font-size: 40px; letter-spacing: -0.01em;">Yours v̌y,</div>
+          <div class="sig">W Churchill</div>
+          <div class="to">Colonel Bryan Fairfax, C.M.G.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Ledger #26, #27 · IMG/signature.JPG</span><span>Facsimile — composition only</span></div>
+</section>
+
+<!-- ================= 04  FAIRFAX ================= -->
+<section data-label="04 Fairfax" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>03 · The Recipient</span><span>12 September 1873 – 29 January 1950</span></div>
+  <div class="frame">
+    <div class="eyebrow">The Recipient</div>
+    <h2 class="title">Colonel Bryan Charles Fairfax, C.M.G.</h2>
+    <p class="subtitle">A Victorian captain in the K.O.Y.L.I., a commander on the Somme, and — by 1946 — a figure Churchill had reason to recognise five times over.</p>
+
+    <div style="display: grid; grid-template-columns: 420px 1fr; gap: 72px; margin-top: 54px; flex: 1; min-height: 0;">
+      <div>
+        <div class="media media-contain" style="height: 520px; background: oklch(0.88 0.01 80);"><img src="assets/ColFairfax.jpeg" style="object-fit: contain;" alt="Colonel Bryan Fairfax"/></div>
+        <div class="label" style="margin-top: 14px; text-align: center;">Lt.-Col. B. Fairfax · 89th Brigade portrait</div>
+      </div>
+      <div class="dossier" style="padding: 30px 36px;">
+        <div class="row"><div class="k">Born</div><div class="v">12 September 1873</div></div>
+        <div class="row"><div class="k">Early service</div><div class="v">3rd Bn, King's Own Yorkshire Light Infantry · West India Regiment</div></div>
+        <div class="row"><div class="k">China, 1900</div><div class="v">Boxer Uprising</div></div>
+        <div class="row"><div class="k">Somme, 1916</div><div class="v"><em>C.O., 17th Bn King's Liverpool Regiment</em></div></div>
+        <div class="row"><div class="k">Honours</div><div class="v">C.M.G. (1916) — for wartime service</div></div>
+        <div class="row"><div class="k">Chinese Labour Corps</div><div class="v">Commanded ≈ 100,000 men in France</div></div>
+        <div class="row"><div class="k">Canadian service</div><div class="v">199th Bn (Duchess of Connaught's Own Irish Canadian Rangers), C.E.F.</div></div>
+        <div class="row"><div class="k">Post-war</div><div class="v">Director of Remounts, War Office · Cons. candidate, Spen Valley by-election (1919)</div></div>
+        <div class="row"><div class="k">Died</div><div class="v">29 January 1950, Toronto</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Ledger #1–7, 23–25, 39</span><span>IWM — Lives of the First World War 1187431</span></div>
+</section>
+
+<!-- ================= 05  FIVE THREADS ================= -->
+<section data-label="05 Five Threads" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>04 · Why Churchill Knew Him</span><span>Five documented threads</span></div>
+  <div class="frame">
+    <div class="eyebrow">Why Churchill Knew Him</div>
+    <h2 class="title">Not a courtesy to a stranger.</h2>
+    <p class="subtitle">Overlapping spheres across three decades — front line, ministry, labour corps, party, and the Commonwealth elite.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px; margin-top: 64px; flex: 1; min-height: 0;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="coord">01</div>
+        <div class="title sub" style="font-size: 32px;">Western Front, 1915–16</div>
+        <hr class="rule"/>
+        <div class="small">Churchill commanded the 6th Royal Scots Fusiliers at Ploegsteert Jan–May 1916 — home weeks before the Somme opened.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="coord">02</div>
+        <div class="title sub" style="font-size: 32px;">War Office, 1919–21</div>
+        <hr class="rule"/>
+        <div class="small">Secretary of State for War. Fairfax held the post of Director of Remounts in the same building, in the same hierarchy.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="coord">03</div>
+        <div class="title sub" style="font-size: 32px;">Chinese Labour Corps</div>
+        <hr class="rule"/>
+        <div class="small">Fairfax commanded the CLC in France (≈100,000 men). Churchill, as Minister of Munitions then War Secretary, oversaw its policy.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="coord">04</div>
+        <div class="title sub" style="font-size: 32px;">Conservative Circles</div>
+        <hr class="rule"/>
+        <div class="small">Spen Valley by-election, 1919. Two officers, two Conservatives — one party-political world.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="coord">05</div>
+        <div class="title sub" style="font-size: 32px;">Canadian Elite</div>
+        <hr class="rule"/>
+        <div class="small">Married into the Gooderham family of Toronto. His son became the 14th Lord Fairfax of Cameron.</div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Ref: Readme.md §"Five Documented Threads"</span><span>All dates cross-referenced in ledger</span></div>
+</section>
+
+<!-- ================= 06  SECTION DIVIDER — THE BATTLE ================= -->
+<section data-label="06 Section — Battle" class="paper-dark section-opener">
+  <div class="chrome-top"><span><span class="dot"></span>Part II</span><span>The battle that earned the letter</span></div>
+  <div class="frame" style="justify-content: center;">
+    <div class="eyebrow" style="color: oklch(0.86 0.06 35);">Part II · May – August 1916</div>
+    <h2 class="title display" style="color: oklch(0.96 0.008 85); max-width: 1600px;">
+      The 89th Brigade on <em style="color: oklch(0.72 0.12 30);">the extreme right</em> of the British Army.
+    </h2>
+    <p class="subtitle" style="color: oklch(0.82 0.008 82); max-width: 1500px;">
+      Every quotation, every date, every map reference that follows is verbatim from Brigadier-General F. C. Stanley's
+      <em>History of the 89th Brigade 1914–1918</em> (Liverpool, "Daily Post" Printers, 1919).
+    </p>
+    <div style="margin-top: 80px; display: flex; gap: 48px;">
+      <span class="stamp"><span class="x">×</span> Primary source verified</span>
+      <span class="stamp"><span class="x">×</span> Page-level citations</span>
+      <span class="stamp"><span class="x">×</span> Georeferenced to 1916 trench map</span>
+    </div>
+  </div>
+  <div class="chrome-bot"><span style="color: oklch(0.74 0.012 78);">Stanley commanded the Brigade · Fairfax commanded the 17th Bn K.L.R. under him</span><span style="color: oklch(0.74 0.012 78);">Five phases · one ground</span></div>
+</section>
+
+<!-- ================= 07  THE GROUND ================= -->
+<section data-label="07 The Ground" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>05 · The Ground Itself</span><span>Sheet 62C.NW · British 1:20,000 trench map</span></div>
+  <div class="frame" style="padding: 92px 80px 80px;">
+    <div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 60px; flex: 1; min-height: 0;">
+      <div class="media" style="box-shadow: var(--shadow-2);">
+        <img src="assets/SommeWideLabeled.png" alt="3D rendered trench map — Brigade HQ to Trones Wood"/>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <div class="eyebrow">The Ground Itself</div>
+        <h2 class="title sub">The 1916 trench map draped on Copernicus 30&nbsp;m terrain.</h2>
+        <p class="body" style="margin-top: 28px; font-size: 26px;">
+          Six pins. One yellow thread. Fifty-nine days between the first pin (<em>Brigade HQ, June 1916</em>)
+          and the last (<em>Guillemont, 30 July 1916</em>).
+        </p>
+        <hr class="rule" style="margin: 32px 0;"/>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px 36px;">
+          <div><div class="label">Westernmost pin</div><div class="coord">Brigade HQ · 49.9823° N</div></div>
+          <div><div class="label">Easternmost pin</div><div class="coord">Guillemont · 50.0133° N</div></div>
+          <div><div class="label">Distance, west → east</div><div class="coord">≈ 3.9 km · on the ground</div></div>
+          <div><div class="label">Elevation range</div><div class="coord">66 m – 148 m (Copernicus DEM)</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Trench map NLS · CC-BY · Terrain © Copernicus</span><span>Render: Blender 4 · cycles</span></div>
+</section>
+
+<!-- ================= 08  PHASE 1 HQ ================= -->
+<section data-label="08 Phase 1 Brigade HQ" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>Phase 1 · May – 28 June 1916</span><span>89th Bde · pp. 119, 121, 129</span></div>
+  <div class="frame">
+    <div class="two" style="gap: 70px;">
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <div class="eyebrow">Phase 1</div>
+        <h2 class="title">Brigade HQ, in a pit<br/>southwest of Maricourt.</h2>
+        <p class="body" style="margin-top: 36px;">
+          By May the Brigade had moved into the sector. HQ was established at
+          <em style="color: var(--accent-deep); font-style: normal;">Ailly-sur-Somme</em>,
+          the 17th Battalion at <em style="color: var(--accent-deep); font-style: normal;">Vaux</em>.
+          Through June, the Brigade advanced to a pit on the hinge of the British and French armies — southwest of Maricourt.
+        </p>
+
+        <div class="tl" style="margin-top: 44px;">
+          <div class="tl-cell" style="grid-column: span 2;"><div class="d">May 1916</div><div class="n">Brigade HQ · Ailly-sur-Somme</div><div class="w">89th Bde p.119</div></div>
+          <div class="tl-cell" style="grid-column: span 2;"><div class="d">Late May 1916</div><div class="n">17th Bn HQ · Vaux</div><div class="w">89th Bde p.119</div></div>
+          <div class="tl-cell hot" style="grid-column: span 2;"><div class="d">June 1916</div><div class="n">Pit SW of Maricourt</div><div class="w">89th Bde p.121</div></div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 26px;">
+        <div class="media" style="flex: 1;"><img src="assets/render_maricourt_closeup.png" alt="Brigade HQ position — SW of Maricourt"/></div>
+        <div class="gcard">
+          <span class="pin">Pin · Brigade HQ</span>
+          <div class="name">Pit southwest of Maricourt</div>
+          <div class="coordline">49.9823° N, 2.7725° E · approx.</div>
+          <div class="note">A concealed position on the boundary seam between the British Fourth Army and the French Sixth.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Ledger #8, 9, 10</span><span>Primary: 89th Bde pp.119, 121</span></div>
+</section>
+
+<!-- ================= 09  THE ORDER — QUOTE ================= -->
+<section data-label="09 The Order" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>06 · The Order of 28 June 1916</span><span>89th Bde · p.129</span></div>
+  <div class="frame" style="justify-content: center;">
+    <div class="eyebrow">Stanley's Special Order · 28 June 1916</div>
+    <div class="quote" style="margin-top: 18px;">
+      The 89th Brigade occupies the most honourable position in the whole of the British Army, because not only
+      are we on the <em style="font-style: normal; color: var(--accent-deep);">extreme right</em>, but we are fighting side by side
+      with the celebrated French <em style="font-style: normal; color: var(--accent-deep);">Corps de Fer</em>.
+    </div>
+    <div class="quote-attrib">Brigadier-General F. C. Stanley · 89th Brigade, p. 129 · Ledger #11</div>
+
+    <div style="margin-top: 96px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1400px;">
+      <div>
+        <div class="label">Corps commander's visit, same day</div>
+        <p class="body" style="font-size: 26px; margin-top: 10px;">
+          General Congreve: <em>"I know you will, and if you cannot manage it, no other troops can."</em>
+        </p>
+      </div>
+      <div>
+        <div class="label">French neighbour, 39e Division d'Infanterie</div>
+        <p class="body" style="font-size: 26px; margin-top: 10px;">
+          The Brigade was paired in the line with the 3rd Battalion, <em>153e Régiment d'Infanterie</em> — the "Iron Corps".
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Ledger #11, #43</span><span>Three days before zero hour</span></div>
+</section>
+
+<!-- ================= 10  PHASE 2 — 1 JULY ================= -->
+<section data-label="10 Phase 2 1 July" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>Phase 2 · 1 July 1916</span><span>89th Bde · p.131</span></div>
+  <div class="frame">
+    <div class="two" style="gap: 80px;">
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <div class="eyebrow">The Attack</div>
+        <h2 class="title">06:25 — intense bombardment.<br/>07:30 — over the parapet.</h2>
+
+        <div style="margin-top: 50px; display: flex; flex-direction: column; gap: 20px;">
+          <div style="display: grid; grid-template-columns: 200px 1fr; align-items: baseline; gap: 28px; padding: 18px 0; border-bottom: 1px solid var(--rule);">
+            <div class="coord" style="font-size: 30px;">06:25</div>
+            <div class="body" style="margin: 0; font-size: 26px;">"We started an intense bombardment…"</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 200px 1fr; align-items: baseline; gap: 28px; padding: 18px 0; border-bottom: 1px solid var(--rule);">
+            <div class="coord" style="font-size: 30px;">07:30</div>
+            <div class="body" style="margin: 0; font-size: 26px;">"After sixty-five minutes, we popped over the parapet."</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 200px 1fr; align-items: baseline; gap: 28px; padding: 18px 0; border-bottom: 1px solid var(--rule);">
+            <div class="coord" style="font-size: 30px;">Midday</div>
+            <div class="body" style="margin: 0; font-size: 26px;">Briqueterie objective captured.</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 200px 1fr; align-items: baseline; gap: 28px; padding: 18px 0;">
+            <div class="coord" style="font-size: 30px;">+1 day</div>
+            <div class="body" style="margin: 0; font-size: 26px;">French 153e RI sweeps over <em>five lines</em> of enemy trench.</div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 26px;">
+        <div class="media" style="flex: 1;"><img src="assets/render_labeled_dramatic.png" alt="Maricourt attack corridor"/></div>
+        <div class="gcard">
+          <span class="pin">Pin · Briqueterie</span>
+          <div class="name">Brickworks between Maricourt &amp; Montauban</div>
+          <div class="coordline">49.9952° N, 2.7985° E</div>
+          <div class="note">The 20th King's Liverpools secured the Briqueterie around midday on 1 July.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Ledger #12, #13</span><span>89th Bde p.131</span></div>
+</section>
+
+<!-- ================= 11  ARM IN ARM ================= -->
+<section data-label="11 Arm in Arm" class="paper-dark">
+  <div class="chrome-top"><span style="color: oklch(0.84 0.008 82);"><span class="dot"></span>07 · The Second Wave</span><span style="color: oklch(0.84 0.008 82);">1 July 1916 · Maricourt</span></div>
+  <div class="frame" style="justify-content: center;">
+    <div class="eyebrow" style="color: oklch(0.86 0.06 35);">The Act</div>
+    <h2 class="title display" style="color: oklch(0.96 0.008 85); max-width: 1700px;">
+      Fairfax and Lepetit went across <em style="color: oklch(0.82 0.14 30);">arm in arm.</em>
+    </h2>
+    <p class="subtitle" style="color: oklch(0.84 0.008 82); max-width: 1500px;">
+      Not an accident of the battlefield. A deliberate act of Allied solidarity, planned under fire,
+      at the seam where two armies met.
+    </p>
+
+    <div style="margin-top: 84px; display: grid; grid-template-columns: 1fr 60px 1fr; gap: 40px; max-width: 1600px;">
+      <div class="gcard" style="background: oklch(0.22 0.014 60); border-color: oklch(0.40 0.016 60); color: oklch(0.94 0.008 82);">
+        <span class="pin" style="color: oklch(0.94 0.008 82);">British</span>
+        <div class="name" style="color: inherit;">Lt.-Col. Bryan Fairfax</div>
+        <div class="coordline">17th Battalion · King's Liverpool Regiment</div>
+        <div class="note" style="color: oklch(0.82 0.008 82);">89th Brigade · 30th Division · XIII Corps</div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <div style="font-family: var(--serif); font-size: 72px; color: oklch(0.72 0.12 30); font-style: italic;">&amp;</div>
+      </div>
+      <div class="gcard" style="background: oklch(0.22 0.014 60); border-color: oklch(0.40 0.016 60); color: oklch(0.94 0.008 82);">
+        <span class="pin" style="color: oklch(0.94 0.008 82);">French</span>
+        <div class="name" style="color: inherit;">Commandant Lepetit</div>
+        <div class="coordline">3rd Battalion · 153e Régiment d'Infanterie</div>
+        <div class="note" style="color: oklch(0.82 0.008 82);">39e Division · Corps de Fer · Armée de Fayolle</div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span style="color: oklch(0.74 0.012 78);">Ledger #14 · Readme lines 47, 91</span><span style="color: oklch(0.74 0.012 78);">Commemorated today at the Maricourt memorial</span></div>
+</section>
+
+<!-- ================= 12  FRENCH CITATION ================= -->
+<section data-label="12 French Citation" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>08 · The Citation</span><span>Col. de Coutard · 11 July 1916</span></div>
+  <div class="frame">
+    <div class="two" style="gap: 80px;">
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <div class="eyebrow">Ten days later</div>
+        <h2 class="title sub">A French Colonel singled Fairfax out <em>by name</em>.</h2>
+        <div class="quote" style="font-size: 34px; line-height: 1.28; margin-top: 44px;">
+          …le courage et le sang-froid de nos voisins, officiers et hommes du 17 bataillon de King's Liverpool. En particulier, les relations si cordiales entretenues avec leur chef le Colonel Fairfax ont permis de remarquer ses hautes qualités militaires…
+        </div>
+        <div class="quote-attrib" style="margin-top: 24px;">89th Brigade, p.134 · 11 July 1916 · Ledger #15</div>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: center; gap: 24px;">
+        <div class="label">Translation</div>
+        <p class="body" style="font-size: 28px;">
+          <em>"…the courage and composure of our neighbours, officers and men of the 17th Battalion King's Liverpool.
+          In particular, the cordial relations maintained with their commander Colonel Fairfax revealed his high
+          military qualities — and made all the more regrettable the departure of this brilliant leader and his
+          magnificent Battalion."</em>
+        </p>
+        <hr class="rule" style="margin: 28px 0 8px 0;"/>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px;">
+          <div><div class="label">Author</div><div class="coord">Col. de Coutard · 153e RI sector</div></div>
+          <div><div class="label">Date</div><div class="coord">11 July 1916</div></div>
+          <div><div class="label">Later honours, 153e RI</div><div class="coord">Croix de Guerre · Légion d'honneur · red fourragère</div></div>
+          <div><div class="label">Archive</div><div class="coord">Stanley, 89th Bde, p.134</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Primary French-language source preserved in Stanley, 1919</span><span>Ledger #15</span></div>
+</section>
+
+<!-- ================= 13  PHASE 3 — TRONES WOOD ================= -->
+<section data-label="13 Phase 3 Trones" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>Phase 3 · Mid-July 1916</span><span>89th Bde · p.143</span></div>
+  <div class="frame">
+    <div class="two" style="gap: 80px;">
+      <div style="display: flex; flex-direction: column; gap: 26px;">
+        <div class="media" style="flex: 1;"><img src="assets/render_trones_wood.png" alt="Trones Wood — mid-July 1916"/></div>
+        <div class="gcard">
+          <span class="pin">Pin · Trônes Wood</span>
+          <div class="name">Bois des Troncs · northern slope of Montauban ridge</div>
+          <div class="coordline">50.0068° N, 2.8042° E</div>
+          <div class="note">Pear-shaped wood, ~1,300 m × 370 m. Held by 89th Bde after 8–14 July.</div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <div class="eyebrow">Phase 3</div>
+        <h2 class="title">Dug down in Trônes Wood.</h2>
+        <div class="quote" style="font-size: 36px; margin-top: 44px;">
+          Brinson… said that Fairfax was in the wood. They had had an awful time, but had not lost many men, were all dug down, and could hold on.
+        </div>
+        <div class="quote-attrib">89th Bde, p.143 · Ledger #16</div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Trônes Wood: 8–14 July 1916</span><span>89th Bde took over front 10 July, 20th K.L.R. in Maltz Horn trench at 01:00 on 11 July</span></div>
+</section>
+
+<!-- ================= 14  PHASE 4 — GUILLEMONT (Gas & Fog) ================= -->
+<section data-label="14 Phase 4 Guillemont" class="paper-dark">
+  <div class="chrome-top"><span style="color: oklch(0.84 0.008 82);"><span class="dot"></span>Phase 4 · 29 – 30 July 1916</span><span style="color: oklch(0.84 0.008 82);">Gas · Fog · 1,450 casualties</span></div>
+  <div class="frame">
+    <div class="eyebrow" style="color: oklch(0.86 0.06 35);">Phase 4 · Guillemont</div>
+    <h2 class="title display" style="color: oklch(0.96 0.008 85); font-size: 96px;">Gas by night. Fog by morning.</h2>
+
+    <div class="two" style="gap: 80px; margin-top: 56px;">
+      <div style="display: flex; flex-direction: column; gap: 26px;">
+        <div style="background: oklch(0.22 0.014 60); padding: 30px 34px; border-left: 4px solid var(--accent); color: oklch(0.94 0.008 82);">
+          <div class="label" style="color: oklch(0.74 0.12 35);">Night of 29 July 1916</div>
+          <p class="body" style="color: oklch(0.92 0.008 82); font-size: 26px; max-width: 100%; margin: 10px 0 0 0;">
+            <em>"The Boche started with a new kind of gas shell… a lot of them were very seedy, including Poyntz and Fairfax."</em>
+          </p>
+          <div class="quote-attrib" style="color: oklch(0.66 0.012 78); margin-top: 14px;">TextExtract line 29 · Ledger #17</div>
+        </div>
+        <div style="background: oklch(0.22 0.014 60); padding: 30px 34px; border-left: 4px solid var(--accent); color: oklch(0.94 0.008 82);">
+          <div class="label" style="color: oklch(0.74 0.12 35);">Morning of 30 July 1916</div>
+          <p class="body" style="color: oklch(0.92 0.008 82); font-size: 26px; max-width: 100%; margin: 10px 0 0 0;">
+            <em>"Of all bad luck in the world it was a thick fog; so thick that you couldn't see more than about ten yards."</em>
+          </p>
+          <div class="quote-attrib" style="color: oklch(0.66 0.012 78); margin-top: 14px;">TextExtract line 31 · Ledger #18</div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="bignum" style="color: oklch(0.96 0.008 85); font-size: 360px;">1,<em style="color: oklch(0.78 0.14 30);">450</em></div>
+        <div class="label" style="color: oklch(0.74 0.012 78); margin-top: 18px;">Brigade casualties · 30 July 1916</div>
+        <hr class="rule" style="margin: 40px 0; width: 60%; border-color: oklch(0.40 0.016 60);"/>
+        <div style="display: flex; gap: 48px;">
+          <div style="text-align: center;">
+            <div class="title sub" style="color: oklch(0.96 0.008 85); font-size: 64px;">10</div>
+            <div class="label" style="color: oklch(0.74 0.012 78);">sergeants remaining</div>
+          </div>
+          <div style="text-align: center;">
+            <div class="title sub" style="color: oklch(0.96 0.008 85); font-size: 64px;">21</div>
+            <div class="label" style="color: oklch(0.74 0.012 78);">corporals remaining</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span style="color: oklch(0.74 0.012 78);">Ledger #17, 18, 20, 21</span><span style="color: oklch(0.74 0.012 78);">Guillemont · 50.0133° N, 2.8226° E</span></div>
+</section>
+
+<!-- ================= 15  PHASE 5 — SHADOW ================= -->
+<section data-label="15 Phase 5 Shadow" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>Phase 5 · Early August 1916</span><span>Stanley, personal passage</span></div>
+  <div class="frame" style="justify-content: center;">
+    <div class="eyebrow">Phase 5 · "An Absolute Shadow"</div>
+    <div class="quote" style="font-size: 40px; line-height: 1.26; max-width: 1600px; margin-top: 10px;">
+      …he stuck it out most gallantly at the time of the attack, it was too much for him afterwards and he suffered very much.
+      He went to <em style="font-style: normal; color: var(--accent-deep);">an absolute shadow of himself</em>, and although he wanted to stop on with the Battalion,
+      I had to be quite firm and told him that it was out of the question. If he had not gone then I don't think that his life would be worth anything at all.
+    </div>
+    <div class="quote-attrib">Brig.-Gen. F. C. Stanley · TextExtract line 49 · Ledger #19</div>
+
+    <hr class="rule" style="margin: 72px 0 40px 0; width: 1600px;"/>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; max-width: 1700px;">
+      <div>
+        <div class="label">Fate</div>
+        <p class="body" style="font-size: 26px;">Evacuated to England at the beginning of August 1916.</p>
+      </div>
+      <div>
+        <div class="label">The Brigade, 2 August</div>
+        <p class="body" style="font-size: 26px;">Moved out to rest at Huppy, near Abbeville.</p>
+      </div>
+      <div>
+        <div class="label">The 17th Bn, after</div>
+        <p class="body" style="font-size: 26px;">Commanded by Peck · no other officers of standing except Draper.</p>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Ledger #19, #22, #45</span><span>TextExtract lines 47, 49 · Readme line 105</span></div>
+</section>
+
+<!-- ================= 16  THE GROUND TODAY — Google Earth pins ================= -->
+<section data-label="16 Ground Today" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>09 · The Ground Today</span><span>Google Earth Pro — live pins</span></div>
+  <div class="frame">
+    <div class="eyebrow">Reconstruction</div>
+    <h2 class="title">From 1916 trench grid<br/>to modern coordinates.</h2>
+    <p class="subtitle">Each 89th Brigade location below has been georeferenced from Sheet 62C.NW onto the present landscape. Click any card to open that pin in Google Earth.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 60px; flex: 1; min-height: 0;">
+
+      <a class="gcard" style="text-decoration: none; color: inherit;" href="https://www.google.com/maps/@49.9823,2.7725,380m/data=!3m1!1e3" target="_blank" rel="noopener">
+        <span class="pin">01 · Brigade HQ</span>
+        <div class="name">Pit SW of Maricourt</div>
+        <div class="coordline">49.9823° N, 2.7725° E</div>
+        <div class="meta">June 1916 · 89th Bde p.121</div>
+        <div class="note">Open in Google Earth →</div>
+      </a>
+
+      <a class="gcard" style="text-decoration: none; color: inherit;" href="https://www.google.com/maps/place/49%C2%B059'15.0%22N+2%C2%B047'28.3%22E/@49.9874974,2.7910823,18z" target="_blank" rel="noopener">
+        <span class="pin">02 · Maricourt memorial</span>
+        <div class="name">1er Juillet 1916</div>
+        <div class="coordline">49.9875° N, 2.7911° E</div>
+        <div class="meta">Fairfax &amp; Lepetit · arm in arm</div>
+        <div class="note">Open in Google Earth →</div>
+      </a>
+
+      <a class="gcard" style="text-decoration: none; color: inherit;" href="https://www.google.com/maps/@49.9952,2.7985,380m/data=!3m1!1e3" target="_blank" rel="noopener">
+        <span class="pin">03 · Briqueterie</span>
+        <div class="name">Brickworks · Maricourt–Montauban road</div>
+        <div class="coordline">49.9952° N, 2.7985° E</div>
+        <div class="meta">1 July 1916 · objective taken</div>
+        <div class="note">Open in Google Earth →</div>
+      </a>
+
+      <a class="gcard" style="text-decoration: none; color: inherit;" href="https://www.google.com/maps/@49.9997,2.7836,380m/data=!3m1!1e3" target="_blank" rel="noopener">
+        <span class="pin">04 · Montauban-de-Picardie</span>
+        <div class="name">Village of Montauban</div>
+        <div class="coordline">49.9997° N, 2.7836° E</div>
+        <div class="meta">1 July 1916 · advance objective</div>
+        <div class="note">Open in Google Earth →</div>
+      </a>
+
+      <a class="gcard" style="text-decoration: none; color: inherit;" href="https://www.google.com/maps/@50.0068,2.8042,380m/data=!3m1!1e3" target="_blank" rel="noopener">
+        <span class="pin">05 · Trônes Wood</span>
+        <div class="name">Bois des Troncs</div>
+        <div class="coordline">50.0068° N, 2.8042° E</div>
+        <div class="meta">Mid-July 1916 · holding under fire</div>
+        <div class="note">Open in Google Earth →</div>
+      </a>
+
+      <a class="gcard" style="text-decoration: none; color: inherit; border-color: var(--accent-deep); box-shadow: 0 0 0 2px oklch(0.52 0.15 25 / 0.12);" href="https://www.google.com/maps/@50.0133,2.8226,380m/data=!3m1!1e3" target="_blank" rel="noopener">
+        <span class="pin">06 · Guillemont</span>
+        <div class="name">Village of Guillemont</div>
+        <div class="coordline">50.0133° N, 2.8226° E</div>
+        <div class="meta">29–30 July 1916 · gas, fog, evacuation</div>
+        <div class="note" style="color: var(--accent-deep);">Open in Google Earth →</div>
+      </a>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>All coordinates georeferenced against NLS trench map 62C.NW</span><span>Click any card to open in a new tab</span></div>
+</section>
+
+<!-- ================= 17  CHARTWELL ================= -->
+<section data-label="17 Chartwell" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>10 · The Reply</span><span>Chartwell · 6 December 1946</span></div>
+  <div class="frame">
+    <div class="two" style="gap: 80px;">
+      <div style="display: flex; flex-direction: column; gap: 26px;">
+        <div class="media" style="flex: 1;"><img src="assets/Chartwell.jpg" alt="Chartwell, Kent — rear view"/></div>
+        <div class="media media-contain" style="height: 260px; background: oklch(0.92 0.012 80);"><img src="assets/Chartwell_map.jpg" alt="Chartwell relief map, Kent"/></div>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <div class="eyebrow">The Reply</div>
+        <h2 class="title">From the library at Chartwell<br/>— thirty years on.</h2>
+        <p class="body" style="margin-top: 36px;">
+          Churchill replied from the house where he was then drafting <em>The Gathering Storm</em>.
+          The letter travelled from <em style="color: var(--accent-deep); font-style: normal;">Chartwell</em> to
+          <em style="color: var(--accent-deep); font-style: normal;">Toronto</em>, where Fairfax had retired.
+          Fairfax died thirteen months later; the last volumes of the set were assembled after his death.
+        </p>
+        <a class="gcard" style="text-decoration: none; color: inherit; margin-top: 36px;" href="https://www.google.com/maps/@51.2449,0.0811,400m/data=!3m1!1e3" target="_blank" rel="noopener">
+          <span class="pin">Pin · Chartwell</span>
+          <div class="name">Chartwell, Westerham, Kent</div>
+          <div class="coordline">51.2449° N, 0.0811° E</div>
+          <div class="meta">Churchill's home, 1922 – 1965 · National Trust</div>
+          <div class="note">Open in Google Earth →</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>Return address on stationery: "CHARTWELL · WESTERHAM · KENT."</span><span>Ledger #26, #27</span></div>
+</section>
+
+<!-- ================= 18  WHAT THIS RECONSTRUCTION IS ================= -->
+<section data-label="18 Colophon" class="paper">
+  <div class="chrome-top"><span><span class="dot"></span>Colophon</span><span>Sources · methods · next steps</span></div>
+  <div class="frame">
+    <div class="eyebrow">Colophon</div>
+    <h2 class="title">One set. Five phases. Six coordinates.</h2>
+
+    <div class="three" style="margin-top: 72px;">
+      <div>
+        <div class="label">Primary sources</div>
+        <ul class="body" style="font-size: 24px; padding-left: 22px; margin-top: 14px;">
+          <li>Stanley, <em>89th Brigade 1914–1918</em> (1919)</li>
+          <li>TextExtract.md · Readme.md · FEC</li>
+          <li>Fairfax obituary · IWM 1187431</li>
+        </ul>
+        <div class="label" style="margin-top: 32px;">Map &amp; terrain</div>
+        <ul class="body" style="font-size: 24px; padding-left: 22px; margin-top: 14px;">
+          <li>NLS trench map 62C.NW · 3 Sep 1916 · CC-BY</li>
+          <li>Copernicus DEM 30 m</li>
+          <li>Blender 4 · Cycles · georeferenced draping</li>
+        </ul>
+      </div>
+      <div>
+        <div class="label">Evidence discipline</div>
+        <p class="body" style="font-size: 24px; margin-top: 14px;">
+          Every slide anchors to the <em>Ground Truth Ledger</em>: file, page/line, verbatim quote. No entry without a source.
+          Claude's reconstruction adds layout and linkage — never claims.
+        </p>
+        <div class="label" style="margin-top: 32px;">Where Claude earned its keep</div>
+        <ul class="body" style="font-size: 24px; padding-left: 22px; margin-top: 14px;">
+          <li>Georeferencing 1916 grid → WGS-84</li>
+          <li>Terrain fly-through from trench overlay</li>
+          <li>Chronology across Stanley + OCR'd memoir</li>
+        </ul>
+      </div>
+      <div>
+        <div class="label">Next / open threads</div>
+        <ul class="body" style="font-size: 24px; padding-left: 22px; margin-top: 14px;">
+          <li>Research subagent: precise Briqueterie ruin location</li>
+          <li>Locate 17th Bn assembly trenches via Operation Order No. 76</li>
+          <li>Cross-check memorial text against Stanley p.131</li>
+          <li>Add Blender shot: Brigade HQ ↔ Maricourt memorial</li>
+          <li>Export Google Earth KMZ from these six pins</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="rule" style="margin-top: 56px;"/>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 22px;">
+      <div class="label">Fairfax Churchill Dossier · Somme Reconstruction · v1</div>
+      <div class="label">Maricourt ⟶ Guillemont ⟶ Chartwell ⟶ Toronto ⟶ British Columbia</div>
+    </div>
+  </div>
+  <div class="chrome-bot"><span>© 2026 · research, reconstruction, and design</span><span>For the speaker's own review, not for external attribution</span></div>
+</section>
+
+</deck-stage>
+
+</body>
+</html>
