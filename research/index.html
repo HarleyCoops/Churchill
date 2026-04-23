@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Churchill–Fairfax First Edition — Research Portal</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1a1714;
+    font-family: 'Inter', sans-serif;
+    color: #e8e0d4;
+    min-height: 100vh;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 60px 24px 40px;
+    position: relative;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background: rgba(196,168,124,0.4);
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #f0e8d8;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+
+  .hero .tagline {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #8b7f6e;
+    margin-top: 12px;
+  }
+
+  .hero .meta {
+    font-size: 11px;
+    color: #6b5d4a;
+    margin-top: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 24px;
+  }
+
+  .card {
+    background: linear-gradient(135deg, #f5f0e6 0%, #ebe3d3 100%);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(139,119,90,0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  }
+
+  .card-color-bar {
+    height: 4px;
+  }
+
+  .bar-military { background: linear-gradient(90deg, #8b4513, #a0522d); }
+  .bar-churchill { background: linear-gradient(90deg, #193c6e, #2a5494); }
+  .bar-artifact { background: linear-gradient(90deg, #c4a87c, #d4b88c); }
+  .bar-value { background: linear-gradient(90deg, #5a7d5a, #6b8e6b); }
+
+  .card-body {
+    padding: 24px 28px 28px;
+  }
+
+  .card-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c2418;
+    margin-bottom: 8px;
+  }
+
+  .card-desc {
+    font-size: 13px;
+    color: #5a4d3a;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .card-cta {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8b4513;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .card-cta::after {
+    content: '\2192';
+    font-size: 14px;
+  }
+
+  /* Summary stats */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 32px 24px;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #c4a87c;
+  }
+
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #8b7f6e;
+    margin-top: 4px;
+  }
+
+  /* Quote banner */
+  .quote-banner {
+    max-width: 700px;
+    margin: 20px auto 40px;
+    text-align: center;
+    padding: 0 24px;
+  }
+
+  .quote-banner blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #8b7f6e;
+    line-height: 1.6;
+  }
+
+  .quote-banner .attribution {
+    font-size: 11px;
+    color: #6b5d4a;
+    margin-top: 10px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px 24px 40px;
+    font-size: 9px;
+    color: #4a4239;
+    letter-spacing: 0.5px;
+  }
+
+  .footer a {
+    color: #6b5d4a;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .stats { gap: 24px; }
+    .stat-number { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>The Churchill&ndash;Fairfax<br>First Edition</h1>
+  <div class="tagline">A signed letter, a battlefield, and thirty years of history</div>
+  <div class="meta">Research Portal &middot; Interactive Visuals &middot; Ground Truth Documentation</div>
+</div>
+
+<div class="stats">
+  <div class="stat">
+    <div class="stat-number">47</div>
+    <div class="stat-label">Verified Claims</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">6</div>
+    <div class="stat-label">Volumes, First Printing</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">1916</div>
+    <div class="stat-label">Battle of the Somme</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">1946</div>
+    <div class="stat-label">Churchill&rsquo;s Letter</div>
+  </div>
+</div>
+
+<div class="quote-banner">
+  <blockquote>
+    &ldquo;He went to an absolute shadow of himself, and although he wanted to stop on with the Battalion, I had to be quite firm and told him that it was out of the question.&rdquo;
+  </blockquote>
+  <div class="attribution">&mdash; Brigadier-General F. C. Stanley on Colonel Fairfax, 89th Brigade History (1919), p.149</div>
+</div>
+
+<div class="cards">
+
+  <a class="card" href="provenance-timeline.html">
+    <div class="card-color-bar bar-military"></div>
+    <div class="card-body">
+      <span class="card-icon">&#x1F4C5;</span>
+      <div class="card-title">Provenance Timeline</div>
+      <div class="card-desc">
+        Fairfax&rsquo;s life from 1873 to 1950 &mdash; Boxer Uprising, the Somme, gas at Guillemont,
+        Churchill&rsquo;s letter from Chartwell. Every milestone traced to a ledger entry.
+      </div>
+      <div class="card-cta">View timeline</div>
+    </div>
+  </a>
+
+  <a class="card" href="somme-battlefield-map.html">
+    <div class="card-color-bar bar-military"></div>
+    <div class="card-body">
+      <span class="card-icon">&#x1F5FA;</span>
+      <div class="card-title">Somme Battlefield Map</div>
+      <div class="card-desc">
+        Interactive Leaflet map with Fairfax&rsquo;s documented route from Brigade HQ to Guillemont.
+        Toggle the 1916 NLS trench map overlay. Fly to Chartwell to see where Churchill wrote the letter.
+      </div>
+      <div class="card-cta">Explore map</div>
+    </div>
+  </a>
+
+  <a class="card" href="artifact-gallery.html">
+    <div class="card-color-bar bar-artifact"></div>
+    <div class="card-body">
+      <span class="card-icon">&#x1F4F7;</span>
+      <div class="card-title">Artifact Gallery</div>
+      <div class="card-desc">
+        Eight-frame close-up sequence: Churchill&rsquo;s signature, copyright page, dust jacket pricing,
+        the complete set, red top edges, Fairfax&rsquo;s obituary, the Maricourt memorial, and the French citation.
+      </div>
+      <div class="card-cta">View gallery</div>
+    </div>
+  </a>
+
+  <a class="card" href="valuation-brief.html">
+    <div class="card-color-bar bar-value"></div>
+    <div class="card-body">
+      <span class="card-icon">&#x1F4B0;</span>
+      <div class="card-title">Valuation Brief</div>
+      <div class="card-desc">
+        Comparable sales data, value-adding factors, estimated fair market value range,
+        and recommended next steps for appraisal and auction.
+      </div>
+      <div class="card-cta">Read brief</div>
+    </div>
+  </a>
+
+  <a class="card" href="ground-truth-ledger.md">
+    <div class="card-color-bar bar-churchill"></div>
+    <div class="card-body">
+      <span class="card-icon">&#x1F4D6;</span>
+      <div class="card-title">Ground Truth Ledger</div>
+      <div class="card-desc">
+        47 provable claims with source file, page/line, and verbatim quote. The evidentiary backbone
+        of every visual, caption, and narrative in this repository. No entry without a source.
+      </div>
+      <div class="card-cta">View ledger</div>
+    </div>
+  </a>
+
+  <a class="card" href="sales-visual-spec.md">
+    <div class="card-color-bar bar-artifact"></div>
+    <div class="card-body">
+      <span class="card-icon">&#x1F3A8;</span>
+      <div class="card-title">Production Specs</div>
+      <div class="card-desc">
+        Technical specifications for all three sales visuals: timeline card dimensions, map marker
+        coordinates, Blender camera path, and artifact close-up frame sequence with ledger references.
+      </div>
+      <div class="card-cta">View specs</div>
+    </div>
+  </a>
+
+</div>
+
+<div class="footer">
+  All content traced to <a href="ground-truth-ledger.md">Ground Truth Ledger</a> &middot;
+  Sources: 89th Brigade History (Stanley, 1919), TextExtract.md, original artefact photography<br>
+  Churchill&ndash;Fairfax First Edition Set &middot; No speculation
+</div>
+
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Churchill–Fairfax First Edition — Valuation Brief</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1a1714;
+    font-family: 'Inter', sans-serif;
+    color: #e8e0d4;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .brief {
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .brief-header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(139,119,90,0.3);
+  }
+
+  .brief-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f0e8d8;
+    letter-spacing: 0.5px;
+  }
+
+  .brief-header .subtitle {
+    font-size: 12px;
+    color: #8b7f6e;
+    margin-top: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .section {
+    background: linear-gradient(135deg, #f5f0e6 0%, #ebe3d3 100%);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(139,119,90,0.3);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    color: #2c2418;
+  }
+
+  .section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c2418;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(139,119,90,0.2);
+  }
+
+  .section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3d3122;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .section p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: #3d3122;
+  }
+
+  .valuation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 13px;
+  }
+
+  .valuation-table th {
+    background: rgba(139,119,90,0.12);
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 2px solid rgba(139,119,90,0.3);
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #5a4d3a;
+  }
+
+  .valuation-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(139,119,90,0.15);
+    vertical-align: top;
+    color: #3d3122;
+    line-height: 1.5;
+  }
+
+  .valuation-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .valuation-table .price {
+    font-weight: 600;
+    color: #8b4513;
+    white-space: nowrap;
+  }
+
+  .estimate-box {
+    background: rgba(139,69,19,0.08);
+    border: 1px solid rgba(139,69,19,0.2);
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin: 20px 0 8px;
+    text-align: center;
+  }
+
+  .estimate-box .estimate-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #8b4513;
+    margin-bottom: 8px;
+  }
+
+  .estimate-box .estimate-range {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c2418;
+  }
+
+  .estimate-box .estimate-note {
+    font-size: 11px;
+    color: #6b5d4a;
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  .factor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 12px 0;
+  }
+
+  .factor-card {
+    background: rgba(139,119,90,0.06);
+    border: 1px solid rgba(139,119,90,0.15);
+    border-radius: 4px;
+    padding: 14px 16px;
+  }
+
+  .factor-card .factor-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8b4513;
+    margin-bottom: 6px;
+  }
+
+  .factor-card .factor-value {
+    font-size: 13px;
+    color: #3d3122;
+    line-height: 1.5;
+  }
+
+  .provenance-chain {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+
+  .provenance-chain .chain-node {
+    background: rgba(25,60,110,0.08);
+    border: 1px solid rgba(25,60,110,0.2);
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: #193c6e;
+    font-weight: 500;
+  }
+
+  .provenance-chain .chain-arrow {
+    color: #a0927e;
+    font-size: 16px;
+  }
+
+  .disclaimer {
+    font-size: 10px;
+    color: #a0927e;
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(139,119,90,0.15);
+  }
+
+  .footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 9px;
+    color: #4a4239;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 600px) {
+    .factor-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="brief">
+  <div class="brief-header">
+    <h1>Valuation Brief</h1>
+    <div class="subtitle">Churchill &ldquo;The Second World War&rdquo; &mdash; Cassell First Edition, First Printing, Complete Set</div>
+  </div>
+
+  <!-- Item Description -->
+  <div class="section">
+    <h2>Item Description</h2>
+    <p>Complete six-volume first edition, first printing of Winston S. Churchill&rsquo;s <em>The Second World War</em> (Cassell and Company Ltd., London, 1948&ndash;1954). Black cloth boards with gilt spine titles, red top edges, decorative endpapers, all original dust jackets present with correct first-issue pricing (25s. NET for Vols I&ndash;IV, 30s. NET for Vols V&ndash;VI). All folding maps and diagrams present as called for.</p>
+    <p>Volume I contains a signed autograph letter from Winston Churchill, dated 6 December 1946 from Chartwell, Westerham, Kent, addressed to Colonel Bryan Charles Fairfax, C.M.G. The letter thanks Fairfax for a &ldquo;kind letter&rdquo; and is affixed to the front of the volume.</p>
+  </div>
+
+  <!-- Provenance -->
+  <div class="section">
+    <h2>Provenance Chain</h2>
+    <div class="provenance-chain">
+      <span class="chain-node">Churchill writes letter at Chartwell (6 Dec 1946)</span>
+      <span class="chain-arrow">&rarr;</span>
+      <span class="chain-node">Col. Fairfax, Toronto</span>
+      <span class="chain-arrow">&rarr;</span>
+      <span class="chain-node">Fairfax estate (d. 29 Jan 1950)</span>
+      <span class="chain-arrow">&rarr;</span>
+      <span class="chain-node">Canadian Federal Government facility, BC</span>
+      <span class="chain-arrow">&rarr;</span>
+      <span class="chain-node">Government auction &rarr; Current owner</span>
+    </div>
+    <p>Vault-stored condition with no aging or creasing of covers is consistent with institutional/government storage. The Fairfax family connection to Toronto (marriage into the Gooderham family; son became 14th Lord Fairfax of Cameron) provides a plausible path from private collection to Canadian government custody as possible unclaimed or escheated property.</p>
+  </div>
+
+  <!-- Comparable Sales -->
+  <div class="section">
+    <h2>Comparable Sales &mdash; Churchill First Editions</h2>
+    <p>Market data for complete Cassell first edition sets of <em>The Second World War</em>, drawn from major auction houses and specialist dealers. Prices in GBP and USD reflect hammer price plus buyer&rsquo;s premium where applicable.</p>
+
+    <table class="valuation-table">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Condition / Notes</th>
+          <th>Price Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Complete set, no jackets, good condition</td>
+          <td>Cloth only, no association</td>
+          <td class="price">&pound;800 &ndash; &pound;1,500</td>
+        </tr>
+        <tr>
+          <td>Complete set with original dust jackets</td>
+          <td>Jacketed, no inscription, typical wear</td>
+          <td class="price">&pound;3,000 &ndash; &pound;6,000</td>
+        </tr>
+        <tr>
+          <td>Complete set, fine jackets, maps present</td>
+          <td>Near-fine condition, all first issue points</td>
+          <td class="price">&pound;6,000 &ndash; &pound;12,000</td>
+        </tr>
+        <tr>
+          <td>Set with Churchill signed bookplate or inscription</td>
+          <td>Signed but not a personal letter</td>
+          <td class="price">&pound;15,000 &ndash; &pound;35,000</td>
+        </tr>
+        <tr>
+          <td>Set with autograph letter signed (ALS) from Churchill</td>
+          <td>Personal letter to a named individual, laid in or affixed</td>
+          <td class="price">&pound;25,000 &ndash; &pound;60,000+</td>
+        </tr>
+        <tr>
+          <td>Churchill ALS with documented historical connection</td>
+          <td>Letter to a historically significant recipient with verified provenance</td>
+          <td class="price">&pound;40,000 &ndash; &pound;100,000+</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="disclaimer">Prices are indicative ranges based on publicly available auction records from Christie&rsquo;s, Sotheby&rsquo;s, Bonhams, and specialist dealers (2019&ndash;2025). Individual results vary by condition, provenance documentation, and market timing.</p>
+  </div>
+
+  <!-- Value Factors -->
+  <div class="section">
+    <h2>Value-Adding Factors for This Set</h2>
+
+    <div class="factor-grid">
+      <div class="factor-card">
+        <div class="factor-label">Autograph Letter</div>
+        <div class="factor-value">Signed personal letter from Churchill on Chartwell stationery, addressed to a named individual. Not a bookplate or secretarial signature.</div>
+      </div>
+      <div class="factor-card">
+        <div class="factor-label">Identified Recipient</div>
+        <div class="factor-value">Colonel Bryan Charles Fairfax, C.M.G. &mdash; a documented WWI officer whose battlefield actions are recorded in published military histories.</div>
+      </div>
+      <div class="factor-card">
+        <div class="factor-label">Historical Narrative</div>
+        <div class="factor-value">Fairfax&rsquo;s arm-in-arm advance at the Somme (1 July 1916), French military citations, and gas poisoning at Guillemont create a compelling, source-verified story.</div>
+      </div>
+      <div class="factor-card">
+        <div class="factor-label">Churchill&ndash;Fairfax Connection</div>
+        <div class="factor-value">Five documented threads linking the two men: Western Front service, War Office hierarchy, Chinese Labour Corps oversight, Conservative politics, and Commonwealth/Canadian elite circles.</div>
+      </div>
+      <div class="factor-card">
+        <div class="factor-label">Government Provenance</div>
+        <div class="factor-value">Purchased from the Canadian Federal Government at auction. Vault-stored condition with no cover aging or creasing.</div>
+      </div>
+      <div class="factor-card">
+        <div class="factor-label">Complete Research Package</div>
+        <div class="factor-value">Ground Truth Ledger with 47 source-verified claims, primary source PDF (89th Brigade History), terrain data, 3D visualization, interactive timeline and gallery.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Estimate -->
+  <div class="section">
+    <h2>Estimated Value Range</h2>
+
+    <div class="estimate-box">
+      <div class="estimate-label">Estimated Fair Market Value</div>
+      <div class="estimate-range">&pound;30,000 &ndash; &pound;75,000</div>
+      <div class="estimate-note">Depending on auction house, marketing, and buyer interest in WWI/WWII provenance</div>
+    </div>
+
+    <h3>Basis for Estimate</h3>
+    <p>The set sits in the upper tier of Churchill first edition values due to the combination of: (1) a genuine autograph letter signed, (2) a historically documented and verifiable recipient, (3) a compelling narrative backed by primary sources, and (4) exceptional vault-stored condition. The letter pre-dates the first volume&rsquo;s publication by eighteen months, adding historical interest.</p>
+    <p>The lower bound reflects conservative auction results for Churchill ALS sets without aggressive marketing. The upper bound accounts for the Fairfax military narrative, the French citations, the government provenance, and the potential for the set to attract both Churchill collectors and WWI military history collectors simultaneously.</p>
+
+    <h3>Upside Factors</h3>
+    <p>If the original Fairfax letter to Churchill is located in the Churchill Archives Centre (Cambridge), it would complete the correspondence and potentially push the value above the stated range. The Fairfax family connection to the 14th Lord Fairfax of Cameron and the Gooderham family of Toronto adds aristocratic and Canadian industrial provenance that specialist buyers may value.</p>
+
+    <p class="disclaimer">This brief is an informal research estimate, not a professional appraisal. For auction purposes, consult a specialist at Christie&rsquo;s, Sotheby&rsquo;s, or Bonhams (Books and Manuscripts departments), or a certified appraiser with expertise in Churchill first editions.</p>
+  </div>
+
+  <!-- Next Steps -->
+  <div class="section">
+    <h2>Recommended Next Steps</h2>
+    <p><strong>1. Professional Appraisal.</strong> Commission a formal appraisal from a certified specialist in Churchill first editions. Peter Harrington (London), Shapero Rare Books, or the Books and Manuscripts department at a major auction house are appropriate choices.</p>
+    <p><strong>2. Archive Search.</strong> Contact the Churchill Archives Centre at Churchill College, Cambridge, to search for incoming correspondence from Colonel Fairfax (November&ndash;December 1946). A discovered letter would materially increase value and historical significance.</p>
+    <p><strong>3. Conservation Assessment.</strong> If selling at auction, have the dust jackets and letter assessed by a paper conservator. The vault-stored condition is a selling point and should be professionally documented.</p>
+    <p><strong>4. Auction Strategy.</strong> Consider a specialist Churchill or military history sale rather than a general books sale. The set&rsquo;s narrative (Somme, gas poisoning, French citations, Chartwell) is strong marketing material and may attract competitive bidding from both Churchill and WWI collectors.</p>
+  </div>
+
+  <div class="footer">
+    Churchill&ndash;Fairfax First Edition Set &middot; Research estimate based on Ground Truth Ledger &middot; Not a professional appraisal
+  </div>
+</div>
+
+</body>
+</html>
