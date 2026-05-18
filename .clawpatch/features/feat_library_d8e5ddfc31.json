@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "featureId": "feat_library_d8e5ddfc31",
+  "title": "Python project Churchill",
+  "summary": "Python project metadata in requirements.txt.",
+  "kind": "library",
+  "source": "python-project",
+  "confidence": "medium",
+  "entrypoints": [
+    {
+      "path": "requirements.txt",
+      "symbol": null,
+      "route": null,
+      "command": null
+    }
+  ],
+  "ownedFiles": [
+    {
+      "path": "requirements.txt",
+      "reason": "python project metadata"
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "README.md",
+      "reason": "python project context"
+    }
+  ],
+  "tests": [],
+  "tags": [
+    "python",
+    "package"
+  ],
+  "trustBoundaries": [],
+  "status": "needs-fix",
+  "lock": null,
+  "findingIds": [
+    "fnd_sig-feat-library-d8e5ddfc31-61e5_2c2192ad9a"
+  ],
+  "patchAttemptIds": [],
+  "analysisHistory": [
+    {
+      "runId": "20260518T024955-8b7107",
+      "kind": "review",
+      "summary": "1 finding(s)",
+      "provider": "codex",
+      "model": null,
+      "createdAt": "2026-05-18T02:54:42.717Z"
+    }
+  ],
+  "createdAt": "2026-05-18T02:49:39.364Z",
+  "updatedAt": "2026-05-18T02:54:42.717Z"
+}

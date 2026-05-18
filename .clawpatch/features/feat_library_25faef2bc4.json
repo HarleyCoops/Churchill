@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "featureId": "feat_library_25faef2bc4",
+  "title": "Python source root",
+  "summary": "Python source group root with 2 files.",
+  "kind": "library",
+  "source": "python-source-group",
+  "confidence": "medium",
+  "entrypoints": [
+    {
+      "path": "root",
+      "symbol": "root",
+      "route": null,
+      "command": null
+    }
+  ],
+  "ownedFiles": [
+    {
+      "path": "blender_mcp_addon.py",
+      "reason": "source group root"
+    },
+    {
+      "path": "fairfax_letter_finder.py",
+      "reason": "source group root"
+    }
+  ],
+  "contextFiles": [],
+  "tests": [],
+  "tags": [
+    "python",
+    "source-group"
+  ],
+  "trustBoundaries": [],
+  "status": "needs-fix",
+  "lock": null,
+  "findingIds": [
+    "fnd_sig-feat-library-25faef2bc4-ab5b_6122055094",
+    "fnd_sig-feat-library-25faef2bc4-3348_f17a5c87db",
+    "fnd_sig-feat-library-25faef2bc4-e896_2eac758c0e"
+  ],
+  "patchAttemptIds": [],
+  "analysisHistory": [
+    {
+      "runId": "20260518T024955-8b7107",
+      "kind": "review",
+      "summary": "3 finding(s)",
+      "provider": "codex",
+      "model": null,
+      "createdAt": "2026-05-18T02:52:07.185Z"
+    }
+  ],
+  "createdAt": "2026-05-18T02:49:39.364Z",
+  "updatedAt": "2026-05-18T02:52:07.185Z"
+}

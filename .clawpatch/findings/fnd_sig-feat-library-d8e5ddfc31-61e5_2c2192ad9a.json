@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "findingId": "fnd_sig-feat-library-d8e5ddfc31-61e5_2c2192ad9a",
+  "featureId": "feat_library_d8e5ddfc31",
+  "title": "Pytest test command is not reproducible from the only pip requirements file",
+  "category": "build-release",
+  "severity": "low",
+  "confidence": "medium",
+  "triage": "risk",
+  "evidence": [
+    {
+      "path": "requirements.txt",
+      "startLine": 1,
+      "endLine": 9,
+      "symbol": null,
+      "quote": "# Fairfax Letter Finder requirements\npytesseract>=0.3.8\nPillow>=8.2.0\nrequests>=2.25.1\nnumpy>=1.20.0\nloguru>=0.6.0\n# Optional: for more advanced OCR capabilities\n# pdf2image>=1.16.0\n# opencv-python>=4.5.3"
+    }
+  ],
+  "reasoning": "The project metadata says the test command is pytest and pip/requirements.txt is the detected dependency source, but requirements.txt only installs runtime OCR/image/network/logging libraries. In a clean environment that follows the published pip metadata, pytest may be missing, so the configured test command can fail before any tests are collected.",
+  "reproduction": "Create a fresh virtualenv with only this file installed, then run: python -m pip install -r requirements.txt && pytest. If pytest is not already present globally, the test command is unavailable.",
+  "recommendation": "Add a test/development dependency source that includes pytest, or add pytest to requirements.txt if this file is intended to provision both runtime and test environments. Update CI or clawpatch metadata to install that dependency set before running pytest.",
+  "whyTestsDoNotAlreadyCoverThis": "No linked tests cover dependency metadata, and this failure occurs at environment setup time before application tests can run.",
+  "suggestedRegressionTest": "Add a CI smoke job that creates a fresh virtualenv, installs the declared pip dependency set, and runs python -m pytest or at least verifies import pytest succeeds before test execution.",
+  "minimumFixScope": "Introduce or reference a dev/test requirements file containing pytest, or include pytest in requirements.txt if that is the canonical install file.",
+  "status": "open",
+  "history": [],
+  "signature": "sig_feat-library-d8e5ddfc31_61e5db27d4",
+  "linkedPatchAttemptIds": [],
+  "createdByRunId": "20260518T024955-8b7107",
+  "createdAt": "2026-05-18T02:54:42.698Z",
+  "updatedAt": "2026-05-18T02:54:42.698Z"
+}

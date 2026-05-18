@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "findingId": "fnd_sig-feat-library-25faef2bc4-3348_f17a5c87db",
+  "featureId": "feat_library_25faef2bc4",
+  "title": "Hunyuan ZIP import extracts untrusted archives without traversal validation",
+  "category": "security",
+  "severity": "medium",
+  "confidence": "high",
+  "triage": "confirmed-bug",
+  "evidence": [
+    {
+      "path": "blender_mcp_addon.py",
+      "startLine": 2249,
+      "endLine": 2255,
+      "symbol": "BlenderMCPServer.import_generated_asset_hunyuan_ai",
+      "quote": "def import_generated_asset_hunyuan_ai(self, name: str , zip_file_url: str):\n...\nif not re.match(r'^https?://', zip_file_url, re.IGNORECASE):"
+    },
+    {
+      "path": "blender_mcp_addon.py",
+      "startLine": 2264,
+      "endLine": 2273,
+      "symbol": "BlenderMCPServer.import_generated_asset_hunyuan_ai",
+      "quote": "zip_response = requests.get(zip_file_url, stream=True)\n...\nwith zipfile.ZipFile(zip_file_path, \"r\") as zip_ref:\n    zip_ref.extractall(temp_dir)"
+    },
+    {
+      "path": "blender_mcp_addon.py",
+      "startLine": 1750,
+      "endLine": 1777,
+      "symbol": "BlenderMCPServer.download_sketchfab_model",
+      "quote": "# Extract the zip file with enhanced security\n...\n# If all files passed security checks, extract them\nzip_ref.extractall(temp_dir)"
+    }
+  ],
+  "reasoning": "The Hunyuan import path accepts an arbitrary HTTP(S) ZIP URL, downloads it, and calls extractall() directly. The same file contains explicit path-traversal checks in the Sketchfab ZIP path, showing the expected local pattern, but those checks are absent here. A malicious or compromised ZIP can attempt path traversal or unsafe archive entries during extraction before the OBJ import step.",
+  "reproduction": "Enable Hunyuan3D and call import_generated_asset_hunyuan with zip_file_url pointing to a ZIP containing entries such as ../outside.txt or absolute-path-like names. The Hunyuan path extracts the archive without the validation used by the Sketchfab importer.",
+  "recommendation": "Reuse the Sketchfab archive validation for Hunyuan before extraction: normalize each member, ensure the resolved target remains inside temp_dir using commonpath, reject absolute paths and traversal components, and only then extract. Prefer extracting members manually after validation.",
+  "whyTestsDoNotAlreadyCoverThis": "No linked tests exercise Hunyuan ZIP import or malicious archive entries; the only discovered test-like files are unrelated terrain_data render scripts.",
+  "suggestedRegressionTest": "Add a unit test around the archive validation helper with traversal entries and assert import_generated_asset_hunyuan_ai rejects them before extraction.",
+  "minimumFixScope": "Hunyuan ZIP download/extraction path, ideally by factoring a shared safe ZIP extraction helper used by both Sketchfab and Hunyuan importers.",
+  "status": "open",
+  "history": [],
+  "signature": "sig_feat-library-25faef2bc4_3348d37ec0",
+  "linkedPatchAttemptIds": [],
+  "createdByRunId": "20260518T024955-8b7107",
+  "createdAt": "2026-05-18T02:52:07.135Z",
+  "updatedAt": "2026-05-18T02:52:07.135Z"
+}
