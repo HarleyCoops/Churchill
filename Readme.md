@@ -195,11 +195,62 @@ All surviving evidence — Churchill's correspondence, appointment diaries, and 
 
 A memorial at Maricourt (coordinates: [49°59'15.0"N 2°47'28.3"E](https://www.google.com/maps/place/49%C2%B059'15.0%22N+2%C2%B047'28.3%22E/@49.9874974,2.7910823,19z/data=!4m4!3m3!8m2!3d49.9874974!4d2.7910823?entry=ttu)) commemorates the joint Anglo-French attack of 1 July 1916 and names Fairfax's advance with his French counterpart. The Battle of Maricourt began on 1 July 1916 and drew to a close in the last days of November 1916. It remains one of the bloodiest engagements in the history of warfare.
 
+### Archival Map Source Images
+
+The images below are fixed crops from the National Library of Scotland trench-map tile sources, not Blender renders. They preserve the map as documentary evidence: place names, trench marks, contour lines, woods, roads, and red overprinted trench positions remain visible without reconstruction styling.
+
 <div align="center">
-  <img src="terrain_data/trench_mosaic.png" alt="1916 Trench Map — Maricourt to Guillemont" width="700" />
+  <img src="docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_guillemont_overview.jpg" alt="NLS trench map overview — Maricourt to Guillemont sector" width="700" />
   <br/>
-  <em>Georeferenced British trench map, Sheet 62C.NW, dated 3 September 1916 — weeks after Fairfax was evacuated. Shows Maricourt (left), Montauban, Trones Wood, and Guillemont (right) with trench positions marked. Source: National Library of Scotland, CC-BY.</em>
+  <em>Overview of the Maricourt–Guillemont sector from the NLS trench-map tile set. Source tile set: <code>101465287</code>, z17.</em>
 </div>
+
+<br/>
+
+<div align="center">
+  <img src="docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_british_french_line.jpg" alt="NLS trench map crop — Maricourt British-French line" width="700" />
+  <br/>
+  <em>Maricourt sector, where the British and French lines met on 1 July 1916. Source tile set: <code>101465287</code>, z17.</em>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="docs/assets/nls-source-maps/nls_1916_trench_map_montauban_briqueterie.jpg" alt="NLS trench map crop — Montauban and Briqueterie" width="700" />
+  <br/>
+  <em>Montauban and the Briqueterie objective on the 1 July axis of advance. Source tile set: <code>101465287</code>, z17.</em>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="docs/assets/nls-source-maps/nls_1916_trench_map_bernafay_trones_wood.jpg" alt="NLS trench map crop — Bernafay Wood and Trones Wood" width="700" />
+  <br/>
+  <em>Bernafay Wood and Trones Wood area in the mid-July fighting. Source tile set: <code>101464777</code>, z17.</em>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="docs/assets/nls-source-maps/nls_1916_trench_map_trones_wood.jpg" alt="NLS trench map crop — Trones Wood" width="700" />
+  <br/>
+  <em>Trones Wood, where Fairfax was reported in the wood with his men dug in and holding. Source tile set: <code>101464777</code>, z17.</em>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="docs/assets/nls-source-maps/nls_1916_trench_map_guillemont_approach.jpg" alt="NLS trench map crop — Guillemont approach" width="700" />
+  <br/>
+  <em>Guillemont approach, the sector of the 29–30 July gas, fog, and assembly-position narrative. Source tile set: <code>101464777</code>, z17.</em>
+</div>
+
+Source metadata and reproducibility notes are preserved in:
+
+- <code>terrain_data/nls_source_maps/101465287_z17_manifest.json</code>
+- <code>terrain_data/nls_source_maps/101464777_z17_northern_crops_manifest.json</code>
+- <code>terrain_data/build_nls_source_map_assets.py</code>
+- <code>terrain_data/build_nls_northern_source_crops.py</code>
 
 ### The French Citation Concerning the 1ˢᵗ Battalion 113ᵗʰ RI
 

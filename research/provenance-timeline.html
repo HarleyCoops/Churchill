@@ -3,469 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Colonel Bryan Charles Fairfax — Provenance Timeline</title>
+<title>Churchill–Fairfax Archive — Provenance Timeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,650;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    background: #1a1714;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 40px 20px;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .timeline-card {
-    width: 1400px;
-    min-height: 480px;
-    background: linear-gradient(135deg, #f5f0e6 0%, #ebe3d3 40%, #e8dfc9 100%);
-    border-radius: 4px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
-    position: relative;
-    overflow: hidden;
-    padding: 32px 40px 28px;
-  }
-
-  /* Parchment texture overlay */
-  .timeline-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent, transparent 2px,
-      rgba(139,119,90,0.03) 2px, rgba(139,119,90,0.03) 4px
-    );
-    pointer-events: none;
-  }
-
-  /* Subtle aged border */
-  .timeline-card::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: 1px solid rgba(139,119,90,0.3);
-    border-radius: 4px;
-    box-shadow: inset 0 0 60px rgba(139,119,90,0.15);
-    pointer-events: none;
-  }
-
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .card-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: #2c2418;
-    letter-spacing: 0.5px;
-  }
-
-  .card-subtitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 13px;
-    font-weight: 400;
-    font-style: italic;
-    color: #6b5d4a;
-    margin-top: 3px;
-  }
-
-  .card-dates {
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    color: #8b7760;
-    text-align: right;
-  }
-
-  /* Zone labels */
-  .zone-labels {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 8px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .zone-label {
-    font-size: 9px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border-radius: 2px;
-  }
-
-  .zone-military {
-    background: rgba(139,69,19,0.12);
-    color: #8b4513;
-    margin-left: 80px;
-  }
-
-  .zone-churchill {
-    background: rgba(25,60,110,0.10);
-    color: #193c6e;
-    margin-left: auto;
-    margin-right: 60px;
-  }
-
-  /* Main timeline track */
-  .timeline-track {
-    position: relative;
-    height: 300px;
-    margin: 0 20px;
-    z-index: 1;
-  }
-
-  .track-line {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg,
-      #c4a87c 0%, #8b4513 10%, #8b4513 55%,
-      #4a6580 70%, #193c6e 85%, #193c6e 100%
-    );
-    border-radius: 2px;
-  }
-
-  /* Military zone highlight */
-  .track-zone-military {
-    position: absolute;
-    top: 115px;
-    left: 8%;
-    width: 47%;
-    height: 13px;
-    background: rgba(139,69,19,0.06);
-    border-radius: 6px;
-  }
-
-  .track-zone-churchill {
-    position: absolute;
-    top: 115px;
-    left: 72%;
-    width: 26%;
-    height: 13px;
-    background: rgba(25,60,110,0.05);
-    border-radius: 6px;
-  }
-
-  /* Milestone dots and labels */
-  .milestone {
-    position: absolute;
-    top: 112px;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .milestone .dot {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    border: 3px solid #f5f0e6;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-    position: relative;
-    z-index: 2;
-  }
-
-  .dot-military { background: #8b4513; }
-  .dot-churchill { background: #193c6e; }
-  .dot-birth { background: #5a7d5a; }
-  .dot-death { background: #4a4a4a; }
-  .dot-highlight {
-    background: #b22222;
-    width: 22px;
-    height: 22px;
-    margin-top: -2px;
-    border: 3px solid #f5f0e6;
-    box-shadow: 0 0 8px rgba(178,34,34,0.3), 0 1px 4px rgba(0,0,0,0.2);
-  }
-
-  /* Date above the line */
-  .milestone .date-label {
-    position: absolute;
-    bottom: 24px;
-    white-space: nowrap;
-    font-family: 'Playfair Display', serif;
-    font-size: 11px;
-    font-weight: 700;
-    color: #3d3122;
-  }
-
-  /* Event text below the line */
-  .milestone .event-text {
-    margin-top: 10px;
-    width: 100px;
-    text-align: center;
-    font-size: 10px;
-    font-weight: 400;
-    color: #3d3122;
-    line-height: 1.35;
-  }
-
-  .milestone .event-text em {
-    display: block;
-    font-style: italic;
-    font-size: 9px;
-    color: #8b7760;
-    margin-top: 3px;
-    line-height: 1.25;
-  }
-
-  .milestone .source-cite {
-    margin-top: 3px;
-    font-size: 7px;
-    font-variant: small-caps;
-    letter-spacing: 0.5px;
-    color: #a0927e;
-    text-align: center;
-    width: 100px;
-  }
-
-  /* Wide events get more space */
-  .milestone.wide .event-text,
-  .milestone.wide .source-cite { width: 130px; }
-
-  .milestone.extra-wide .event-text,
-  .milestone.extra-wide .source-cite { width: 160px; }
-
-  /* Alternating top/bottom layout */
-  .milestone.above {
-    top: 18px;
-    flex-direction: column-reverse;
-  }
-
-  .milestone.above .date-label {
-    bottom: auto;
-    top: auto;
-    position: relative;
-    margin-bottom: 6px;
-    order: -2;
-  }
-
-  .milestone.above .event-text {
-    margin-top: 0;
-    margin-bottom: 10px;
-    order: -3;
-  }
-
-  .milestone.above .source-cite {
-    margin-top: 0;
-    margin-bottom: 2px;
-    order: -4;
-  }
-
-  /* Connector line from dot to event */
-  .milestone .connector {
-    width: 1px;
-    height: 8px;
-    background: rgba(139,119,90,0.4);
-  }
-
-  .milestone.above .connector {
-    order: -1;
-  }
-
-  /* Footer */
-  .card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 8px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .card-footer .attribution {
-    font-size: 8px;
-    color: #a0927e;
-    letter-spacing: 0.5px;
-  }
-
-  .card-footer .ledger-ref {
-    font-size: 8px;
-    color: #a0927e;
-    font-variant: small-caps;
-  }
+:root{
+  --paper:#f5efe2;
+  --paper-2:#ebe1cf;
+  --ink:#211b15;
+  --muted:#746650;
+  --faint:#a89678;
+  --rule:#d8c6aa;
+  --blue:#183b5b;
+  --red:#8f2d22;
+  --green:#536747;
+  --gold:#a4743a;
+  --shadow:0 24px 70px rgba(24,18,11,.18);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--ink); font-family:Inter,system-ui,sans-serif;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(164,116,58,.12), transparent 34rem),
+    linear-gradient(180deg,#fcf8ef 0%,#efe5d4 55%,#ded0ba 100%);
+}
+a{color:inherit}.page{max-width:1240px;margin:0 auto;padding:28px clamp(18px,4vw,56px) 80px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:22px;border-bottom:1px solid var(--rule);padding:12px 0 24px;margin-bottom:44px}.mark{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700}.nav{display:flex;gap:16px;flex-wrap:wrap}.nav a{font-size:13px;text-decoration:none;color:var(--muted);border-bottom:1px solid transparent}.nav a:hover{color:var(--ink);border-color:var(--ink)}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:44px;align-items:end;margin-bottom:58px}.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:14px}.hero h1{font-family:'Crimson Pro',Georgia,serif;font-weight:650;font-size:clamp(52px,8vw,112px);line-height:.86;letter-spacing:-.045em;margin:0 0 22px}.dek{font-family:'Crimson Pro',Georgia,serif;font-size:clamp(21px,2.4vw,31px);line-height:1.16;color:#3f3428;max-width:720px;margin:0}.hero-card{background:rgba(255,252,244,.72);border:1px solid var(--rule);box-shadow:var(--shadow);padding:18px;border-radius:4px}.hero-card img{width:100%;display:block;border-radius:2px;filter:sepia(.08) contrast(1.04)}.caption{font-size:12px;line-height:1.55;color:var(--muted);margin-top:12px}.source-note{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 64px}.source-note div{border-top:1px solid var(--rule);padding-top:12px;color:var(--muted);font-size:13px;line-height:1.45}.source-note strong{display:block;color:var(--ink);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px}.section-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800;margin:52px 0 20px}.timeline{position:relative;display:grid;gap:18px}.timeline::before{content:"";position:absolute;left:159px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--rule),var(--red) 28%,var(--blue) 74%,var(--rule));}.event{display:grid;grid-template-columns:130px 56px minmax(0,1fr);gap:0;align-items:start}.date{font-family:'Crimson Pro',Georgia,serif;font-size:25px;line-height:1;color:var(--ink);text-align:right;padding-top:19px}.dot-wrap{position:relative;display:flex;justify-content:center;padding-top:16px}.dot{width:17px;height:17px;border-radius:50%;background:var(--gold);border:3px solid #fbf5e9;box-shadow:0 0 0 1px var(--rule),0 4px 12px rgba(0,0,0,.16);z-index:2}.event[data-kind="combat"] .dot{background:var(--red)}.event[data-kind="artifact"] .dot{background:var(--blue)}.event[data-kind="life"] .dot{background:var(--green)}.event-card{background:rgba(255,252,244,.78);border:1px solid rgba(216,198,170,.92);box-shadow:0 10px 28px rgba(40,28,16,.08);padding:20px 22px;border-radius:4px}.event-card h2{font-family:'Crimson Pro',Georgia,serif;font-size:28px;line-height:1.02;margin:0 0 8px;letter-spacing:-.015em}.event-card p{margin:0;color:#3f3428;line-height:1.62;font-size:15px}.quote{margin:14px 0 0;padding:13px 0 0;border-top:1px solid var(--rule);font-family:'Crimson Pro',Georgia,serif;font-style:italic;font-size:18px;color:#473827;line-height:1.35}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--rule);color:var(--muted);padding:5px 7px;border-radius:999px;background:rgba(245,239,226,.55)}.artifact-band{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}.artifact{background:#181512;color:#efe6d7;border-radius:4px;overflow:hidden;box-shadow:var(--shadow)}.artifact img{width:100%;height:280px;object-fit:cover;display:block;filter:contrast(1.04)}.artifact div{padding:14px 16px;font-size:13px;line-height:1.48;color:#cdbfa8}.artifact strong{display:block;color:#fffaf0;margin-bottom:4px}.foot{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;color:var(--muted);font-size:12px;line-height:1.55;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.source-note{grid-template-columns:1fr}.timeline::before{left:21px}.event{grid-template-columns:42px minmax(0,1fr);gap:0}.date{grid-column:2;text-align:left;padding:0 0 8px;font-size:22px}.dot-wrap{grid-column:1;grid-row:1 / span 2;padding-top:6px}.event-card{grid-column:2}.artifact-band{grid-template-columns:1fr}.topbar{align-items:flex-start;flex-direction:column}.nav{gap:10px}.hero h1{font-size:58px}}
 </style>
 </head>
 <body>
+<main class="page">
+  <header class="topbar">
+    <div class="mark">Churchill–Fairfax Archive</div>
+    <nav class="nav" aria-label="Archive pages">
+      <a href="../Readme.md">Readme</a>
+      <a href="artifact-gallery.html">Artifact Gallery</a>
+      <a href="ground-truth-ledger.md">Ground Truth Ledger</a>
+    </nav>
+  </header>
 
-<div class="timeline-card">
-
-  <div class="card-header">
+  <section class="hero">
     <div>
-      <div class="card-title">Colonel Bryan Charles Fairfax, C.M.G.</div>
-      <div class="card-subtitle">Provenance Timeline &mdash; Churchill First Edition Set</div>
+      <div class="eyebrow">Provenance timeline</div>
+      <h1>From the Somme to Chartwell.</h1>
+      <p class="dek">A source-backed chronology connecting Colonel Bryan Charles Fairfax, the 89th Brigade history, the National Library of Scotland trench maps, and Churchill’s signed 1946 reply now affixed to Volume I.</p>
     </div>
-    <div class="card-dates">
-      12 September 1873<br>
-      &mdash; 29 January 1950
-    </div>
-  </div>
+    <figure class="hero-card">
+      <img src="../docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_guillemont_overview.jpg" alt="NLS trench map overview of the Maricourt to Guillemont sector">
+      <figcaption class="caption">Archival source-map overview from National Library of Scotland trench-map tile set <code>101465287</code>, z17. The close-up crops used elsewhere in this archive are derived from NLS tiles, not Blender renders.</figcaption>
+    </figure>
+  </section>
 
-  <div class="zone-labels">
-    <span class="zone-label zone-military">Military Service</span>
-    <span class="zone-label zone-churchill">Churchill Connection</span>
-  </div>
+  <section class="source-note" aria-label="Method notes">
+    <div><strong>Evidence standard</strong>Each event below is tied to the project ledger, artifact photography, the 89th Brigade history, or NLS map source imagery.</div>
+    <div><strong>Boundary</strong>The page avoids claims about Churchill and Fairfax’s private relationship beyond the documented 1946 letter exchange and known institutional overlap.</div>
+    <div><strong>Map basis</strong>Source-map crops use NLS tile sets <code>101465287</code> and <code>101464777</code> at z17 for higher-resolution fixed images.</div>
+  </section>
 
-  <div class="timeline-track">
-    <div class="track-zone-military"></div>
-    <div class="track-zone-churchill"></div>
-    <div class="track-line"></div>
+  <div class="section-kicker">Chronology</div>
+  <section class="timeline" aria-label="Fairfax and Churchill provenance chronology">
+    <article class="event" data-kind="life"><div class="date">1873</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>Birth of Bryan Charles Fairfax</h2><p>Colonel Bryan Charles Fairfax, C.M.G., was born 12 September 1873.</p><div class="meta"><span class="tag">Ledger #1</span><span class="tag">Readme.md</span></div></div></article>
+    <article class="event" data-kind="life"><div class="date">1900</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>Boxer Uprising service</h2><p>Fairfax’s earlier military career included service in China during the Boxer Uprising, after service in the King’s Own Yorkshire Light Infantry and the West India Regiment.</p><div class="meta"><span class="tag">Ledger #2–4</span><span class="tag">Readme.md</span></div></div></article>
+    <article class="event" data-kind="combat"><div class="date">28 Jun 1916</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>Extreme right of the British Army</h2><p>The 89th Brigade occupied the junction with the French Corps de Fer. General Congreve visited before the offensive.</p><div class="quote">“I know you will, and if you cannot manage it, no other troops can.”</div><div class="meta"><span class="tag">Ledger #11, #43</span><span class="tag">89th Bde p.129</span></div></div></article>
+    <article class="event" data-kind="combat"><div class="date">1 Jul 1916</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>Maricourt: Fairfax and Lepetit advance together</h2><p>At the opening of the Somme, Fairfax commanded the 17th Battalion King’s Liverpool Regiment. In the second wave he advanced arm in arm with Commandant Lepetit of the neighbouring French unit.</p><div class="meta"><span class="tag">Ledger #12, #14</span><span class="tag">Maricourt</span><span class="tag">89th Bde p.131</span></div></div></article>
+    <article class="event" data-kind="combat"><div class="date">1 Jul 1916</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>Montauban and the Briqueterie objective</h2><p>The brigade history records the attack through Montauban and the taking of the Briqueterie. The associated fixed map crop preserves the objective area as source cartography.</p><div class="meta"><span class="tag">Ledger #13</span><span class="tag">Briqueterie</span><span class="tag">NLS 101465287</span></div></div></article>
+    <article class="event" data-kind="combat"><div class="date">11 Jul 1916</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>French letter names Fairfax</h2><p>Colonel de Coutard’s official letter singled Fairfax out by name and praised his military qualities and the cordial relations maintained with the French.</p><div class="quote">“leur chef le Colonel Fairfax … ses hautes qualités militaires”</div><div class="meta"><span class="tag">Ledger #15</span><span class="tag">89th Bde p.134</span></div></div></article>
+    <article class="event" data-kind="combat"><div class="date">Mid-Jul 1916</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>Trones Wood: dug in and holding</h2><p>Stanley’s account places Fairfax in Trones Wood, with his men dug in after an awful time and able to hold on. The northern NLS source sheet supplies the readable Trones Wood crop.</p><div class="quote">“Fairfax was in the wood … were all dug down, and could hold on.”</div><div class="meta"><span class="tag">Ledger #16</span><span class="tag">NLS 101464777</span><span class="tag">89th Bde p.143</span></div></div></article>
+    <article class="event" data-kind="combat"><div class="date">29–30 Jul 1916</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>Guillemont: gas, fog, and command endurance</h2><p>On the way to the Guillemont assembly position Fairfax was affected by a new gas shell, then continued through the attack. Stanley later wrote that Fairfax became “an absolute shadow of himself” and had to be ordered away.</p><div class="meta"><span class="tag">Ledger #17–19</span><span class="tag">TextExtract.md lines 29, 49</span></div></div></article>
+    <article class="event" data-kind="life"><div class="date">1916</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>C.M.G. awarded</h2><p>Fairfax was awarded Companion of the Order of St Michael and St George for wartime service.</p><div class="meta"><span class="tag">Ledger #7</span><span class="tag">Readme.md</span></div></div></article>
+    <article class="event" data-kind="artifact"><div class="date">6 Dec 1946</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>Churchill replies from Chartwell</h2><p>The signed note from Winston Churchill, dated 6 December 1946, thanks Fairfax for a “kind letter.” It is now affixed to Volume I of the Cassell first-edition set.</p><div class="meta"><span class="tag">Ledger #26–27</span><span class="tag">Images/signature.JPG</span><span class="tag">Chartwell</span></div></div></article>
+    <article class="event" data-kind="artifact"><div class="date">1948</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2><em>The Gathering Storm</em> appears</h2><p>Volume I of Churchill’s <em>The Second World War</em> was first published by Cassell in 1948. The copyright page and first-issue jacket details are documented photographically.</p><div class="meta"><span class="tag">Ledger #28–32</span><span class="tag">FirstPublished.JPG</span><span class="tag">Price.JPG</span></div></div></article>
+    <article class="event" data-kind="life"><div class="date">1950</div><div class="dot-wrap"><span class="dot"></span></div><div class="event-card"><h2>Fairfax dies in Toronto</h2><p>Fairfax died in Toronto on 29 January 1950. Later volumes in the complete set would therefore have been assembled after his death.</p><div class="meta"><span class="tag">Ledger #39</span><span class="tag">Readme.md</span></div></div></article>
+  </section>
 
-    <!-- 1: Born 1873 — left=2% -->
-    <div class="milestone above" style="left: 2%;">
-      <div class="date-label">1873</div>
-      <div class="event-text">
-        Born, 12 September
-      </div>
-      <div class="source-cite">Ledger #1 &middot; Readme.md</div>
-      <div class="connector"></div>
-      <div class="dot dot-birth"></div>
-    </div>
+  <section class="artifact-band" aria-label="Key artifacts">
+    <figure class="artifact"><img src="../Images/signature.JPG" alt="Churchill signed note to Fairfax"><div><strong>Churchill’s signed note</strong>Chartwell, 6 December 1946. The documentary anchor of the Churchill–Fairfax connection.</div></figure>
+    <figure class="artifact"><img src="../docs/assets/nls-source-maps/nls_1916_trench_map_trones_wood.jpg" alt="NLS Trones Wood source-map crop"><div><strong>Trones Wood source map</strong>Fixed archival crop from NLS tile set 101464777, z17.</div></figure>
+  </section>
 
-    <!-- 2: Boxer Uprising 1900 — left=12% -->
-    <div class="milestone" style="left: 12%;">
-      <div class="date-label">1900</div>
-      <div class="dot dot-military"></div>
-      <div class="connector"></div>
-      <div class="event-text">
-        Boxer Uprising, China
-      </div>
-      <div class="source-cite">Ledger #4 &middot; Readme.md</div>
-    </div>
-
-    <!-- 3: Congreve's visit 28 Jun 1916 -->
-    <div class="milestone above" style="left: 22%;">
-      <div class="date-label">28 Jun 1916</div>
-      <div class="event-text">
-        Gen. Congreve: &ldquo;if you cannot manage it, no other troops can&rdquo;
-      </div>
-      <div class="source-cite">Ledger #43 &middot; 89th Bde p.129</div>
-      <div class="connector"></div>
-      <div class="dot dot-military"></div>
-    </div>
-
-    <!-- 4: July 1st Attack -->
-    <div class="milestone wide" style="left: 30%;">
-      <div class="date-label">1 Jul 1916</div>
-      <div class="dot dot-highlight"></div>
-      <div class="connector"></div>
-      <div class="event-text">
-        6:25am &mdash; leads attack at Maricourt arm-in-arm with Cdt. Lepetit
-      </div>
-      <div class="source-cite">Ledger #12, #14 &middot; 89th Bde p.131</div>
-    </div>
-
-    <!-- 5: French citation 11 Jul -->
-    <div class="milestone above wide" style="left: 38%;">
-      <div class="date-label">11 Jul 1916</div>
-      <div class="event-text">
-        Col. de Coutard names Fairfax: <em>&ldquo;ses hautes qualit&eacute;s militaires&rdquo;</em>
-      </div>
-      <div class="source-cite">Ledger #15 &middot; 89th Bde p.134</div>
-      <div class="connector"></div>
-      <div class="dot dot-military"></div>
-    </div>
-
-    <!-- 6: Trones Wood mid-Jul -->
-    <div class="milestone" style="left: 45%;">
-      <div class="date-label">Mid-Jul</div>
-      <div class="dot dot-military"></div>
-      <div class="connector"></div>
-      <div class="event-text">
-        Holds Trones Wood: <em>&ldquo;could hold on&rdquo;</em>
-      </div>
-      <div class="source-cite">Ledger #16 &middot; 89th Bde p.143</div>
-    </div>
-
-    <!-- 7: Gassed 29 Jul -->
-    <div class="milestone above extra-wide" style="left: 52%;">
-      <div class="date-label">29 Jul 1916</div>
-      <div class="event-text">
-        Gassed on way to Guillemont assembly position
-      </div>
-      <div class="source-cite">Ledger #17 &middot; TextExtract.md:29</div>
-      <div class="connector"></div>
-      <div class="dot dot-highlight"></div>
-    </div>
-
-    <!-- 8: Guillemont + evacuation 30 Jul -->
-    <div class="milestone extra-wide" style="left: 60%;">
-      <div class="date-label">30 Jul 1916</div>
-      <div class="dot dot-highlight"></div>
-      <div class="connector"></div>
-      <div class="event-text">
-        Attacks Guillemont despite gas; &ldquo;went to an absolute shadow&rdquo; &mdash; ordered to leave
-      </div>
-      <div class="source-cite">Ledger #18, #19 &middot; TextExtract.md:49</div>
-    </div>
-
-    <!-- 9: C.M.G. awarded 1916 -->
-    <div class="milestone above" style="left: 68%;">
-      <div class="date-label">1916</div>
-      <div class="event-text">
-        Awarded C.M.G.
-      </div>
-      <div class="source-cite">Ledger #7 &middot; Readme.md</div>
-      <div class="connector"></div>
-      <div class="dot dot-military"></div>
-    </div>
-
-    <!-- 10: Churchill letter 6 Dec 1946 -->
-    <div class="milestone wide" style="left: 80%;">
-      <div class="date-label">6 Dec 1946</div>
-      <div class="dot dot-churchill"></div>
-      <div class="connector"></div>
-      <div class="event-text">
-        Churchill writes from Chartwell: <em>&ldquo;Dear Colonel Fairfax&rdquo;</em>
-      </div>
-      <div class="source-cite">Ledger #26, #27 &middot; signature.JPG</div>
-    </div>
-
-    <!-- 11: Gathering Storm published 1948 -->
-    <div class="milestone above" style="left: 88%;">
-      <div class="date-label">1948</div>
-      <div class="event-text">
-        <em>The Gathering Storm</em> first published, Cassell
-      </div>
-      <div class="source-cite">Ledger #28 &middot; FirstPublished.JPG</div>
-      <div class="connector"></div>
-      <div class="dot dot-churchill"></div>
-    </div>
-
-    <!-- 12: Fairfax dies 1950 — left=95% -->
-    <div class="milestone" style="left: 95%;">
-      <div class="date-label">29 Jan 1950</div>
-      <div class="dot dot-death"></div>
-      <div class="connector"></div>
-      <div class="event-text">
-        Dies in Toronto, age 76
-      </div>
-      <div class="source-cite">Ledger #39 &middot; Readme.md</div>
-    </div>
-
-  </div>
-
-  <div class="card-footer">
-    <span class="attribution">Sources: 89th Brigade History (Stanley, 1916) &middot; Readme.md &middot; Fairfax-Churchill.md &middot; Original artefact photography</span>
-    <span class="ledger-ref">All events traced to Ground Truth Ledger &middot; Churchill&ndash;Fairfax First Edition Set</span>
-  </div>
-
-</div>
-
+  <footer class="foot">
+    <span>Sources: 89th Brigade History; TextExtract.md; Readme.md; Fairfax-Churchill.md; Ground Truth Ledger; original artifact photography; National Library of Scotland trench-map tiles.</span>
+    <span>No claims on this page are intended to replace the ledger; use the ledger for source-by-source audit.</span>
+  </footer>
+</main>
 </body>
 </html>

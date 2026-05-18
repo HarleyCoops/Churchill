@@ -71,17 +71,61 @@ class BlenderMCPServerSecurityTest(unittest.TestCase):
         server.execute_code.assert_not_called()
 
     def test_execute_code_requires_explicit_unsafe_opt_in(self):
-        with mock.patch.dict(os.environ, {self.addon.UNSAFE_EXECUTE_CODE_ENV: "1"}):
+        with mock.patch.dict(
+            os.environ,
+            {
+                self.addon.UNSAFE_EXECUTE_CODE_ENV: "1",
+                self.addon.EXECUTE_CODE_TOKEN_ENV: "secret",
+            },
+        ):
             server = self.addon.BlenderMCPServer()
         server.execute_code = mock.Mock(return_value={"executed": True, "result": ""})
 
         response = server.execute_command({
             "type": "execute_code",
+            "token": "secret",
             "params": {"code": "print('allowed')"},
         })
 
         self.assertEqual(response["status"], "success")
         server.execute_code.assert_called_once_with(code="print('allowed')")
+
+    def test_execute_code_requires_token_when_unsafe_mode_is_enabled(self):
+        server = self.addon.BlenderMCPServer(
+            allow_unsafe_execute_code=True,
+            execute_code_token="secret",
+        )
+        server.execute_code = mock.Mock(return_value={"executed": True})
+
+        missing_response = server.execute_command({
+            "type": "execute_code",
+            "params": {"code": "print('denied')"},
+        })
+        invalid_response = server.execute_command({
+            "type": "execute_code",
+            "token": "wrong",
+            "params": {"code": "print('denied')"},
+        })
+
+        self.assertEqual(missing_response["status"], "error")
+        self.assertIn("requires a valid token", missing_response["message"])
+        self.assertEqual(invalid_response["status"], "error")
+        self.assertIn("requires a valid token", invalid_response["message"])
+        server.execute_code.assert_not_called()
+
+    def test_execute_code_requires_configured_token_when_unsafe_mode_is_enabled(self):
+        server = self.addon.BlenderMCPServer(allow_unsafe_execute_code=True)
+        server.execute_code = mock.Mock(return_value={"executed": True})
+
+        response = server.execute_command({
+            "type": "execute_code",
+            "token": "secret",
+            "params": {"code": "print('denied')"},
+        })
+
+        self.assertEqual(response["status"], "error")
+        self.assertIn("requires a valid token", response["message"])
+        server.execute_code.assert_not_called()
 
 
 if __name__ == "__main__":
