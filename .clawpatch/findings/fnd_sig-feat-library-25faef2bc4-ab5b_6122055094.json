@@ -39,8 +39,10 @@
   "status": "open",
   "history": [],
   "signature": "sig_feat-library-25faef2bc4_ab5bc037eb",
-  "linkedPatchAttemptIds": [],
+  "linkedPatchAttemptIds": [
+    "pat_fnd-sig-feat-library-25faef2bc4-_f801b574d6"
+  ],
   "createdByRunId": "20260518T024955-8b7107",
   "createdAt": "2026-05-18T02:52:07.135Z",
-  "updatedAt": "2026-05-18T02:52:07.135Z"
+  "updatedAt": "2026-05-18T03:03:10.628Z"
 }
