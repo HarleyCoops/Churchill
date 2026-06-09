@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "findingId": "fnd_sig-feat-library-25faef2bc4-ab5b_6122055094",
+  "featureId": "feat_library_25faef2bc4",
+  "title": "MCP server accepts unauthenticated arbitrary Python execution",
+  "category": "security",
+  "severity": "high",
+  "confidence": "high",
+  "triage": "confirmed-bug",
+  "evidence": [
+    {
+      "path": "blender_mcp_addon.py",
+      "startLine": 58,
+      "endLine": 59,
+      "symbol": "BlenderMCPServer.start",
+      "quote": "self.socket.bind((self.host, self.port))\nself.socket.listen(1)"
+    },
+    {
+      "path": "blender_mcp_addon.py",
+      "startLine": 209,
+      "endLine": 210,
+      "symbol": "BlenderMCPServer._execute_command_internal",
+      "quote": "\"get_viewport_screenshot\": self.get_viewport_screenshot,\n\"execute_code\": self.execute_code,"
+    },
+    {
+      "path": "blender_mcp_addon.py",
+      "startLine": 421,
+      "endLine": 431,
+      "symbol": "BlenderMCPServer.execute_code",
+      "quote": "def execute_code(self, code):\n    \"\"\"Execute arbitrary Blender Python code\"\"\"\n...\n    exec(code, namespace)"
+    }
+  ],
+  "reasoning": "Starting the add-on opens a TCP listener and dispatches any JSON request with type execute_code to exec() with Python builtins still available. There is no authentication, shared secret, origin check, or user confirmation in the socket handler before executing code. Binding to localhost reduces remote exposure, but any local process can execute arbitrary Python inside the Blender process, including file and network operations available through builtins/imports.",
+  "reproduction": "Start the BlenderMCP server, then connect to localhost:9876 and send a JSON object such as {\"type\":\"execute_code\",\"params\":{\"code\":\"open('/tmp/blender_mcp_pwned','w').write('x')\"}}. The command is scheduled and executed without authentication.",
+  "recommendation": "Require an explicit per-session token or authenticated handshake before accepting commands, and gate execute_code behind a separate opt-in confirmation or remove it from the network API. At minimum, reject unauthenticated clients and log/deny execute_code unless the user has enabled a clear unsafe mode.",
+  "whyTestsDoNotAlreadyCoverThis": "No tests are linked for this feature, and the repository test discovery only showed unrelated terrain_data render scripts rather than MCP protocol/security tests.",
+  "suggestedRegressionTest": "Add a socket-level test that sends execute_code without a valid token and asserts the server returns an authorization error and does not execute the payload.",
+  "minimumFixScope": "BlenderMCPServer connection protocol and execute_code registration/authorization path.",
+  "status": "open",
+  "history": [],
+  "signature": "sig_feat-library-25faef2bc4_ab5bc037eb",
+  "linkedPatchAttemptIds": [
+    "pat_fnd-sig-feat-library-25faef2bc4-_f801b574d6",
+    "pat_fnd-sig-feat-library-25faef2bc4-_5c075c900f"
+  ],
+  "createdByRunId": "20260518T024955-8b7107",
+  "createdAt": "2026-05-18T02:52:07.135Z",
+  "updatedAt": "2026-05-18T04:08:48.242Z"
+}

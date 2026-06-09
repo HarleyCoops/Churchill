@@ -4,7 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Historical research and documentation repository focused on a first edition set of Winston Churchill's "The Second World War" containing a personal note from Churchill to Colonel Bryan Charles Fairfax (dated 6 December 1946). Includes a Python archive search tool for locating Fairfax's original letter to Churchill.
+Historical research and documentation repository focused on a first edition set of Winston Churchill's "The Second World War" containing a personal note from Churchill to Colonel Bryan Charles Fairfax (dated 6 December 1946). Three strands of work live here:
+
+1. A Python archive search tool for locating Fairfax's original letter to Churchill.
+2. A Blender-based cinematic flythrough of the Somme battlefield, tied to the 89th Brigade's actions.
+3. HTML deliverables — a research portal and a slide deck — built on a fact-only research ledger.
 
 ## Commands
 
@@ -12,20 +16,21 @@ Historical research and documentation repository focused on a first edition set 
 # Install Python dependencies
 pip install -r requirements.txt
 
-# Run archive search (basic, no OCR)
-python fairfax_letter_finder.py
+# --- Archive search tool ---
+python fairfax_letter_finder.py                       # basic search, no OCR
+python fairfax_letter_finder.py --full                # full search with OCR
+python fairfax_letter_finder.py --ocr-only <directory>  # OCR existing downloads
+python fairfax_letter_finder.py --query "search terms"  # custom query
 
-# Full search with OCR processing
-python fairfax_letter_finder.py --full
-
-# OCR on existing downloaded documents
-python fairfax_letter_finder.py --ocr-only <directory>
-
-# Custom search query
-python fairfax_letter_finder.py --query "search terms"
+# --- Cinematic flythrough (requires Blender installed locally) ---
+cd terrain_data
+blender -b somme_battlefield.blend \
+  --python build_cinematic_flythrough.py \
+  --python render_flythrough.py          # build animation, render to MP4
+python3 encode_flythrough.py             # MP4 -> GIF (needs ffmpeg on PATH)
 ```
 
-No build, lint, or test commands — this is a documentation repository with a single Python tool.
+No build, lint, or test commands — this is a documentation repository. The flythrough scripts run inside Blender's Python (`bpy`) and cannot be executed in this environment.
 
 ## Architecture
 
@@ -37,21 +42,16 @@ No build, lint, or test commands — this is a documentation repository with a s
 
 Data flow: Agent searches archives → downloads document images → OCR extracts text → relevance scoring → results compiled.
 
-**research/** — fact-only research deliverables:
+**research/** — fact-only research deliverables. `ground-truth-ledger.md` is the source of truth: every provable claim with source file, page/line, and verbatim quote. The HTML pages (`index.html` portal, `artifact-gallery.html`, `provenance-timeline.html`, `somme-battlefield-map.html`, `valuation-brief.html`) are self-contained — inline CSS, Google Fonts, no build step. `sales-visual-spec.md` (also in `visuals/`) gives production specs for sales visuals, each referencing ledger entries. **Any historical claim in HTML or the deck must trace back to a ledger entry.**
 
-- **ground-truth-ledger.md** — every provable claim with source file, page/line, and verbatim quote
-- **sales-visual-spec.md** — production specs for 3 sales visuals (timeline, map, artifact close-ups), each referencing ledger entries
+**terrain_data/** — Somme battlefield 3D visualization. The flythrough is a three-stage pipeline (see `CINEMATIC_FLYTHROUGH.md` and `cinematic_flythrough_plan.md`):
 
-**terrain_data/** — Somme battlefield 3D visualization assets:
+- **build_cinematic_flythrough.py** — runs inside an open `.blend`; data-driven. Edit the `WAYPOINTS` list (story beats, pacing, card text, orbit/zoom) to change the film. Each beat travels → settles → shows an info card → orbits → pushes in. Expects scene objects `FlythroughCam`, `CameraTarget`, and `PinHead_*` pins.
+- **render_flythrough.py** — renders the animation straight to `fairfax_flythrough.mp4` via EEVEE Next; set `RENDER_IMAGE_SEQUENCE = True` for PNG frames instead.
+- **encode_flythrough.py** — converts the MP4 to GIF (or builds an MP4 from PNG frames); requires `ffmpeg`.
+- Most raw terrain assets (DEM GeoTIFF, elevation JSON, satellite mosaic, heightmap, trench tiles, the `.blend`) are gitignored. Only selected deliverables are tracked: `somme_dem_meta.json`, `trench_mosaic.png` (NLS sheet 62C.NW, 3 Sept 1916), `trench_render_wide.png`, and the flythrough MP4/GIF.
 
-- **somme_dem.tif** — Copernicus GLO-30 DEM GeoTIFF (30m resolution, bbox 49.97-50.01N, 2.75-2.86E)
-- **somme_elevations.json** — 144x396 grid of raw elevation values in metres
-- **somme_dem_meta.json** — DEM metadata (rows, cols, min/max elevation, bounding box)
-- **somme_satellite.jpg** — ESRI World Imagery mosaic (1536x1024, zoom 14)
-- **somme_heightmap.png** — 16-bit PNG heightmap converted from GeoTIFF
-- **trench_mosaic.png** — Georeferenced NLS trench map mosaic, sheet 62C.NW, 3 Sept 1916 (1536x768)
-- **trench_tiles/** — Raw NLS S3 tiles at zoom 14 from `mapseries-tilesets.s3.amazonaws.com`
-- **trench_render_*.png** — Blender renders of the 3D terrain with trench map overlay
+**presentations/fairfax-churchill-deck/** — HTML slide deck. `deck-stage.js` is a reusable `<deck-stage>` web component handling slide navigation, auto-scaling to a fixed 1920×1080 design canvas, speaker notes, and print-to-PDF. `Fairfax Churchill Deck.html` is the deck; `deck.css` and `assets/` support it.
 
 ## Code Style (Python)
 

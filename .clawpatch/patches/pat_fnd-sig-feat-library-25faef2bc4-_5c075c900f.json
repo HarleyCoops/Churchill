@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "patchAttemptId": "pat_fnd-sig-feat-library-25faef2bc4-_5c075c900f",
+  "findingIds": [
+    "fnd_sig-feat-library-25faef2bc4-ab5b_6122055094"
+  ],
+  "featureIds": [
+    "feat_library_25faef2bc4"
+  ],
+  "status": "failed",
+  "plan": "Added a token requirement to the unsafe execute_code path so even when BLENDERMCP_ALLOW_UNSAFE_EXECUTE_CODE is enabled, commands must include the configured BLENDERMCP_EXECUTE_CODE_TOKEN. Updated focused security tests for default denial, missing/invalid token denial, missing configured token denial, and valid token execution.",
+  "filesChanged": [
+    "test_blender_mcp_security.py"
+  ],
+  "commandsRun": [
+    {
+      "command": "pytest",
+      "cwd": "/mnt/c/Users/chris/Churchill",
+      "exitCode": 127,
+      "durationMs": 16,
+      "stdout": "",
+      "stderr": "/bin/sh: 1: pytest: not found\n"
+    }
+  ],
+  "testResults": [
+    {
+      "command": "pytest",
+      "cwd": "/mnt/c/Users/chris/Churchill",
+      "exitCode": 127,
+      "durationMs": 16,
+      "stdout": "",
+      "stderr": "/bin/sh: 1: pytest: not found\n"
+    }
+  ],
+  "provider": {
+    "name": "codex",
+    "model": null,
+    "requestId": null,
+    "startedAt": "2026-05-18T03:14:24.824Z",
+    "finishedAt": "2026-05-18T04:08:48.224Z"
+  },
+  "git": {
+    "baseSha": "b45ae2c212965d01fceb5a0adb4776e022e9f4cc",
+    "commitSha": null,
+    "branchName": "cursor/trench-tutorial-and-flythrough-assets",
+    "prUrl": null
+  },
+  "createdAt": "2026-05-18T03:14:24.793Z",
+  "updatedAt": "2026-05-18T04:08:48.224Z"
+}

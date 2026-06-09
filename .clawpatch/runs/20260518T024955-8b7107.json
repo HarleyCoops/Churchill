@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260518T024955-8b7107",
+  "command": "review",
+  "args": [
+    "review",
+    "--limit",
+    "5"
+  ],
+  "rootPath": "/mnt/c/Users/chris/Churchill",
+  "headSha": "c6c56bd1010046867da322bc0eff5f74b16f1a20",
+  "startedAt": "2026-05-18T02:49:55.538Z",
+  "finishedAt": "2026-05-18T02:54:42.735Z",
+  "status": "completed",
+  "claimedFeatureIds": [
+    "feat_library_25faef2bc4",
+    "feat_library_d8e5ddfc31"
+  ],
+  "findingIds": [
+    "fnd_sig-feat-library-25faef2bc4-ab5b_6122055094",
+    "fnd_sig-feat-library-25faef2bc4-3348_f17a5c87db",
+    "fnd_sig-feat-library-25faef2bc4-e896_2eac758c0e",
+    "fnd_sig-feat-library-d8e5ddfc31-61e5_2c2192ad9a"
+  ],
+  "patchAttemptIds": [],
+  "errors": []
+}

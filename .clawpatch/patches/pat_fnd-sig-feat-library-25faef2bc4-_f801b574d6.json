@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "patchAttemptId": "pat_fnd-sig-feat-library-25faef2bc4-_f801b574d6",
+  "findingIds": [
+    "fnd_sig-feat-library-25faef2bc4-ab5b_6122055094"
+  ],
+  "featureIds": [
+    "feat_library_25faef2bc4"
+  ],
+  "status": "failed",
+  "plan": "Disabled network-accessible execute_code by default behind explicit BLENDERMCP_ALLOW_UNSAFE_EXECUTE_CODE opt-in, and added focused unittest coverage proving unauth/default execute_code requests are rejected without invoking the executor.",
+  "filesChanged": [
+    "CLAUDE.md",
+    "test_blender_mcp_security.py"
+  ],
+  "commandsRun": [
+    {
+      "command": "pytest",
+      "cwd": "/mnt/c/Users/chris/Churchill",
+      "exitCode": 127,
+      "durationMs": 7,
+      "stdout": "",
+      "stderr": "/bin/sh: 1: pytest: not found\n"
+    }
+  ],
+  "testResults": [
+    {
+      "command": "pytest",
+      "cwd": "/mnt/c/Users/chris/Churchill",
+      "exitCode": 127,
+      "durationMs": 7,
+      "stdout": "",
+      "stderr": "/bin/sh: 1: pytest: not found\n"
+    }
+  ],
+  "provider": {
+    "name": "codex",
+    "model": null,
+    "requestId": null,
+    "startedAt": "2026-05-18T02:59:38.600Z",
+    "finishedAt": "2026-05-18T03:03:10.611Z"
+  },
+  "git": {
+    "baseSha": "783413a506974c20cc45472311fe8287d7ae9d7f",
+    "commitSha": null,
+    "branchName": "cursor/trench-tutorial-and-flythrough-assets",
+    "prUrl": null
+  },
+  "createdAt": "2026-05-18T02:59:38.576Z",
+  "updatedAt": "2026-05-18T03:03:10.611Z"
+}

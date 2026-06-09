@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "findingId": "fnd_sig-feat-library-25faef2bc4-e896_2eac758c0e",
+  "featureId": "feat_library_25faef2bc4",
+  "title": "Streaming downloads can hang indefinitely and leak response handles",
+  "category": "performance",
+  "severity": "medium",
+  "confidence": "high",
+  "triage": "risk",
+  "evidence": [
+    {
+      "path": "fairfax_letter_finder.py",
+      "startLine": 424,
+      "endLine": 435,
+      "symbol": "ArchiveAPIClient.download_document_image",
+      "quote": "while retries < MAX_DOWNLOAD_RETRIES:\n    try:\n        response = self.session.get(image_url, stream=True)\n        response.raise_for_status()\n...\n        for chunk in response.iter_content(chunk_size=8192):"
+    },
+    {
+      "path": "fairfax_letter_finder.py",
+      "startLine": 199,
+      "endLine": 205,
+      "symbol": "ArchiveAPIClient.search",
+      "quote": "response = self.session.get(\n    endpoint,\n    params=search_params,\n    timeout=self.timeout,\n    allow_redirects=False,\n)"
+    },
+    {
+      "path": "fairfax_letter_finder.py",
+      "startLine": 414,
+      "endLine": 415,
+      "symbol": "ArchiveAPIClient.get_document",
+      "quote": "finally:\n    response.close()"
+    }
+  ],
+  "reasoning": "The search and document metadata paths set a timeout and close responses in finally blocks, but download_document_image omits both. A slow or stalled image server can block the full search pipeline forever despite MAX_DOWNLOAD_RETRIES, because the first stream may never time out. Successful and failed streamed responses are also not explicitly closed, which can leave connections/file descriptors held in the session pool across many page downloads.",
+  "reproduction": "Run the full search against an image URL served by a test HTTP server that accepts the connection and never sends the body. download_document_image blocks inside session.get/iter_content instead of timing out and retrying.",
+  "recommendation": "Pass timeout=self.timeout or a connect/read timeout tuple to the streaming GET and use a context manager, e.g. with self.session.get(..., stream=True, timeout=self.timeout) as response. Also clean up partial output files when a download fails mid-stream.",
+  "whyTestsDoNotAlreadyCoverThis": "No linked tests cover archive image downloads, retry behavior, or stalled HTTP responses.",
+  "suggestedRegressionTest": "Add a test using a local fake server or mocked requests.Session.get that raises a read timeout during iter_content, then assert the method retries, closes the response, and returns False without leaving a partial file.",
+  "minimumFixScope": "ArchiveAPIClient.download_document_image download loop and failure cleanup.",
+  "status": "open",
+  "history": [],
+  "signature": "sig_feat-library-25faef2bc4_e896d56329",
+  "linkedPatchAttemptIds": [],
+  "createdByRunId": "20260518T024955-8b7107",
+  "createdAt": "2026-05-18T02:52:07.135Z",
+  "updatedAt": "2026-05-18T02:52:07.135Z"
+}

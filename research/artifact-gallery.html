@@ -3,445 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Churchill–Fairfax First Edition — Artifact Close-Up Sequence</title>
+<title>Churchill–Fairfax Archive — Artifact Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,650;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    background: #111;
-    color: #e8e0d4;
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
-  }
-
-  /* Header */
-  .gallery-header {
-    text-align: center;
-    padding: 60px 40px 20px;
-  }
-
-  .gallery-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: #f0e8d8;
-    letter-spacing: 1px;
-  }
-
-  .gallery-header .subtitle {
-    font-size: 13px;
-    color: #8b7f6e;
-    margin-top: 8px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
-  .gallery-header .divider {
-    width: 60px;
-    height: 1px;
-    background: #6b5d4a;
-    margin: 20px auto 0;
-  }
-
-  /* Carousel container */
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 0;
-    padding: 40px 0 20px;
-    scrollbar-width: none;
-  }
-
-  .carousel::-webkit-scrollbar { display: none; }
-
-  /* Each frame */
-  .frame {
-    flex: 0 0 100vw;
-    scroll-snap-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 80px;
-    min-height: 75vh;
-  }
-
-  .frame-inner {
-    max-width: 800px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Frame number */
-  .frame-number {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #6b5d4a;
-    margin-bottom: 24px;
-  }
-
-  /* Image container */
-  .frame-image {
-    width: 100%;
-    max-height: 55vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 28px;
-  }
-
-  .frame-image img {
-    max-width: 100%;
-    max-height: 55vh;
-    object-fit: contain;
-    border-radius: 2px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
-  }
-
-  /* Text-only frame (frame 8) */
-  .frame-quote {
-    background: linear-gradient(135deg, #f5f0e6 0%, #ebe3d3 100%);
-    color: #2c2418;
-    padding: 40px 48px;
-    border-radius: 2px;
-    max-width: 700px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
-    position: relative;
-  }
-
-  .frame-quote::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: 1px solid rgba(139,119,90,0.3);
-    border-radius: 2px;
-    pointer-events: none;
-  }
-
-  .frame-quote .quote-mark {
-    font-family: 'Playfair Display', serif;
-    font-size: 64px;
-    color: #c4a87c;
-    line-height: 0.5;
-    margin-bottom: 16px;
-  }
-
-  .frame-quote blockquote {
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    font-style: italic;
-    line-height: 1.7;
-    color: #3d3122;
-    margin-bottom: 16px;
-  }
-
-  .frame-quote .quote-attribution {
-    font-size: 12px;
-    font-weight: 500;
-    color: #6b5d4a;
-    text-align: right;
-  }
-
-  /* Caption area */
-  .frame-caption {
-    max-width: 600px;
-    text-align: center;
-  }
-
-  .frame-caption .caption-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #f0e8d8;
-    margin-bottom: 8px;
-  }
-
-  .frame-caption .caption-text {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.65;
-    color: #b8ad9c;
-  }
-
-  .frame-caption .caption-ledger {
-    margin-top: 12px;
-    font-size: 10px;
-    font-variant: small-caps;
-    letter-spacing: 1px;
-    color: #6b5d4a;
-  }
-
-  /* Navigation dots */
-  .nav-dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 16px 0 40px;
-  }
-
-  .nav-dots .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #3a3428;
-    border: 1px solid #6b5d4a;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  .nav-dots .dot.active,
-  .nav-dots .dot:hover {
-    background: #c4a87c;
-    border-color: #c4a87c;
-  }
-
-  /* Swipe hint */
-  .swipe-hint {
-    text-align: center;
-    font-size: 11px;
-    color: #4a4239;
-    letter-spacing: 1px;
-    padding-bottom: 20px;
-  }
-
-  /* Footer */
-  .gallery-footer {
-    text-align: center;
-    padding: 20px 40px 40px;
-    font-size: 9px;
-    color: #4a4239;
-    letter-spacing: 0.5px;
-  }
+:root{--bg:#13110e;--panel:#1f1b16;--paper:#efe5d3;--paper2:#f8f1e4;--ink:#231c15;--muted:#a99a83;--line:#3a3127;--gold:#c49a5f;--blue:#8fb5ca;--red:#c66d55;--green:#9aae83;--shadow:0 30px 90px rgba(0,0,0,.45)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,rgba(196,154,95,.16),transparent 36rem),linear-gradient(180deg,#16130f,#0f0d0b 70%);color:#efe7da;font-family:Inter,system-ui,sans-serif}a{color:inherit}.wrap{max-width:1440px;margin:0 auto;padding:30px clamp(18px,4vw,58px) 80px}.topbar{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:46px}.mark{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:800}.nav{display:flex;gap:16px;flex-wrap:wrap}.nav a{font-size:13px;color:var(--muted);text-decoration:none;border-bottom:1px solid transparent}.nav a:hover{color:#fff;border-color:#fff}.hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(360px,1.1fr);gap:42px;align-items:end;margin-bottom:52px}.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:14px}.hero h1{font-family:'Crimson Pro',Georgia,serif;font-size:clamp(54px,8.2vw,118px);line-height:.86;letter-spacing:-.05em;margin:0 0 22px}.dek{font-family:'Crimson Pro',Georgia,serif;font-size:clamp(21px,2.4vw,31px);line-height:1.16;color:#d8ccb8;max-width:760px;margin:0}.hero-image{background:#070605;border:1px solid var(--line);box-shadow:var(--shadow);padding:12px}.hero-image img{width:100%;height:520px;object-fit:cover;display:block;filter:contrast(1.05) saturate(.96)}.caption{font-size:12px;line-height:1.55;color:var(--muted);margin:12px 4px 2px}.filters{position:sticky;top:0;z-index:4;background:rgba(19,17,14,.92);backdrop-filter:blur(18px);border:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap;padding:10px;margin-bottom:30px}.filter{border:1px solid var(--line);background:#191611;color:var(--muted);font:700 11px/1 Inter;text-transform:uppercase;letter-spacing:.11em;padding:10px 12px;border-radius:999px;cursor:pointer}.filter.active,.filter:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}.section-title{font-family:'Crimson Pro',Georgia,serif;font-size:36px;letter-spacing:-.02em;margin:46px 0 18px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 4;background:var(--panel);border:1px solid var(--line);box-shadow:0 18px 50px rgba(0,0,0,.24);min-height:100%;display:flex;flex-direction:column}.card.wide{grid-column:span 8}.card.tall{grid-row:span 2}.media{background:#080706;min-height:250px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--line);cursor:zoom-in}.card.wide .media{min-height:360px}.media img{width:100%;height:100%;max-height:520px;object-fit:contain;display:block;transition:transform .45s ease, filter .45s ease}.card:hover .media img{transform:scale(1.018);filter:contrast(1.05)}.text{padding:18px 18px 20px}.label{display:flex;align-items:center;gap:8px;color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;margin-bottom:12px}.label::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}.card[data-type="book"] .label{color:var(--blue)}.card[data-type="book"] .label::before{background:var(--blue)}.card[data-type="map"] .label{color:var(--green)}.card[data-type="map"] .label::before{background:var(--green)}.card[data-type="field"] .label{color:var(--red)}.card[data-type="field"] .label::before{background:var(--red)}.text h2{font-family:'Crimson Pro',Georgia,serif;font-size:28px;line-height:1.02;margin:0 0 9px;letter-spacing:-.015em;color:#fff8eb}.text p{margin:0;color:#c7b9a2;line-height:1.56;font-size:14px}.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.tag{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:5px 7px;border-radius:999px}.quote-card{grid-column:span 4;background:linear-gradient(135deg,var(--paper2),var(--paper));color:var(--ink);border:1px solid #ccb894;padding:28px;box-shadow:var(--shadow)}.quote-card .label{color:#8a5b2a}.quote-card h2{font-family:'Crimson Pro',Georgia,serif;font-size:34px;line-height:.98;margin:0 0 16px}.quote-card blockquote{font-family:'Crimson Pro',Georgia,serif;font-style:italic;font-size:22px;line-height:1.28;margin:0;color:#463525}.quote-card p{color:#756149;font-size:13px;line-height:1.5}.source-strip{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:12px;line-height:1.55;display:grid;grid-template-columns:1fr 1fr;gap:24px}.lightbox{position:fixed;inset:0;background:rgba(5,4,3,.92);display:none;align-items:center;justify-content:center;z-index:20;padding:28px}.lightbox.open{display:flex}.lightbox figure{margin:0;max-width:min(1200px,96vw);max-height:94vh}.lightbox img{max-width:100%;max-height:82vh;display:block;margin:auto;box-shadow:var(--shadow);background:#111}.lightbox figcaption{color:#d7c9b4;margin-top:12px;font-size:14px;line-height:1.45}.close{position:absolute;top:18px;right:22px;border:1px solid #5a4c3d;background:#19140f;color:#efe7da;border-radius:999px;width:42px;height:42px;font-size:24px;cursor:pointer}.hidden{display:none!important}
+@media(max-width:1040px){.hero{grid-template-columns:1fr}.hero-image img{height:auto}.card,.card.wide,.quote-card{grid-column:span 6}}@media(max-width:720px){.grid{grid-template-columns:1fr}.card,.card.wide,.quote-card{grid-column:1}.source-strip{grid-template-columns:1fr}.topbar{align-items:flex-start;flex-direction:column}.hero h1{font-size:58px}.media,.card.wide .media{min-height:auto}.filters{position:static}}
 </style>
 </head>
 <body>
+<main class="wrap">
+  <header class="topbar"><div class="mark">Churchill–Fairfax Archive</div><nav class="nav" aria-label="Archive pages"><a href="../Readme.md">Readme</a><a href="provenance-timeline.html">Provenance Timeline</a><a href="ground-truth-ledger.md">Ground Truth Ledger</a></nav></header>
+  <section class="hero">
+    <div><div class="eyebrow">Artifact gallery</div><h1>Evidence, not decoration.</h1><p class="dek">A close-reading gallery for the Churchill letter, first-edition indicators, Fairfax identity evidence, memorial photography, and the newly generated NLS source-map crops.</p></div>
+    <figure class="hero-image"><img src="../Images/signature.JPG" alt="Churchill signed note to Colonel Fairfax"><figcaption class="caption">Original signed note from Winston Churchill to Colonel Fairfax, dated 6 December 1946 and affixed to Volume I.</figcaption></figure>
+  </section>
 
-<div class="gallery-header">
-  <h1>The Churchill&ndash;Fairfax First Edition</h1>
-  <div class="subtitle">Authenticated Artifact Sequence</div>
-  <div class="divider"></div>
-</div>
-
-<div class="carousel" id="carousel">
-
-  <!-- Frame 1: Churchill's Signature Letter -->
-  <div class="frame">
-    <div class="frame-inner">
-      <div class="frame-number">I of VIII</div>
-      <div class="frame-image">
-        <img src="../Images/signature.JPG" alt="Churchill's signed letter to Colonel Fairfax">
-      </div>
-      <div class="frame-caption">
-        <div class="caption-title">Churchill&rsquo;s Letter to Colonel Fairfax</div>
-        <div class="caption-text">
-          &ldquo;Chartwell, Westerham, Kent. 6 December, 1946. Dear Colonel Fairfax&hellip;&rdquo;
-          Original signed letter from Winston Churchill, affixed to Volume I of the first edition set.
-        </div>
-        <div class="caption-ledger">Ledger #26, #27 &middot; signature.JPG &middot; Fairfax-Churchill.md line 34</div>
-      </div>
-    </div>
+  <div class="filters" aria-label="Filter gallery">
+    <button class="filter active" data-filter="all">All evidence</button>
+    <button class="filter" data-filter="letter">Letter</button>
+    <button class="filter" data-filter="book">Book state</button>
+    <button class="filter" data-filter="map">Source maps</button>
+    <button class="filter" data-filter="field">Field evidence</button>
   </div>
 
-  <!-- Frame 2: First Edition Copyright Page -->
-  <div class="frame">
-    <div class="frame-inner">
-      <div class="frame-number">II of VIII</div>
-      <div class="frame-image">
-        <img src="../Images/FirstPublished.JPG" alt="First Published 1948 copyright page">
-      </div>
-      <div class="frame-caption">
-        <div class="caption-title">First Edition Copyright Page</div>
-        <div class="caption-text">
-          &ldquo;First Published 1948. Cassell and Company Ltd.&rdquo;
-          No mention of later printings &mdash; confirms first edition, first printing.
-        </div>
-        <div class="caption-ledger">Ledger #28, #34 &middot; FirstPublished.JPG &middot; FirstEditionChecklist.md</div>
-      </div>
-    </div>
-  </div>
+  <h2 class="section-title">Primary artifact and bibliographic evidence</h2>
+  <section class="grid" aria-label="Artifact gallery cards">
+    <article class="card wide" data-type="letter"><div class="media"><img src="../Images/signature.JPG" alt="Churchill signed note to Colonel Fairfax"></div><div class="text"><div class="label">Letter</div><h2>Churchill’s signed note to Colonel Fairfax</h2><p>“Chartwell, Westerham, Kent. 6 December, 1946. Dear Colonel Fairfax…” The note thanks Fairfax for a “kind letter” and anchors the documented Churchill–Fairfax exchange.</p><div class="meta"><span class="tag">Ledger #26–27</span><span class="tag">Images/signature.JPG</span><span class="tag">Chartwell</span></div></div></article>
+    <article class="card" data-type="letter"><div class="media"><img src="../Images/signature_closeup.JPG" alt="Close-up of Churchill signature"></div><div class="text"><div class="label">Letter</div><h2>Signature close-up</h2><p>Close photography of the signed insert for visual examination of the artifact rather than transcription alone.</p><div class="meta"><span class="tag">Images/signature_closeup.JPG</span></div></div></article>
+    <article class="card" data-type="book"><div class="media"><img src="../Images/FirstPublished.JPG" alt="First Published 1948 page"></div><div class="text"><div class="label">Book state</div><h2>First Published page</h2><p>The copyright page records “First Published 1948” and Cassell and Company Ltd., supporting first-edition identification.</p><div class="meta"><span class="tag">Ledger #28</span><span class="tag">FirstEditionChecklist.md</span></div></div></article>
+    <article class="card" data-type="book"><div class="media"><img src="../Images/Price.JPG" alt="Dust jacket price 25s. NET"></div><div class="text"><div class="label">Book state</div><h2>Dust-jacket price</h2><p>The visible “25s. NET” price is one of the external first-issue indicators documented in the checklist.</p><div class="meta"><span class="tag">Ledger #29</span><span class="tag">Price.JPG</span></div></div></article>
+    <article class="card" data-type="book"><div class="media"><img src="../Images/TopEdgeVolume1.jpeg" alt="Red top edge of Volume I"></div><div class="text"><div class="label">Book state</div><h2>Red top edge</h2><p>Photographic record of the red top edge, a first-printing feature noted in the checklist.</p><div class="meta"><span class="tag">Ledger #32</span><span class="tag">TopEdgeVolume1.jpeg</span></div></div></article>
+    <article class="card" data-type="book"><div class="media"><img src="../Images/WorstEdge.JPG" alt="Worst edge wear found on the set"></div><div class="text"><div class="label">Book state</div><h2>Condition reference</h2><p>A deliberately plain condition image: the worst edge wear identified in the current photography set.</p><div class="meta"><span class="tag">Images/WorstEdge.JPG</span></div></div></article>
+    <article class="card wide" data-type="book"><div class="media"><img src="../Images/hero.JPG" alt="Complete Churchill six-volume set"></div><div class="text"><div class="label">Book state</div><h2>Complete six-volume set</h2><p>Cassell first edition set with black cloth boards and gilt spine titles, documented with accompanying close-ups.</p><div class="meta"><span class="tag">Images/hero.JPG</span><span class="tag">Ledger #31</span></div></div></article>
+    <article class="quote-card" data-type="letter"><div class="label">Source boundary</div><h2>What the letter proves</h2><blockquote>Churchill replied to Fairfax from Chartwell and thanked him for a “kind letter.”</blockquote><p>The original Fairfax letter has not yet been located in this project. The gallery therefore treats the note as a documented exchange, not proof of a broader private friendship.</p></article>
+  </section>
 
-  <!-- Frame 3: First Issue Dust Jacket Price -->
-  <div class="frame">
-    <div class="frame-inner">
-      <div class="frame-number">III of VIII</div>
-      <div class="frame-image">
-        <img src="../Images/Price.JPG" alt="Dust jacket showing 25s. NET price">
-      </div>
-      <div class="frame-caption">
-        <div class="caption-title">First Issue Dust Jacket Price</div>
-        <div class="caption-text">
-          &ldquo;25s. NET&rdquo; &mdash; the correct price for Volumes I&ndash;IV,
-          the most visible external indicator of a first issue jacket.
-        </div>
-        <div class="caption-ledger">Ledger #29 &middot; Price.JPG &middot; FirstEditionChecklist.md line 15</div>
-      </div>
-    </div>
-  </div>
+  <h2 class="section-title">Source-map close readings</h2>
+  <section class="grid" aria-label="NLS source map gallery">
+    <article class="card wide" data-type="map"><div class="media"><img src="../docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_guillemont_overview.jpg" alt="NLS source map overview Maricourt to Guillemont"></div><div class="text"><div class="label">Source map</div><h2>Maricourt–Guillemont overview</h2><p>Unannotated source-map overview from NLS tile set 101465287, z17. This gives the documentary map context before any interpretive terrain work.</p><div class="meta"><span class="tag">NLS 101465287</span><span class="tag">z17</span></div></div></article>
+    <article class="card" data-type="map"><div class="media"><img src="../docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_british_french_line.jpg" alt="Maricourt sector source map crop"></div><div class="text"><div class="label">Source map</div><h2>Maricourt line</h2><p>Crop preserving the Maricourt sector around the British/French junction named in the 1 July narrative.</p><div class="meta"><span class="tag">NLS 101465287</span></div></div></article>
+    <article class="card" data-type="map"><div class="media"><img src="../docs/assets/nls-source-maps/nls_1916_trench_map_montauban_briqueterie.jpg" alt="Montauban and Briqueterie source map crop"></div><div class="text"><div class="label">Source map</div><h2>Montauban and Briqueterie</h2><p>Fixed crop around the Briqueterie objective area described in the 1 July phase.</p><div class="meta"><span class="tag">NLS 101465287</span></div></div></article>
+    <article class="card wide" data-type="map"><div class="media"><img src="../docs/assets/nls-source-maps/nls_1916_trench_map_bernafay_trones_wood.jpg" alt="Bernafay Wood and Trones Wood source map crop"></div><div class="text"><div class="label">Source map</div><h2>Bernafay Wood to Trones Wood</h2><p>Northern adjacent NLS sheet crop showing the wooded sector for the mid-July fighting.</p><div class="meta"><span class="tag">NLS 101464777</span><span class="tag">z17</span></div></div></article>
+    <article class="card" data-type="map"><div class="media"><img src="../docs/assets/nls-source-maps/nls_1916_trench_map_trones_wood.jpg" alt="Trones Wood source map crop"></div><div class="text"><div class="label">Source map</div><h2>Trones Wood</h2><p>Readable source crop for the passage placing Fairfax in the wood with his men dug in and holding.</p><div class="meta"><span class="tag">Ledger #16</span><span class="tag">NLS 101464777</span></div></div></article>
+    <article class="card" data-type="map"><div class="media"><img src="../docs/assets/nls-source-maps/nls_1916_trench_map_guillemont_approach.jpg" alt="Guillemont source map crop"></div><div class="text"><div class="label">Source map</div><h2>Guillemont approach</h2><p>Source crop for the 29–30 July gas, fog, assembly-position, and attack narrative.</p><div class="meta"><span class="tag">Ledger #17–19</span><span class="tag">NLS 101464777</span></div></div></article>
+  </section>
 
-  <!-- Frame 4: Complete Six-Volume Set -->
-  <div class="frame">
-    <div class="frame-inner">
-      <div class="frame-number">IV of VIII</div>
-      <div class="frame-image">
-        <img src="../Images/hero.JPG" alt="Complete six-volume Churchill first edition set">
-      </div>
-      <div class="frame-caption">
-        <div class="caption-title">Complete Six-Volume Set</div>
-        <div class="caption-text">
-          Cassell first edition, black cloth boards with gilt spine titles.
-          All volumes present with original dust jackets.
-        </div>
-        <div class="caption-ledger">Ledger #31 &middot; hero.JPG &middot; FirstEditionChecklist.md</div>
-      </div>
-    </div>
-  </div>
+  <h2 class="section-title">Fairfax identity and field evidence</h2>
+  <section class="grid" aria-label="Fairfax and memorial gallery">
+    <article class="card" data-type="field"><div class="media"><img src="../Images/ColFairfax.jpeg" alt="Colonel Bryan Fairfax obituary image"></div><div class="text"><div class="label">Field evidence</div><h2>Colonel Fairfax</h2><p>Obituary/portrait image used to confirm identity, rank, and decorations within the project ledger.</p><div class="meta"><span class="tag">Ledger #39, #47</span></div></div></article>
+    <article class="card" data-type="field"><div class="media"><img src="../MonumenImages/memorial2.jpg" alt="Maricourt memorial plaque"></div><div class="text"><div class="label">Field evidence</div><h2>Maricourt plaque</h2><p>Memorial plaque at Maricourt recording the 1 July 1916 joint Anglo-French attack context.</p><div class="meta"><span class="tag">Ledger #40–41</span></div></div></article>
+    <article class="card" data-type="field"><div class="media"><img src="../MonumenImages/memorial.jpg" alt="Maricourt memorial site"></div><div class="text"><div class="label">Field evidence</div><h2>Memorial site</h2><p>Wider site photograph situating the plaque and memorial at Maricourt.</p><div class="meta"><span class="tag">MonumenImages/memorial.jpg</span></div></div></article>
+    <article class="quote-card" data-type="field"><div class="label">French source</div><h2>Fairfax named by an ally</h2><blockquote>“leur chef le Colonel Fairfax … ses hautes qualités militaires”</blockquote><p>Colonel de Coutard, 11 July 1916, as quoted in Stanley’s 89th Brigade history and ledgered as claim #15.</p></article>
+  </section>
 
-  <!-- Frame 5: Red Top Edge -->
-  <div class="frame">
-    <div class="frame-inner">
-      <div class="frame-number">V of VIII</div>
-      <div class="frame-image">
-        <img src="../Images/TopEdgeVolume1.jpeg" alt="Red top edge of Volume I">
-      </div>
-      <div class="frame-caption">
-        <div class="caption-title">Red Top Edge, Volume I</div>
-        <div class="caption-text">
-          Hallmark of first printing. Some fading is typical;
-          this copy retains pronounced colour.
-        </div>
-        <div class="caption-ledger">Ledger #32 &middot; TopEdgeVolume1.jpeg &middot; FirstEditionChecklist.md</div>
-      </div>
-    </div>
-  </div>
+  <footer class="source-strip"><div>Gallery principle: show the artifact, the bibliographic indicators, and the source-map evidence as archival objects. Interpretive Blender/terrain reconstructions belong elsewhere and are not used as evidence images here.</div><div>Image paths are local to this repository. Map derivatives were generated from NLS S3 tile sets with manifests under <code>terrain_data/nls_source_maps/</code>.</div></footer>
+</main>
 
-  <!-- Frame 6: Colonel Fairfax Obituary -->
-  <div class="frame">
-    <div class="frame-inner">
-      <div class="frame-number">VI of VIII</div>
-      <div class="frame-image">
-        <img src="../Images/ColFairfax.jpeg" alt="Colonel Fairfax obituary">
-      </div>
-      <div class="frame-caption">
-        <div class="caption-title">Colonel Bryan Charles Fairfax, C.M.G.</div>
-        <div class="caption-text">
-          Obituary confirming rank, decorations, and identity.
-          Born 12 September 1873, died 29 January 1950, Toronto.
-        </div>
-        <div class="caption-ledger">Ledger #39, #47 &middot; ColFairfax.jpeg</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Frame 7: Maricourt Memorial -->
-  <div class="frame">
-    <div class="frame-inner">
-      <div class="frame-number">VII of VIII</div>
-      <div class="frame-image">
-        <img src="../MonumenImages/memorial2.jpg" alt="Maricourt memorial plaque, 1er juillet 1916">
-      </div>
-      <div class="frame-caption">
-        <div class="caption-title">Maricourt Memorial Plaque</div>
-        <div class="caption-text">
-          &ldquo;1er juillet 1916&rdquo; &mdash; at the site where Fairfax and Commandant Lepetit
-          advanced arm-in-arm. Coordinates: 49&deg;59&prime;15.0&Prime;N 2&deg;47&prime;28.3&Prime;E.
-        </div>
-        <div class="caption-ledger">Ledger #40, #41, #14 &middot; memorial2.jpg &middot; Readme.md line 114</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Frame 8: French Citation (Text Panel) -->
-  <div class="frame">
-    <div class="frame-inner">
-      <div class="frame-number">VIII of VIII</div>
-      <div class="frame-quote">
-        <div class="quote-mark">&ldquo;</div>
-        <blockquote>
-          &hellip;les relations si cordiales entretenues avec leur chef le Colonel Fairfax
-          ont permis de remarquer ses hautes qualit&eacute;s militaires et ont fait
-          regretter l&rsquo;&eacute;loignement de ce chef brillant et de son magnifique Bataillon.
-        </blockquote>
-        <div class="quote-attribution">
-          &mdash; Colonel de Coutard, 11 July 1916<br>
-          89th Brigade History, p.134
-        </div>
-      </div>
-      <div class="frame-caption" style="margin-top: 28px;">
-        <div class="caption-title">French Citation Naming Fairfax</div>
-        <div class="caption-text">
-          &ldquo;&hellip;the cordial relations maintained with their commander Colonel Fairfax
-          have allowed us to observe his high military qualities and have made us regret
-          the departure of this brilliant commander and his magnificent Battalion.&rdquo;
-        </div>
-        <div class="caption-ledger">Ledger #15 &middot; 89th Brigade History (Stanley) p.134</div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- Navigation dots -->
-<div class="nav-dots" id="navDots">
-  <div class="dot active" data-index="0"></div>
-  <div class="dot" data-index="1"></div>
-  <div class="dot" data-index="2"></div>
-  <div class="dot" data-index="3"></div>
-  <div class="dot" data-index="4"></div>
-  <div class="dot" data-index="5"></div>
-  <div class="dot" data-index="6"></div>
-  <div class="dot" data-index="7"></div>
-</div>
-
-<div class="swipe-hint">Swipe or scroll to navigate &rarr;</div>
-
-<div class="gallery-footer">
-  All captions traced to Ground Truth Ledger &middot; Churchill&ndash;Fairfax First Edition Set &middot; No speculation
-</div>
-
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="close" aria-label="Close image">×</button><figure><img alt=""><figcaption></figcaption></figure></div>
 <script>
-  const carousel = document.getElementById('carousel');
-  const dots = document.querySelectorAll('.dot');
-  const frames = document.querySelectorAll('.frame');
-
-  // Update active dot on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const index = [...frames].indexOf(entry.target);
-        dots.forEach((d, i) => d.classList.toggle('active', i === index));
-      }
-    });
-  }, { root: carousel, threshold: 0.6 });
-
-  frames.forEach(f => observer.observe(f));
-
-  // Click dot to navigate
-  dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-      const i = parseInt(dot.dataset.index);
-      frames[i].scrollIntoView({ behavior: 'smooth', inline: 'center' });
-    });
+const filterButtons=[...document.querySelectorAll('.filter')];
+const cards=[...document.querySelectorAll('[data-type]')];
+const grids=[...document.querySelectorAll('.grid')];
+function updateSectionHeadings(){
+  grids.forEach(grid=>{
+    const hasVisible=[...grid.querySelectorAll('[data-type]')].some(card=>!card.classList.contains('hidden'));
+    const heading=grid.previousElementSibling?.classList.contains('section-title') ? grid.previousElementSibling : null;
+    grid.classList.toggle('hidden', !hasVisible);
+    heading?.classList.toggle('hidden', !hasVisible);
   });
-
-  // Keyboard navigation
-  document.addEventListener('keydown', (e) => {
-    const active = document.querySelector('.dot.active');
-    const idx = parseInt(active?.dataset.index || 0);
-    if (e.key === 'ArrowRight' && idx < 7) {
-      frames[idx + 1].scrollIntoView({ behavior: 'smooth', inline: 'center' });
-    } else if (e.key === 'ArrowLeft' && idx > 0) {
-      frames[idx - 1].scrollIntoView({ behavior: 'smooth', inline: 'center' });
-    }
-  });
+}
+filterButtons.forEach(btn=>btn.addEventListener('click',()=>{
+  filterButtons.forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+  const f=btn.dataset.filter;
+  cards.forEach(card=>card.classList.toggle('hidden', f!=='all' && card.dataset.type!==f));
+  updateSectionHeadings();
+}));
+updateSectionHeadings();
+const lightbox=document.getElementById('lightbox');
+const lightImg=lightbox.querySelector('img');
+const lightCap=lightbox.querySelector('figcaption');
+document.querySelectorAll('.media img').forEach(img=>img.addEventListener('click',()=>{
+  lightImg.src=img.src; lightImg.alt=img.alt;
+  const title=img.closest('.card')?.querySelector('h2')?.textContent || img.alt;
+  const text=img.closest('.card')?.querySelector('p')?.textContent || '';
+  lightCap.textContent=title + (text ? ' — ' + text : '');
+  lightbox.classList.add('open'); lightbox.setAttribute('aria-hidden','false');
+}));
+function closeLightbox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');lightImg.removeAttribute('src')}
+lightbox.querySelector('.close').addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e=>{if(e.target===lightbox) closeLightbox()});
+document.addEventListener('keydown', e=>{if(e.key==='Escape') closeLightbox()});
 </script>
-
 </body>
 </html>

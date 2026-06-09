@@ -22,13 +22,18 @@ fairfax_search.log
 downloaded_documents/
 ocr_results/
 
-# Terrain data - ignore bulk/raw files, allow deliverables
+# Terrain data - ignore bulk/raw files, allow selected deliverables and source scripts
 terrain_data/*
 !terrain_data/trench_mosaic.png
 !terrain_data/trench_render_wide.png
 !terrain_data/somme_dem_meta.json
 !terrain_data/fairfax_flythrough.mp4
 !terrain_data/fairfax_flythrough.gif
+!terrain_data/build_cinematic_flythrough.py
+!terrain_data/render_flythrough.py
+!terrain_data/encode_flythrough.py
+!terrain_data/CINEMATIC_FLYTHROUGH.md
+!terrain_data/cinematic_flythrough_plan.md
 
 # Large binary files
 *.pdf

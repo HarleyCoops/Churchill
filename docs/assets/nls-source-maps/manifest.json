@@ -1,0 +1,7822 @@
+{
+  "source": "National Library of Scotland trench-map tile set",
+  "source_id": "101465287",
+  "tile_url_pattern": "https://mapseries-tilesets.s3.amazonaws.com/trench/101465287/{z}/{x}/{y}.png",
+  "metadata_url": "https://mapseries-tilesets.s3.amazonaws.com/trench/101465287/metadata.json",
+  "zoom": 17,
+  "bounds": {
+    "west": 2.75,
+    "south": 49.97,
+    "east": 2.86,
+    "north": 50.015
+  },
+  "tile_range": {
+    "x0": 66537,
+    "x1": 66577,
+    "y0": 44443,
+    "y1": 44469
+  },
+  "tiles_present": 841,
+  "tiles_missing": 266,
+  "full_mosaic": {
+    "path": "terrain_data/nls_source_maps/101465287_z17_maricourt_guillemont_sector.png",
+    "width": 10496,
+    "height": 6912
+  },
+  "readme_assets": [
+    {
+      "name": "nls_1916_trench_map_maricourt_guillemont_overview",
+      "path": "docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_guillemont_overview.jpg",
+      "width": 2200,
+      "height": 1449,
+      "caption": "Unannotated source-map overview of the Maricourt\u2013Guillemont sector from the NLS trench-map tile set."
+    },
+    {
+      "name": "nls_1916_trench_map_maricourt_british_french_line",
+      "path": "docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_british_french_line.jpg",
+      "width": 1600,
+      "height": 1067,
+      "caption": "Maricourt sector, where the British and French lines met on 1 July 1916."
+    },
+    {
+      "name": "nls_1916_trench_map_montauban_briqueterie",
+      "path": "docs/assets/nls-source-maps/nls_1916_trench_map_montauban_briqueterie.jpg",
+      "width": 1600,
+      "height": 960,
+      "caption": "Montauban and the Briqueterie objective on the 1 July axis of advance."
+    },
+    {
+      "name": "nls_1916_trench_map_bernafay_trones_wood",
+      "path": "docs/assets/nls-source-maps/nls_1916_trench_map_bernafay_trones_wood.jpg",
+      "width": 1600,
+      "height": 900,
+      "caption": "Bernafay Wood and Trones Wood area in the mid-July fighting."
+    },
+    {
+      "name": "nls_1916_trench_map_trones_wood",
+      "path": "docs/assets/nls-source-maps/nls_1916_trench_map_trones_wood.jpg",
+      "width": 1600,
+      "height": 1046,
+      "caption": "Trones Wood, where Fairfax was reported in the wood with his men dug in and holding."
+    },
+    {
+      "name": "nls_1916_trench_map_guillemont_approach",
+      "path": "docs/assets/nls-source-maps/nls_1916_trench_map_guillemont_approach.jpg",
+      "width": 1600,
+      "height": 1046,
+      "caption": "Guillemont approach, the sector of the 29\u201330 July gas, fog, and assembly-position narrative."
+    }
+  ],
+  "rights_note": "NLS map imagery is used as archival source material; retain NLS attribution and the source URL pattern/metadata in documentation.",
+  "tiles": [
+    {
+      "x": 66537,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66538,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66539,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66540,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66541,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66542,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66543,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66544,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66545,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66546,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66547,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66548,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66549,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66550,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66551,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66552,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66553,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66554,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66555,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66556,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66557,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66558,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66559,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66560,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66561,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66562,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66563,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66564,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66565,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66566,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66567,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66568,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66569,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66570,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66571,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66572,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66573,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66574,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66575,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66576,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66577,
+      "y": 44443,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66537,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66538,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66539,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66540,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66541,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66542,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66543,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66544,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66545,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66546,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66547,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66548,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66549,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66550,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66551,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66552,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66553,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66554,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66555,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66556,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66557,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66558,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66559,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66560,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66561,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66562,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66563,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66564,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66565,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66566,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66567,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66568,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66569,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66570,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66571,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66572,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66573,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66574,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66575,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66576,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66577,
+      "y": 44444,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66537,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66538,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66539,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66540,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66541,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66542,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66543,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66544,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66545,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66546,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66547,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66548,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66549,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66550,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66551,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66552,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66553,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66554,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66555,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66556,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66557,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66558,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66559,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66560,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66561,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66562,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66563,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66564,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66565,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66566,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66567,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66568,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66569,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66570,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66571,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66572,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66573,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66574,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66575,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66576,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66577,
+      "y": 44445,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66537,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66538,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66539,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66540,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66541,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66542,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66543,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66544,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66545,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66546,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66547,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66548,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66549,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66550,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66551,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66552,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66553,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66554,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66555,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66556,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66557,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66558,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66559,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66560,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66561,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66562,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66563,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66564,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66565,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66566,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66567,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66568,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66569,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66570,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66571,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66572,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66573,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66574,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66575,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66576,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66577,
+      "y": 44446,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66537,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66538,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66539,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66540,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66541,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66542,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66543,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66544,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66545,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66546,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66547,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66548,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66549,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66550,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66551,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66552,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66553,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66554,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66555,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66556,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66557,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66558,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66559,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66560,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66561,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66562,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66563,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66564,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66565,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66566,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66567,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66568,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66569,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66570,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66571,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66572,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66573,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66574,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66575,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66576,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66577,
+      "y": 44447,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66537,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66538,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66539,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66540,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66541,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66542,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66543,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66544,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66545,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66546,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66547,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66548,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66549,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66550,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66551,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66552,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66553,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66554,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66555,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66556,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66557,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66558,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66559,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66560,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66561,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66562,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66563,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66564,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66565,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66566,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66567,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66568,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66569,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66570,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66571,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66572,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66573,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66574,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66575,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66576,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66577,
+      "y": 44448,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66537,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66538,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66539,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66540,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66541,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66542,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66543,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66544,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66545,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66546,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66547,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66548,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66549,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66550,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66551,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66552,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66553,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66554,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66555,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66556,
+      "y": 44449,
+      "z": 17,
+      "present": false,
+      "path": null
+    },
+    {
+      "x": 66557,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44449.png"
+    },
+    {
+      "x": 66558,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44449.png"
+    },
+    {
+      "x": 66559,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44449.png"
+    },
+    {
+      "x": 66560,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44449.png"
+    },
+    {
+      "x": 66561,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44449.png"
+    },
+    {
+      "x": 66562,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44449.png"
+    },
+    {
+      "x": 66563,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44449.png"
+    },
+    {
+      "x": 66564,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44449.png"
+    },
+    {
+      "x": 66565,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44449.png"
+    },
+    {
+      "x": 66566,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44449.png"
+    },
+    {
+      "x": 66567,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44449.png"
+    },
+    {
+      "x": 66568,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44449.png"
+    },
+    {
+      "x": 66569,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44449.png"
+    },
+    {
+      "x": 66570,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44449.png"
+    },
+    {
+      "x": 66571,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44449.png"
+    },
+    {
+      "x": 66572,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44449.png"
+    },
+    {
+      "x": 66573,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44449.png"
+    },
+    {
+      "x": 66574,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44449.png"
+    },
+    {
+      "x": 66575,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44449.png"
+    },
+    {
+      "x": 66576,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44449.png"
+    },
+    {
+      "x": 66577,
+      "y": 44449,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44449.png"
+    },
+    {
+      "x": 66537,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44450.png"
+    },
+    {
+      "x": 66538,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44450.png"
+    },
+    {
+      "x": 66539,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44450.png"
+    },
+    {
+      "x": 66540,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44450.png"
+    },
+    {
+      "x": 66541,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44450.png"
+    },
+    {
+      "x": 66542,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44450.png"
+    },
+    {
+      "x": 66543,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44450.png"
+    },
+    {
+      "x": 66544,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44450.png"
+    },
+    {
+      "x": 66545,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44450.png"
+    },
+    {
+      "x": 66546,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44450.png"
+    },
+    {
+      "x": 66547,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44450.png"
+    },
+    {
+      "x": 66548,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44450.png"
+    },
+    {
+      "x": 66549,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44450.png"
+    },
+    {
+      "x": 66550,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44450.png"
+    },
+    {
+      "x": 66551,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44450.png"
+    },
+    {
+      "x": 66552,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44450.png"
+    },
+    {
+      "x": 66553,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44450.png"
+    },
+    {
+      "x": 66554,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44450.png"
+    },
+    {
+      "x": 66555,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44450.png"
+    },
+    {
+      "x": 66556,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44450.png"
+    },
+    {
+      "x": 66557,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44450.png"
+    },
+    {
+      "x": 66558,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44450.png"
+    },
+    {
+      "x": 66559,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44450.png"
+    },
+    {
+      "x": 66560,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44450.png"
+    },
+    {
+      "x": 66561,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44450.png"
+    },
+    {
+      "x": 66562,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44450.png"
+    },
+    {
+      "x": 66563,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44450.png"
+    },
+    {
+      "x": 66564,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44450.png"
+    },
+    {
+      "x": 66565,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44450.png"
+    },
+    {
+      "x": 66566,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44450.png"
+    },
+    {
+      "x": 66567,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44450.png"
+    },
+    {
+      "x": 66568,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44450.png"
+    },
+    {
+      "x": 66569,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44450.png"
+    },
+    {
+      "x": 66570,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44450.png"
+    },
+    {
+      "x": 66571,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44450.png"
+    },
+    {
+      "x": 66572,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44450.png"
+    },
+    {
+      "x": 66573,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44450.png"
+    },
+    {
+      "x": 66574,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44450.png"
+    },
+    {
+      "x": 66575,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44450.png"
+    },
+    {
+      "x": 66576,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44450.png"
+    },
+    {
+      "x": 66577,
+      "y": 44450,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44450.png"
+    },
+    {
+      "x": 66537,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44451.png"
+    },
+    {
+      "x": 66538,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44451.png"
+    },
+    {
+      "x": 66539,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44451.png"
+    },
+    {
+      "x": 66540,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44451.png"
+    },
+    {
+      "x": 66541,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44451.png"
+    },
+    {
+      "x": 66542,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44451.png"
+    },
+    {
+      "x": 66543,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44451.png"
+    },
+    {
+      "x": 66544,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44451.png"
+    },
+    {
+      "x": 66545,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44451.png"
+    },
+    {
+      "x": 66546,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44451.png"
+    },
+    {
+      "x": 66547,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44451.png"
+    },
+    {
+      "x": 66548,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44451.png"
+    },
+    {
+      "x": 66549,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44451.png"
+    },
+    {
+      "x": 66550,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44451.png"
+    },
+    {
+      "x": 66551,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44451.png"
+    },
+    {
+      "x": 66552,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44451.png"
+    },
+    {
+      "x": 66553,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44451.png"
+    },
+    {
+      "x": 66554,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44451.png"
+    },
+    {
+      "x": 66555,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44451.png"
+    },
+    {
+      "x": 66556,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44451.png"
+    },
+    {
+      "x": 66557,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44451.png"
+    },
+    {
+      "x": 66558,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44451.png"
+    },
+    {
+      "x": 66559,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44451.png"
+    },
+    {
+      "x": 66560,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44451.png"
+    },
+    {
+      "x": 66561,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44451.png"
+    },
+    {
+      "x": 66562,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44451.png"
+    },
+    {
+      "x": 66563,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44451.png"
+    },
+    {
+      "x": 66564,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44451.png"
+    },
+    {
+      "x": 66565,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44451.png"
+    },
+    {
+      "x": 66566,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44451.png"
+    },
+    {
+      "x": 66567,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44451.png"
+    },
+    {
+      "x": 66568,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44451.png"
+    },
+    {
+      "x": 66569,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44451.png"
+    },
+    {
+      "x": 66570,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44451.png"
+    },
+    {
+      "x": 66571,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44451.png"
+    },
+    {
+      "x": 66572,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44451.png"
+    },
+    {
+      "x": 66573,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44451.png"
+    },
+    {
+      "x": 66574,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44451.png"
+    },
+    {
+      "x": 66575,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44451.png"
+    },
+    {
+      "x": 66576,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44451.png"
+    },
+    {
+      "x": 66577,
+      "y": 44451,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44451.png"
+    },
+    {
+      "x": 66537,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44452.png"
+    },
+    {
+      "x": 66538,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44452.png"
+    },
+    {
+      "x": 66539,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44452.png"
+    },
+    {
+      "x": 66540,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44452.png"
+    },
+    {
+      "x": 66541,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44452.png"
+    },
+    {
+      "x": 66542,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44452.png"
+    },
+    {
+      "x": 66543,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44452.png"
+    },
+    {
+      "x": 66544,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44452.png"
+    },
+    {
+      "x": 66545,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44452.png"
+    },
+    {
+      "x": 66546,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44452.png"
+    },
+    {
+      "x": 66547,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44452.png"
+    },
+    {
+      "x": 66548,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44452.png"
+    },
+    {
+      "x": 66549,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44452.png"
+    },
+    {
+      "x": 66550,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44452.png"
+    },
+    {
+      "x": 66551,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44452.png"
+    },
+    {
+      "x": 66552,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44452.png"
+    },
+    {
+      "x": 66553,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44452.png"
+    },
+    {
+      "x": 66554,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44452.png"
+    },
+    {
+      "x": 66555,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44452.png"
+    },
+    {
+      "x": 66556,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44452.png"
+    },
+    {
+      "x": 66557,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44452.png"
+    },
+    {
+      "x": 66558,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44452.png"
+    },
+    {
+      "x": 66559,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44452.png"
+    },
+    {
+      "x": 66560,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44452.png"
+    },
+    {
+      "x": 66561,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44452.png"
+    },
+    {
+      "x": 66562,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44452.png"
+    },
+    {
+      "x": 66563,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44452.png"
+    },
+    {
+      "x": 66564,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44452.png"
+    },
+    {
+      "x": 66565,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44452.png"
+    },
+    {
+      "x": 66566,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44452.png"
+    },
+    {
+      "x": 66567,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44452.png"
+    },
+    {
+      "x": 66568,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44452.png"
+    },
+    {
+      "x": 66569,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44452.png"
+    },
+    {
+      "x": 66570,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44452.png"
+    },
+    {
+      "x": 66571,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44452.png"
+    },
+    {
+      "x": 66572,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44452.png"
+    },
+    {
+      "x": 66573,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44452.png"
+    },
+    {
+      "x": 66574,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44452.png"
+    },
+    {
+      "x": 66575,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44452.png"
+    },
+    {
+      "x": 66576,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44452.png"
+    },
+    {
+      "x": 66577,
+      "y": 44452,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44452.png"
+    },
+    {
+      "x": 66537,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44453.png"
+    },
+    {
+      "x": 66538,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44453.png"
+    },
+    {
+      "x": 66539,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44453.png"
+    },
+    {
+      "x": 66540,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44453.png"
+    },
+    {
+      "x": 66541,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44453.png"
+    },
+    {
+      "x": 66542,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44453.png"
+    },
+    {
+      "x": 66543,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44453.png"
+    },
+    {
+      "x": 66544,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44453.png"
+    },
+    {
+      "x": 66545,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44453.png"
+    },
+    {
+      "x": 66546,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44453.png"
+    },
+    {
+      "x": 66547,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44453.png"
+    },
+    {
+      "x": 66548,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44453.png"
+    },
+    {
+      "x": 66549,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44453.png"
+    },
+    {
+      "x": 66550,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44453.png"
+    },
+    {
+      "x": 66551,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44453.png"
+    },
+    {
+      "x": 66552,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44453.png"
+    },
+    {
+      "x": 66553,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44453.png"
+    },
+    {
+      "x": 66554,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44453.png"
+    },
+    {
+      "x": 66555,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44453.png"
+    },
+    {
+      "x": 66556,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44453.png"
+    },
+    {
+      "x": 66557,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44453.png"
+    },
+    {
+      "x": 66558,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44453.png"
+    },
+    {
+      "x": 66559,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44453.png"
+    },
+    {
+      "x": 66560,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44453.png"
+    },
+    {
+      "x": 66561,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44453.png"
+    },
+    {
+      "x": 66562,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44453.png"
+    },
+    {
+      "x": 66563,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44453.png"
+    },
+    {
+      "x": 66564,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44453.png"
+    },
+    {
+      "x": 66565,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44453.png"
+    },
+    {
+      "x": 66566,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44453.png"
+    },
+    {
+      "x": 66567,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44453.png"
+    },
+    {
+      "x": 66568,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44453.png"
+    },
+    {
+      "x": 66569,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44453.png"
+    },
+    {
+      "x": 66570,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44453.png"
+    },
+    {
+      "x": 66571,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44453.png"
+    },
+    {
+      "x": 66572,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44453.png"
+    },
+    {
+      "x": 66573,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44453.png"
+    },
+    {
+      "x": 66574,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44453.png"
+    },
+    {
+      "x": 66575,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44453.png"
+    },
+    {
+      "x": 66576,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44453.png"
+    },
+    {
+      "x": 66577,
+      "y": 44453,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44453.png"
+    },
+    {
+      "x": 66537,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44454.png"
+    },
+    {
+      "x": 66538,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44454.png"
+    },
+    {
+      "x": 66539,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44454.png"
+    },
+    {
+      "x": 66540,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44454.png"
+    },
+    {
+      "x": 66541,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44454.png"
+    },
+    {
+      "x": 66542,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44454.png"
+    },
+    {
+      "x": 66543,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44454.png"
+    },
+    {
+      "x": 66544,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44454.png"
+    },
+    {
+      "x": 66545,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44454.png"
+    },
+    {
+      "x": 66546,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44454.png"
+    },
+    {
+      "x": 66547,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44454.png"
+    },
+    {
+      "x": 66548,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44454.png"
+    },
+    {
+      "x": 66549,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44454.png"
+    },
+    {
+      "x": 66550,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44454.png"
+    },
+    {
+      "x": 66551,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44454.png"
+    },
+    {
+      "x": 66552,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44454.png"
+    },
+    {
+      "x": 66553,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44454.png"
+    },
+    {
+      "x": 66554,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44454.png"
+    },
+    {
+      "x": 66555,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44454.png"
+    },
+    {
+      "x": 66556,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44454.png"
+    },
+    {
+      "x": 66557,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44454.png"
+    },
+    {
+      "x": 66558,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44454.png"
+    },
+    {
+      "x": 66559,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44454.png"
+    },
+    {
+      "x": 66560,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44454.png"
+    },
+    {
+      "x": 66561,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44454.png"
+    },
+    {
+      "x": 66562,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44454.png"
+    },
+    {
+      "x": 66563,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44454.png"
+    },
+    {
+      "x": 66564,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44454.png"
+    },
+    {
+      "x": 66565,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44454.png"
+    },
+    {
+      "x": 66566,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44454.png"
+    },
+    {
+      "x": 66567,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44454.png"
+    },
+    {
+      "x": 66568,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44454.png"
+    },
+    {
+      "x": 66569,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44454.png"
+    },
+    {
+      "x": 66570,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44454.png"
+    },
+    {
+      "x": 66571,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44454.png"
+    },
+    {
+      "x": 66572,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44454.png"
+    },
+    {
+      "x": 66573,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44454.png"
+    },
+    {
+      "x": 66574,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44454.png"
+    },
+    {
+      "x": 66575,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44454.png"
+    },
+    {
+      "x": 66576,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44454.png"
+    },
+    {
+      "x": 66577,
+      "y": 44454,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44454.png"
+    },
+    {
+      "x": 66537,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44455.png"
+    },
+    {
+      "x": 66538,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44455.png"
+    },
+    {
+      "x": 66539,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44455.png"
+    },
+    {
+      "x": 66540,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44455.png"
+    },
+    {
+      "x": 66541,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44455.png"
+    },
+    {
+      "x": 66542,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44455.png"
+    },
+    {
+      "x": 66543,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44455.png"
+    },
+    {
+      "x": 66544,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44455.png"
+    },
+    {
+      "x": 66545,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44455.png"
+    },
+    {
+      "x": 66546,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44455.png"
+    },
+    {
+      "x": 66547,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44455.png"
+    },
+    {
+      "x": 66548,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44455.png"
+    },
+    {
+      "x": 66549,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44455.png"
+    },
+    {
+      "x": 66550,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44455.png"
+    },
+    {
+      "x": 66551,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44455.png"
+    },
+    {
+      "x": 66552,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44455.png"
+    },
+    {
+      "x": 66553,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44455.png"
+    },
+    {
+      "x": 66554,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44455.png"
+    },
+    {
+      "x": 66555,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44455.png"
+    },
+    {
+      "x": 66556,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44455.png"
+    },
+    {
+      "x": 66557,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44455.png"
+    },
+    {
+      "x": 66558,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44455.png"
+    },
+    {
+      "x": 66559,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44455.png"
+    },
+    {
+      "x": 66560,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44455.png"
+    },
+    {
+      "x": 66561,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44455.png"
+    },
+    {
+      "x": 66562,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44455.png"
+    },
+    {
+      "x": 66563,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44455.png"
+    },
+    {
+      "x": 66564,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44455.png"
+    },
+    {
+      "x": 66565,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44455.png"
+    },
+    {
+      "x": 66566,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44455.png"
+    },
+    {
+      "x": 66567,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44455.png"
+    },
+    {
+      "x": 66568,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44455.png"
+    },
+    {
+      "x": 66569,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44455.png"
+    },
+    {
+      "x": 66570,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44455.png"
+    },
+    {
+      "x": 66571,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44455.png"
+    },
+    {
+      "x": 66572,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44455.png"
+    },
+    {
+      "x": 66573,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44455.png"
+    },
+    {
+      "x": 66574,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44455.png"
+    },
+    {
+      "x": 66575,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44455.png"
+    },
+    {
+      "x": 66576,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44455.png"
+    },
+    {
+      "x": 66577,
+      "y": 44455,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44455.png"
+    },
+    {
+      "x": 66537,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44456.png"
+    },
+    {
+      "x": 66538,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44456.png"
+    },
+    {
+      "x": 66539,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44456.png"
+    },
+    {
+      "x": 66540,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44456.png"
+    },
+    {
+      "x": 66541,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44456.png"
+    },
+    {
+      "x": 66542,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44456.png"
+    },
+    {
+      "x": 66543,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44456.png"
+    },
+    {
+      "x": 66544,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44456.png"
+    },
+    {
+      "x": 66545,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44456.png"
+    },
+    {
+      "x": 66546,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44456.png"
+    },
+    {
+      "x": 66547,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44456.png"
+    },
+    {
+      "x": 66548,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44456.png"
+    },
+    {
+      "x": 66549,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44456.png"
+    },
+    {
+      "x": 66550,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44456.png"
+    },
+    {
+      "x": 66551,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44456.png"
+    },
+    {
+      "x": 66552,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44456.png"
+    },
+    {
+      "x": 66553,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44456.png"
+    },
+    {
+      "x": 66554,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44456.png"
+    },
+    {
+      "x": 66555,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44456.png"
+    },
+    {
+      "x": 66556,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44456.png"
+    },
+    {
+      "x": 66557,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44456.png"
+    },
+    {
+      "x": 66558,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44456.png"
+    },
+    {
+      "x": 66559,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44456.png"
+    },
+    {
+      "x": 66560,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44456.png"
+    },
+    {
+      "x": 66561,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44456.png"
+    },
+    {
+      "x": 66562,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44456.png"
+    },
+    {
+      "x": 66563,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44456.png"
+    },
+    {
+      "x": 66564,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44456.png"
+    },
+    {
+      "x": 66565,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44456.png"
+    },
+    {
+      "x": 66566,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44456.png"
+    },
+    {
+      "x": 66567,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44456.png"
+    },
+    {
+      "x": 66568,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44456.png"
+    },
+    {
+      "x": 66569,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44456.png"
+    },
+    {
+      "x": 66570,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44456.png"
+    },
+    {
+      "x": 66571,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44456.png"
+    },
+    {
+      "x": 66572,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44456.png"
+    },
+    {
+      "x": 66573,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44456.png"
+    },
+    {
+      "x": 66574,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44456.png"
+    },
+    {
+      "x": 66575,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44456.png"
+    },
+    {
+      "x": 66576,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44456.png"
+    },
+    {
+      "x": 66577,
+      "y": 44456,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44456.png"
+    },
+    {
+      "x": 66537,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44457.png"
+    },
+    {
+      "x": 66538,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44457.png"
+    },
+    {
+      "x": 66539,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44457.png"
+    },
+    {
+      "x": 66540,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44457.png"
+    },
+    {
+      "x": 66541,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44457.png"
+    },
+    {
+      "x": 66542,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44457.png"
+    },
+    {
+      "x": 66543,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44457.png"
+    },
+    {
+      "x": 66544,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44457.png"
+    },
+    {
+      "x": 66545,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44457.png"
+    },
+    {
+      "x": 66546,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44457.png"
+    },
+    {
+      "x": 66547,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44457.png"
+    },
+    {
+      "x": 66548,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44457.png"
+    },
+    {
+      "x": 66549,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44457.png"
+    },
+    {
+      "x": 66550,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44457.png"
+    },
+    {
+      "x": 66551,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44457.png"
+    },
+    {
+      "x": 66552,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44457.png"
+    },
+    {
+      "x": 66553,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44457.png"
+    },
+    {
+      "x": 66554,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44457.png"
+    },
+    {
+      "x": 66555,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44457.png"
+    },
+    {
+      "x": 66556,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44457.png"
+    },
+    {
+      "x": 66557,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44457.png"
+    },
+    {
+      "x": 66558,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44457.png"
+    },
+    {
+      "x": 66559,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44457.png"
+    },
+    {
+      "x": 66560,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44457.png"
+    },
+    {
+      "x": 66561,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44457.png"
+    },
+    {
+      "x": 66562,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44457.png"
+    },
+    {
+      "x": 66563,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44457.png"
+    },
+    {
+      "x": 66564,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44457.png"
+    },
+    {
+      "x": 66565,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44457.png"
+    },
+    {
+      "x": 66566,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44457.png"
+    },
+    {
+      "x": 66567,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44457.png"
+    },
+    {
+      "x": 66568,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44457.png"
+    },
+    {
+      "x": 66569,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44457.png"
+    },
+    {
+      "x": 66570,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44457.png"
+    },
+    {
+      "x": 66571,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44457.png"
+    },
+    {
+      "x": 66572,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44457.png"
+    },
+    {
+      "x": 66573,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44457.png"
+    },
+    {
+      "x": 66574,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44457.png"
+    },
+    {
+      "x": 66575,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44457.png"
+    },
+    {
+      "x": 66576,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44457.png"
+    },
+    {
+      "x": 66577,
+      "y": 44457,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44457.png"
+    },
+    {
+      "x": 66537,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44458.png"
+    },
+    {
+      "x": 66538,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44458.png"
+    },
+    {
+      "x": 66539,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44458.png"
+    },
+    {
+      "x": 66540,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44458.png"
+    },
+    {
+      "x": 66541,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44458.png"
+    },
+    {
+      "x": 66542,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44458.png"
+    },
+    {
+      "x": 66543,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44458.png"
+    },
+    {
+      "x": 66544,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44458.png"
+    },
+    {
+      "x": 66545,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44458.png"
+    },
+    {
+      "x": 66546,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44458.png"
+    },
+    {
+      "x": 66547,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44458.png"
+    },
+    {
+      "x": 66548,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44458.png"
+    },
+    {
+      "x": 66549,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44458.png"
+    },
+    {
+      "x": 66550,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44458.png"
+    },
+    {
+      "x": 66551,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44458.png"
+    },
+    {
+      "x": 66552,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44458.png"
+    },
+    {
+      "x": 66553,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44458.png"
+    },
+    {
+      "x": 66554,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44458.png"
+    },
+    {
+      "x": 66555,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44458.png"
+    },
+    {
+      "x": 66556,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44458.png"
+    },
+    {
+      "x": 66557,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44458.png"
+    },
+    {
+      "x": 66558,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44458.png"
+    },
+    {
+      "x": 66559,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44458.png"
+    },
+    {
+      "x": 66560,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44458.png"
+    },
+    {
+      "x": 66561,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44458.png"
+    },
+    {
+      "x": 66562,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44458.png"
+    },
+    {
+      "x": 66563,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44458.png"
+    },
+    {
+      "x": 66564,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44458.png"
+    },
+    {
+      "x": 66565,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44458.png"
+    },
+    {
+      "x": 66566,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44458.png"
+    },
+    {
+      "x": 66567,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44458.png"
+    },
+    {
+      "x": 66568,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44458.png"
+    },
+    {
+      "x": 66569,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44458.png"
+    },
+    {
+      "x": 66570,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44458.png"
+    },
+    {
+      "x": 66571,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44458.png"
+    },
+    {
+      "x": 66572,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44458.png"
+    },
+    {
+      "x": 66573,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44458.png"
+    },
+    {
+      "x": 66574,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44458.png"
+    },
+    {
+      "x": 66575,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44458.png"
+    },
+    {
+      "x": 66576,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44458.png"
+    },
+    {
+      "x": 66577,
+      "y": 44458,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44458.png"
+    },
+    {
+      "x": 66537,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44459.png"
+    },
+    {
+      "x": 66538,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44459.png"
+    },
+    {
+      "x": 66539,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44459.png"
+    },
+    {
+      "x": 66540,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44459.png"
+    },
+    {
+      "x": 66541,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44459.png"
+    },
+    {
+      "x": 66542,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44459.png"
+    },
+    {
+      "x": 66543,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44459.png"
+    },
+    {
+      "x": 66544,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44459.png"
+    },
+    {
+      "x": 66545,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44459.png"
+    },
+    {
+      "x": 66546,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44459.png"
+    },
+    {
+      "x": 66547,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44459.png"
+    },
+    {
+      "x": 66548,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44459.png"
+    },
+    {
+      "x": 66549,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44459.png"
+    },
+    {
+      "x": 66550,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44459.png"
+    },
+    {
+      "x": 66551,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44459.png"
+    },
+    {
+      "x": 66552,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44459.png"
+    },
+    {
+      "x": 66553,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44459.png"
+    },
+    {
+      "x": 66554,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44459.png"
+    },
+    {
+      "x": 66555,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44459.png"
+    },
+    {
+      "x": 66556,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44459.png"
+    },
+    {
+      "x": 66557,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44459.png"
+    },
+    {
+      "x": 66558,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44459.png"
+    },
+    {
+      "x": 66559,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44459.png"
+    },
+    {
+      "x": 66560,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44459.png"
+    },
+    {
+      "x": 66561,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44459.png"
+    },
+    {
+      "x": 66562,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44459.png"
+    },
+    {
+      "x": 66563,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44459.png"
+    },
+    {
+      "x": 66564,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44459.png"
+    },
+    {
+      "x": 66565,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44459.png"
+    },
+    {
+      "x": 66566,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44459.png"
+    },
+    {
+      "x": 66567,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44459.png"
+    },
+    {
+      "x": 66568,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44459.png"
+    },
+    {
+      "x": 66569,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44459.png"
+    },
+    {
+      "x": 66570,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44459.png"
+    },
+    {
+      "x": 66571,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44459.png"
+    },
+    {
+      "x": 66572,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44459.png"
+    },
+    {
+      "x": 66573,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44459.png"
+    },
+    {
+      "x": 66574,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44459.png"
+    },
+    {
+      "x": 66575,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44459.png"
+    },
+    {
+      "x": 66576,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44459.png"
+    },
+    {
+      "x": 66577,
+      "y": 44459,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44459.png"
+    },
+    {
+      "x": 66537,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44460.png"
+    },
+    {
+      "x": 66538,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44460.png"
+    },
+    {
+      "x": 66539,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44460.png"
+    },
+    {
+      "x": 66540,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44460.png"
+    },
+    {
+      "x": 66541,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44460.png"
+    },
+    {
+      "x": 66542,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44460.png"
+    },
+    {
+      "x": 66543,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44460.png"
+    },
+    {
+      "x": 66544,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44460.png"
+    },
+    {
+      "x": 66545,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44460.png"
+    },
+    {
+      "x": 66546,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44460.png"
+    },
+    {
+      "x": 66547,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44460.png"
+    },
+    {
+      "x": 66548,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44460.png"
+    },
+    {
+      "x": 66549,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44460.png"
+    },
+    {
+      "x": 66550,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44460.png"
+    },
+    {
+      "x": 66551,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44460.png"
+    },
+    {
+      "x": 66552,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44460.png"
+    },
+    {
+      "x": 66553,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44460.png"
+    },
+    {
+      "x": 66554,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44460.png"
+    },
+    {
+      "x": 66555,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44460.png"
+    },
+    {
+      "x": 66556,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44460.png"
+    },
+    {
+      "x": 66557,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44460.png"
+    },
+    {
+      "x": 66558,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44460.png"
+    },
+    {
+      "x": 66559,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44460.png"
+    },
+    {
+      "x": 66560,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44460.png"
+    },
+    {
+      "x": 66561,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44460.png"
+    },
+    {
+      "x": 66562,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44460.png"
+    },
+    {
+      "x": 66563,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44460.png"
+    },
+    {
+      "x": 66564,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44460.png"
+    },
+    {
+      "x": 66565,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44460.png"
+    },
+    {
+      "x": 66566,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44460.png"
+    },
+    {
+      "x": 66567,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44460.png"
+    },
+    {
+      "x": 66568,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44460.png"
+    },
+    {
+      "x": 66569,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44460.png"
+    },
+    {
+      "x": 66570,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44460.png"
+    },
+    {
+      "x": 66571,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44460.png"
+    },
+    {
+      "x": 66572,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44460.png"
+    },
+    {
+      "x": 66573,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44460.png"
+    },
+    {
+      "x": 66574,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44460.png"
+    },
+    {
+      "x": 66575,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44460.png"
+    },
+    {
+      "x": 66576,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44460.png"
+    },
+    {
+      "x": 66577,
+      "y": 44460,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44460.png"
+    },
+    {
+      "x": 66537,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44461.png"
+    },
+    {
+      "x": 66538,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44461.png"
+    },
+    {
+      "x": 66539,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44461.png"
+    },
+    {
+      "x": 66540,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44461.png"
+    },
+    {
+      "x": 66541,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44461.png"
+    },
+    {
+      "x": 66542,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44461.png"
+    },
+    {
+      "x": 66543,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44461.png"
+    },
+    {
+      "x": 66544,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44461.png"
+    },
+    {
+      "x": 66545,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44461.png"
+    },
+    {
+      "x": 66546,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44461.png"
+    },
+    {
+      "x": 66547,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44461.png"
+    },
+    {
+      "x": 66548,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44461.png"
+    },
+    {
+      "x": 66549,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44461.png"
+    },
+    {
+      "x": 66550,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44461.png"
+    },
+    {
+      "x": 66551,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44461.png"
+    },
+    {
+      "x": 66552,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44461.png"
+    },
+    {
+      "x": 66553,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44461.png"
+    },
+    {
+      "x": 66554,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44461.png"
+    },
+    {
+      "x": 66555,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44461.png"
+    },
+    {
+      "x": 66556,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44461.png"
+    },
+    {
+      "x": 66557,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44461.png"
+    },
+    {
+      "x": 66558,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44461.png"
+    },
+    {
+      "x": 66559,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44461.png"
+    },
+    {
+      "x": 66560,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44461.png"
+    },
+    {
+      "x": 66561,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44461.png"
+    },
+    {
+      "x": 66562,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44461.png"
+    },
+    {
+      "x": 66563,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44461.png"
+    },
+    {
+      "x": 66564,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44461.png"
+    },
+    {
+      "x": 66565,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44461.png"
+    },
+    {
+      "x": 66566,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44461.png"
+    },
+    {
+      "x": 66567,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44461.png"
+    },
+    {
+      "x": 66568,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44461.png"
+    },
+    {
+      "x": 66569,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44461.png"
+    },
+    {
+      "x": 66570,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44461.png"
+    },
+    {
+      "x": 66571,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44461.png"
+    },
+    {
+      "x": 66572,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44461.png"
+    },
+    {
+      "x": 66573,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44461.png"
+    },
+    {
+      "x": 66574,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44461.png"
+    },
+    {
+      "x": 66575,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44461.png"
+    },
+    {
+      "x": 66576,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44461.png"
+    },
+    {
+      "x": 66577,
+      "y": 44461,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44461.png"
+    },
+    {
+      "x": 66537,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44462.png"
+    },
+    {
+      "x": 66538,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44462.png"
+    },
+    {
+      "x": 66539,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44462.png"
+    },
+    {
+      "x": 66540,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44462.png"
+    },
+    {
+      "x": 66541,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44462.png"
+    },
+    {
+      "x": 66542,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44462.png"
+    },
+    {
+      "x": 66543,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44462.png"
+    },
+    {
+      "x": 66544,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44462.png"
+    },
+    {
+      "x": 66545,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44462.png"
+    },
+    {
+      "x": 66546,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44462.png"
+    },
+    {
+      "x": 66547,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44462.png"
+    },
+    {
+      "x": 66548,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44462.png"
+    },
+    {
+      "x": 66549,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44462.png"
+    },
+    {
+      "x": 66550,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44462.png"
+    },
+    {
+      "x": 66551,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44462.png"
+    },
+    {
+      "x": 66552,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44462.png"
+    },
+    {
+      "x": 66553,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44462.png"
+    },
+    {
+      "x": 66554,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44462.png"
+    },
+    {
+      "x": 66555,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44462.png"
+    },
+    {
+      "x": 66556,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44462.png"
+    },
+    {
+      "x": 66557,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44462.png"
+    },
+    {
+      "x": 66558,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44462.png"
+    },
+    {
+      "x": 66559,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44462.png"
+    },
+    {
+      "x": 66560,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44462.png"
+    },
+    {
+      "x": 66561,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44462.png"
+    },
+    {
+      "x": 66562,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44462.png"
+    },
+    {
+      "x": 66563,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44462.png"
+    },
+    {
+      "x": 66564,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44462.png"
+    },
+    {
+      "x": 66565,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44462.png"
+    },
+    {
+      "x": 66566,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44462.png"
+    },
+    {
+      "x": 66567,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44462.png"
+    },
+    {
+      "x": 66568,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44462.png"
+    },
+    {
+      "x": 66569,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44462.png"
+    },
+    {
+      "x": 66570,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44462.png"
+    },
+    {
+      "x": 66571,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44462.png"
+    },
+    {
+      "x": 66572,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44462.png"
+    },
+    {
+      "x": 66573,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44462.png"
+    },
+    {
+      "x": 66574,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44462.png"
+    },
+    {
+      "x": 66575,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44462.png"
+    },
+    {
+      "x": 66576,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44462.png"
+    },
+    {
+      "x": 66577,
+      "y": 44462,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44462.png"
+    },
+    {
+      "x": 66537,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44463.png"
+    },
+    {
+      "x": 66538,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44463.png"
+    },
+    {
+      "x": 66539,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44463.png"
+    },
+    {
+      "x": 66540,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44463.png"
+    },
+    {
+      "x": 66541,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44463.png"
+    },
+    {
+      "x": 66542,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44463.png"
+    },
+    {
+      "x": 66543,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44463.png"
+    },
+    {
+      "x": 66544,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44463.png"
+    },
+    {
+      "x": 66545,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44463.png"
+    },
+    {
+      "x": 66546,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44463.png"
+    },
+    {
+      "x": 66547,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44463.png"
+    },
+    {
+      "x": 66548,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44463.png"
+    },
+    {
+      "x": 66549,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44463.png"
+    },
+    {
+      "x": 66550,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44463.png"
+    },
+    {
+      "x": 66551,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44463.png"
+    },
+    {
+      "x": 66552,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44463.png"
+    },
+    {
+      "x": 66553,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44463.png"
+    },
+    {
+      "x": 66554,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44463.png"
+    },
+    {
+      "x": 66555,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44463.png"
+    },
+    {
+      "x": 66556,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44463.png"
+    },
+    {
+      "x": 66557,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44463.png"
+    },
+    {
+      "x": 66558,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44463.png"
+    },
+    {
+      "x": 66559,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44463.png"
+    },
+    {
+      "x": 66560,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44463.png"
+    },
+    {
+      "x": 66561,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44463.png"
+    },
+    {
+      "x": 66562,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44463.png"
+    },
+    {
+      "x": 66563,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44463.png"
+    },
+    {
+      "x": 66564,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44463.png"
+    },
+    {
+      "x": 66565,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44463.png"
+    },
+    {
+      "x": 66566,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44463.png"
+    },
+    {
+      "x": 66567,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44463.png"
+    },
+    {
+      "x": 66568,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44463.png"
+    },
+    {
+      "x": 66569,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44463.png"
+    },
+    {
+      "x": 66570,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44463.png"
+    },
+    {
+      "x": 66571,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44463.png"
+    },
+    {
+      "x": 66572,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44463.png"
+    },
+    {
+      "x": 66573,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44463.png"
+    },
+    {
+      "x": 66574,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44463.png"
+    },
+    {
+      "x": 66575,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44463.png"
+    },
+    {
+      "x": 66576,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44463.png"
+    },
+    {
+      "x": 66577,
+      "y": 44463,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44463.png"
+    },
+    {
+      "x": 66537,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44464.png"
+    },
+    {
+      "x": 66538,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44464.png"
+    },
+    {
+      "x": 66539,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44464.png"
+    },
+    {
+      "x": 66540,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44464.png"
+    },
+    {
+      "x": 66541,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44464.png"
+    },
+    {
+      "x": 66542,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44464.png"
+    },
+    {
+      "x": 66543,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44464.png"
+    },
+    {
+      "x": 66544,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44464.png"
+    },
+    {
+      "x": 66545,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44464.png"
+    },
+    {
+      "x": 66546,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44464.png"
+    },
+    {
+      "x": 66547,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44464.png"
+    },
+    {
+      "x": 66548,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44464.png"
+    },
+    {
+      "x": 66549,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44464.png"
+    },
+    {
+      "x": 66550,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44464.png"
+    },
+    {
+      "x": 66551,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44464.png"
+    },
+    {
+      "x": 66552,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44464.png"
+    },
+    {
+      "x": 66553,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44464.png"
+    },
+    {
+      "x": 66554,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44464.png"
+    },
+    {
+      "x": 66555,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44464.png"
+    },
+    {
+      "x": 66556,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44464.png"
+    },
+    {
+      "x": 66557,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44464.png"
+    },
+    {
+      "x": 66558,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44464.png"
+    },
+    {
+      "x": 66559,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44464.png"
+    },
+    {
+      "x": 66560,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44464.png"
+    },
+    {
+      "x": 66561,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44464.png"
+    },
+    {
+      "x": 66562,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44464.png"
+    },
+    {
+      "x": 66563,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44464.png"
+    },
+    {
+      "x": 66564,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44464.png"
+    },
+    {
+      "x": 66565,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44464.png"
+    },
+    {
+      "x": 66566,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44464.png"
+    },
+    {
+      "x": 66567,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44464.png"
+    },
+    {
+      "x": 66568,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44464.png"
+    },
+    {
+      "x": 66569,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44464.png"
+    },
+    {
+      "x": 66570,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44464.png"
+    },
+    {
+      "x": 66571,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44464.png"
+    },
+    {
+      "x": 66572,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44464.png"
+    },
+    {
+      "x": 66573,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44464.png"
+    },
+    {
+      "x": 66574,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44464.png"
+    },
+    {
+      "x": 66575,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44464.png"
+    },
+    {
+      "x": 66576,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44464.png"
+    },
+    {
+      "x": 66577,
+      "y": 44464,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44464.png"
+    },
+    {
+      "x": 66537,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44465.png"
+    },
+    {
+      "x": 66538,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44465.png"
+    },
+    {
+      "x": 66539,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44465.png"
+    },
+    {
+      "x": 66540,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44465.png"
+    },
+    {
+      "x": 66541,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44465.png"
+    },
+    {
+      "x": 66542,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44465.png"
+    },
+    {
+      "x": 66543,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44465.png"
+    },
+    {
+      "x": 66544,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44465.png"
+    },
+    {
+      "x": 66545,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44465.png"
+    },
+    {
+      "x": 66546,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44465.png"
+    },
+    {
+      "x": 66547,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44465.png"
+    },
+    {
+      "x": 66548,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44465.png"
+    },
+    {
+      "x": 66549,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44465.png"
+    },
+    {
+      "x": 66550,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44465.png"
+    },
+    {
+      "x": 66551,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44465.png"
+    },
+    {
+      "x": 66552,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44465.png"
+    },
+    {
+      "x": 66553,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44465.png"
+    },
+    {
+      "x": 66554,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44465.png"
+    },
+    {
+      "x": 66555,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44465.png"
+    },
+    {
+      "x": 66556,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44465.png"
+    },
+    {
+      "x": 66557,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44465.png"
+    },
+    {
+      "x": 66558,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44465.png"
+    },
+    {
+      "x": 66559,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44465.png"
+    },
+    {
+      "x": 66560,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44465.png"
+    },
+    {
+      "x": 66561,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44465.png"
+    },
+    {
+      "x": 66562,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44465.png"
+    },
+    {
+      "x": 66563,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44465.png"
+    },
+    {
+      "x": 66564,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44465.png"
+    },
+    {
+      "x": 66565,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44465.png"
+    },
+    {
+      "x": 66566,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44465.png"
+    },
+    {
+      "x": 66567,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44465.png"
+    },
+    {
+      "x": 66568,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44465.png"
+    },
+    {
+      "x": 66569,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44465.png"
+    },
+    {
+      "x": 66570,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44465.png"
+    },
+    {
+      "x": 66571,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44465.png"
+    },
+    {
+      "x": 66572,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44465.png"
+    },
+    {
+      "x": 66573,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44465.png"
+    },
+    {
+      "x": 66574,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44465.png"
+    },
+    {
+      "x": 66575,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44465.png"
+    },
+    {
+      "x": 66576,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44465.png"
+    },
+    {
+      "x": 66577,
+      "y": 44465,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44465.png"
+    },
+    {
+      "x": 66537,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44466.png"
+    },
+    {
+      "x": 66538,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44466.png"
+    },
+    {
+      "x": 66539,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44466.png"
+    },
+    {
+      "x": 66540,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44466.png"
+    },
+    {
+      "x": 66541,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44466.png"
+    },
+    {
+      "x": 66542,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44466.png"
+    },
+    {
+      "x": 66543,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44466.png"
+    },
+    {
+      "x": 66544,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44466.png"
+    },
+    {
+      "x": 66545,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44466.png"
+    },
+    {
+      "x": 66546,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44466.png"
+    },
+    {
+      "x": 66547,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44466.png"
+    },
+    {
+      "x": 66548,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44466.png"
+    },
+    {
+      "x": 66549,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44466.png"
+    },
+    {
+      "x": 66550,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44466.png"
+    },
+    {
+      "x": 66551,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44466.png"
+    },
+    {
+      "x": 66552,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44466.png"
+    },
+    {
+      "x": 66553,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44466.png"
+    },
+    {
+      "x": 66554,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44466.png"
+    },
+    {
+      "x": 66555,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44466.png"
+    },
+    {
+      "x": 66556,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44466.png"
+    },
+    {
+      "x": 66557,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44466.png"
+    },
+    {
+      "x": 66558,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44466.png"
+    },
+    {
+      "x": 66559,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44466.png"
+    },
+    {
+      "x": 66560,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44466.png"
+    },
+    {
+      "x": 66561,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44466.png"
+    },
+    {
+      "x": 66562,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44466.png"
+    },
+    {
+      "x": 66563,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44466.png"
+    },
+    {
+      "x": 66564,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44466.png"
+    },
+    {
+      "x": 66565,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44466.png"
+    },
+    {
+      "x": 66566,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44466.png"
+    },
+    {
+      "x": 66567,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44466.png"
+    },
+    {
+      "x": 66568,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44466.png"
+    },
+    {
+      "x": 66569,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44466.png"
+    },
+    {
+      "x": 66570,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44466.png"
+    },
+    {
+      "x": 66571,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44466.png"
+    },
+    {
+      "x": 66572,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44466.png"
+    },
+    {
+      "x": 66573,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44466.png"
+    },
+    {
+      "x": 66574,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44466.png"
+    },
+    {
+      "x": 66575,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44466.png"
+    },
+    {
+      "x": 66576,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44466.png"
+    },
+    {
+      "x": 66577,
+      "y": 44466,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44466.png"
+    },
+    {
+      "x": 66537,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44467.png"
+    },
+    {
+      "x": 66538,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44467.png"
+    },
+    {
+      "x": 66539,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44467.png"
+    },
+    {
+      "x": 66540,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44467.png"
+    },
+    {
+      "x": 66541,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44467.png"
+    },
+    {
+      "x": 66542,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44467.png"
+    },
+    {
+      "x": 66543,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44467.png"
+    },
+    {
+      "x": 66544,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44467.png"
+    },
+    {
+      "x": 66545,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44467.png"
+    },
+    {
+      "x": 66546,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44467.png"
+    },
+    {
+      "x": 66547,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44467.png"
+    },
+    {
+      "x": 66548,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44467.png"
+    },
+    {
+      "x": 66549,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44467.png"
+    },
+    {
+      "x": 66550,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44467.png"
+    },
+    {
+      "x": 66551,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44467.png"
+    },
+    {
+      "x": 66552,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44467.png"
+    },
+    {
+      "x": 66553,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44467.png"
+    },
+    {
+      "x": 66554,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44467.png"
+    },
+    {
+      "x": 66555,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44467.png"
+    },
+    {
+      "x": 66556,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44467.png"
+    },
+    {
+      "x": 66557,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44467.png"
+    },
+    {
+      "x": 66558,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44467.png"
+    },
+    {
+      "x": 66559,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44467.png"
+    },
+    {
+      "x": 66560,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44467.png"
+    },
+    {
+      "x": 66561,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44467.png"
+    },
+    {
+      "x": 66562,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44467.png"
+    },
+    {
+      "x": 66563,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44467.png"
+    },
+    {
+      "x": 66564,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44467.png"
+    },
+    {
+      "x": 66565,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44467.png"
+    },
+    {
+      "x": 66566,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44467.png"
+    },
+    {
+      "x": 66567,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44467.png"
+    },
+    {
+      "x": 66568,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44467.png"
+    },
+    {
+      "x": 66569,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44467.png"
+    },
+    {
+      "x": 66570,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44467.png"
+    },
+    {
+      "x": 66571,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44467.png"
+    },
+    {
+      "x": 66572,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44467.png"
+    },
+    {
+      "x": 66573,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44467.png"
+    },
+    {
+      "x": 66574,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44467.png"
+    },
+    {
+      "x": 66575,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44467.png"
+    },
+    {
+      "x": 66576,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44467.png"
+    },
+    {
+      "x": 66577,
+      "y": 44467,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44467.png"
+    },
+    {
+      "x": 66537,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44468.png"
+    },
+    {
+      "x": 66538,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44468.png"
+    },
+    {
+      "x": 66539,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44468.png"
+    },
+    {
+      "x": 66540,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44468.png"
+    },
+    {
+      "x": 66541,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44468.png"
+    },
+    {
+      "x": 66542,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44468.png"
+    },
+    {
+      "x": 66543,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44468.png"
+    },
+    {
+      "x": 66544,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44468.png"
+    },
+    {
+      "x": 66545,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44468.png"
+    },
+    {
+      "x": 66546,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44468.png"
+    },
+    {
+      "x": 66547,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44468.png"
+    },
+    {
+      "x": 66548,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44468.png"
+    },
+    {
+      "x": 66549,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44468.png"
+    },
+    {
+      "x": 66550,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44468.png"
+    },
+    {
+      "x": 66551,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44468.png"
+    },
+    {
+      "x": 66552,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44468.png"
+    },
+    {
+      "x": 66553,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44468.png"
+    },
+    {
+      "x": 66554,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44468.png"
+    },
+    {
+      "x": 66555,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44468.png"
+    },
+    {
+      "x": 66556,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44468.png"
+    },
+    {
+      "x": 66557,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44468.png"
+    },
+    {
+      "x": 66558,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44468.png"
+    },
+    {
+      "x": 66559,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44468.png"
+    },
+    {
+      "x": 66560,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44468.png"
+    },
+    {
+      "x": 66561,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44468.png"
+    },
+    {
+      "x": 66562,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44468.png"
+    },
+    {
+      "x": 66563,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44468.png"
+    },
+    {
+      "x": 66564,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44468.png"
+    },
+    {
+      "x": 66565,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44468.png"
+    },
+    {
+      "x": 66566,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44468.png"
+    },
+    {
+      "x": 66567,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44468.png"
+    },
+    {
+      "x": 66568,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44468.png"
+    },
+    {
+      "x": 66569,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44468.png"
+    },
+    {
+      "x": 66570,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44468.png"
+    },
+    {
+      "x": 66571,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44468.png"
+    },
+    {
+      "x": 66572,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44468.png"
+    },
+    {
+      "x": 66573,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44468.png"
+    },
+    {
+      "x": 66574,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44468.png"
+    },
+    {
+      "x": 66575,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44468.png"
+    },
+    {
+      "x": 66576,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44468.png"
+    },
+    {
+      "x": 66577,
+      "y": 44468,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44468.png"
+    },
+    {
+      "x": 66537,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66537/44469.png"
+    },
+    {
+      "x": 66538,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66538/44469.png"
+    },
+    {
+      "x": 66539,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66539/44469.png"
+    },
+    {
+      "x": 66540,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66540/44469.png"
+    },
+    {
+      "x": 66541,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66541/44469.png"
+    },
+    {
+      "x": 66542,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66542/44469.png"
+    },
+    {
+      "x": 66543,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66543/44469.png"
+    },
+    {
+      "x": 66544,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66544/44469.png"
+    },
+    {
+      "x": 66545,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66545/44469.png"
+    },
+    {
+      "x": 66546,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66546/44469.png"
+    },
+    {
+      "x": 66547,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66547/44469.png"
+    },
+    {
+      "x": 66548,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66548/44469.png"
+    },
+    {
+      "x": 66549,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66549/44469.png"
+    },
+    {
+      "x": 66550,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66550/44469.png"
+    },
+    {
+      "x": 66551,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66551/44469.png"
+    },
+    {
+      "x": 66552,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66552/44469.png"
+    },
+    {
+      "x": 66553,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66553/44469.png"
+    },
+    {
+      "x": 66554,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66554/44469.png"
+    },
+    {
+      "x": 66555,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66555/44469.png"
+    },
+    {
+      "x": 66556,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66556/44469.png"
+    },
+    {
+      "x": 66557,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66557/44469.png"
+    },
+    {
+      "x": 66558,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66558/44469.png"
+    },
+    {
+      "x": 66559,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66559/44469.png"
+    },
+    {
+      "x": 66560,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66560/44469.png"
+    },
+    {
+      "x": 66561,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66561/44469.png"
+    },
+    {
+      "x": 66562,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66562/44469.png"
+    },
+    {
+      "x": 66563,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66563/44469.png"
+    },
+    {
+      "x": 66564,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66564/44469.png"
+    },
+    {
+      "x": 66565,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66565/44469.png"
+    },
+    {
+      "x": 66566,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66566/44469.png"
+    },
+    {
+      "x": 66567,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66567/44469.png"
+    },
+    {
+      "x": 66568,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66568/44469.png"
+    },
+    {
+      "x": 66569,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66569/44469.png"
+    },
+    {
+      "x": 66570,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66570/44469.png"
+    },
+    {
+      "x": 66571,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66571/44469.png"
+    },
+    {
+      "x": 66572,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66572/44469.png"
+    },
+    {
+      "x": 66573,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66573/44469.png"
+    },
+    {
+      "x": 66574,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66574/44469.png"
+    },
+    {
+      "x": 66575,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66575/44469.png"
+    },
+    {
+      "x": 66576,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66576/44469.png"
+    },
+    {
+      "x": 66577,
+      "y": 44469,
+      "z": 17,
+      "present": true,
+      "path": "terrain_data/nls_source_maps/tiles_101465287_z17/17/66577/44469.png"
+    }
+  ]
+}

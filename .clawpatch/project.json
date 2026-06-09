@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "projectId": "prj_https-github-com-harleycoops-chu_f79b6b386f",
+  "name": "Churchill",
+  "rootPath": "/mnt/c/Users/chris/Churchill",
+  "git": {
+    "remoteUrl": "https://github.com/HarleyCoops/Churchill.git",
+    "defaultBranch": "main",
+    "currentBranch": "cursor/trench-tutorial-and-flythrough-assets",
+    "headSha": "c6c56bd1010046867da322bc0eff5f74b16f1a20"
+  },
+  "detected": {
+    "languages": [
+      "python"
+    ],
+    "frameworks": [],
+    "packageManagers": [
+      "pip"
+    ],
+    "commands": {
+      "typecheck": null,
+      "lint": null,
+      "format": null,
+      "test": "pytest"
+    }
+  },
+  "createdAt": "2026-05-18T02:49:15.475Z",
+  "updatedAt": "2026-05-18T02:49:15.475Z"
+}
