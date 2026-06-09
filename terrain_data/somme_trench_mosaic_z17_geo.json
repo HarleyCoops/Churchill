@@ -1,0 +1,53 @@
+{
+  "image": "somme_trench_mosaic_z17.png",
+  "width": 10253,
+  "height": 5799,
+  "projection": "equirectangular (linear lon/lat), resampled from web-mercator z17 rows",
+  "crs": "EPSG:4326",
+  "bounds": {
+    "west": 2.749861,
+    "east": 2.859861,
+    "south": 49.970139,
+    "north": 50.010139
+  },
+  "row0_is_north": true,
+  "uv_mapping": {
+    "u": "(lon - west) / (east - west)",
+    "v": "(lat - south) / (north - south)",
+    "note": "Identical to the SommeTerrain UV layout from rebuild_full_scene.py; apply the image directly to the existing UVMap with no offset."
+  },
+  "deg_per_px": {
+    "lon": 1.072856724861015e-05,
+    "lat": 6.897740989825685e-06
+  },
+  "approx_m_per_px": 0.768,
+  "zoom": 17,
+  "tile_size": 256,
+  "tile_range": {
+    "x0": 66537,
+    "x1": 66577,
+    "y0": 44446,
+    "y1": 44469
+  },
+  "tiles_total": 984,
+  "tiles_present": 984,
+  "tiles_missing": 0,
+  "tiles_by_source": {
+    "101465287": 841,
+    "101464777": 143
+  },
+  "sources": [
+    {
+      "source_id": "101465287",
+      "tile_url_pattern": "https://mapseries-tilesets.s3.amazonaws.com/trench/101465287/{z}/{x}/{y}.png",
+      "metadata_url": "https://mapseries-tilesets.s3.amazonaws.com/trench/101465287/metadata.json"
+    },
+    {
+      "source_id": "101464777",
+      "tile_url_pattern": "https://mapseries-tilesets.s3.amazonaws.com/trench/101464777/{z}/{x}/{y}.png",
+      "metadata_url": "https://mapseries-tilesets.s3.amazonaws.com/trench/101464777/metadata.json"
+    }
+  ],
+  "replaces": "trench_mosaic.png (1536x768, z14 tiles)",
+  "rights_note": "National Library of Scotland trench-map imagery; archival/source use with attribution. Keep this sidecar with the image."
+}
