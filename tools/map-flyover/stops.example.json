@@ -1,0 +1,14 @@
+[
+  {"name": "overview",   "u": 0.50,  "v": 0.50,  "alt": 12.5},
+  {"name": "calgary",    "u": 0.385, "v": 0.381, "alt": 2.2},
+  {"name": "dixons",     "u": 0.331, "v": 0.432, "alt": 1.8},
+  {"name": "lonepine",   "u": 0.364, "v": 0.581, "alt": 2.0},
+  {"name": "frenchmans", "u": 0.364, "v": 0.607, "alt": 1.7},
+  {"name": "spring",     "u": 0.566, "v": 0.584, "alt": 2.2},
+  {"name": "davidsons",  "u": 0.717, "v": 0.645, "alt": 1.7},
+  {"name": "tailcreek",  "u": 0.800, "v": 0.727, "alt": 2.0},
+  {"name": "quill",      "u": 0.582, "v": 0.616, "alt": 1.8},
+  {"name": "threehills", "u": 0.665, "v": 0.534, "alt": 2.0},
+  {"name": "home",       "u": 0.385, "v": 0.381, "alt": 2.4},
+  {"name": "outro",      "u": 0.50,  "v": 0.50,  "alt": 13.5}
+]
