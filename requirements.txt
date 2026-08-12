@@ -2,7 +2,7 @@
 pytesseract>=0.3.13
 Pillow>=12.3.0
 requests>=2.34.2
-numpy>=2.5.1
+numpy>=2.5.2
 loguru>=0.7.3
 # Optional: for more advanced OCR capabilities
 # pdf2image>=1.16.0
