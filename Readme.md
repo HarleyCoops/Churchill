@@ -13,10 +13,20 @@
 
 Letter is addressed to Colonel Fairfax, a WWI officer Churchill knew through overlapping military service, War Office hierarchy, and Conservative political circles — and whose celebrated actions on the first day of the Battle of the Somme, July 1, 1916, were among the most famous episodes of Anglo-French solidarity in the entire war.
 
+Documentary closeups cut from the original British 1:20,000 trench map, only at places the [Ground Truth Ledger](research/ground-truth-ledger.md) can put Colonel Bryan Fairfax on the morning of 1 July 1916. These are source-map crops, not a reconstructed route.
+
 <div align="center">
-  <img src="terrain_data/fairfax_flythrough.gif" alt="Somme Battlefield Flythrough — Fairfax's Route, July 1916" width="700" />
+  <img src="docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_1july.jpg" alt="1916 trench map closeup — Maricourt Wood and château, Sheet 62C.NW" width="700" />
   <br/>
-  <em>Camera flythrough of the Somme battlefield following Fairfax's documented route — Brigade HQ to Guillemont, July 1916. 1916 trench map on real Copernicus 30m terrain data.</em>
+  <em>Maricourt Wood and the village château, as printed on Sheet 62C.NW (grid square 16). Stanley records that the 89th Brigade launched its attack from the Maricourt sector at 6:25 a.m. on 1 July 1916; Lieutenant-Colonel Fairfax and Commandant Lepetit then advanced arm in arm across no man's land in the second wave (ledger #12, #14; 89th Bde p.131). The 28 June order had placed the brigade on the extreme right, beside the French Corps de Fer (ledger #11). This crop is taken at the present Maricourt memorial (49.9874974, 2.7910823), which commemorates that 1 July joint attack (ledger #40, #41). British 1:20,000 trench map, Sheet 62C.NW, CC-BY, National Library of Scotland.</em>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="docs/assets/nls-source-maps/nls_1916_trench_map_briqueterie_1july.jpg" alt="1916 trench map closeup — the Briqueterie, Sheet 62C.NW" width="700" />
+  <br/>
+  <em>The Briqueterie, as printed on Sheet 62C.NW (buildings and chimney marked; grid square 4). Stanley records this objective taken on 1 July 1916 (ledger #13; 89th Bde p.131). British 1:20,000 trench map, Sheet 62C.NW, CC-BY, National Library of Scotland.</em>
 </div>
 
 <div align="center">
@@ -197,7 +207,7 @@ A memorial at Maricourt (coordinates: [49°59'15.0"N 2°47'28.3"E](https://www.g
 
 ### Archival Map Source Images
 
-The images below are fixed crops from the National Library of Scotland trench-map tile sources, not Blender renders. They preserve the map as documentary evidence: place names, trench marks, contour lines, woods, roads, and red overprinted trench positions remain visible without reconstruction styling.
+The images below are fixed crops from the National Library of Scotland trench-map tile sources, not Blender renders. They preserve the map as documentary evidence: place names, trench marks, contour lines, woods, roads, and red overprinted trench positions remain visible without reconstruction styling. The 1 July 1916 closeups above are taken from this same NLS tile set; the gallery below also includes later-July sectors (Trones Wood, Guillemont) that are not 1 July placements.
 
 <div align="center">
   <img src="docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_guillemont_overview.jpg" alt="NLS trench map overview — Maricourt to Guillemont sector" width="700" />
