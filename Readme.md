@@ -53,7 +53,7 @@ A first edition, first printing of Winston S. Churchill's "The Second World War"
 
 **Churchill's Signature Insert**  
 <img src="Images/Signature2.JPG" alt="Churchill Signature" width="450" />  
-*The original signed letter from Winston Churchill, dated 6 December 1946, is affixed to Volume I. The letter is addressed to Colonel Fairfax and thanks him for a "kind letter" — written from Chartwell eighteen months before the first volume was published.*
+*The original signed letter from Winston Churchill, dated 6 December 1946, is affixed to Volume I. The letter is addressed to Colonel Fairfax and thanks him for a "kind letter" — written from Chartwell eighteen months before the first volume was published. That physical insert is not Churchill Archive CHAR 2/106, a 1919 Chartwell Papers draft described below.*
 
 </div>
 
@@ -70,6 +70,18 @@ After the war, Fairfax held significant posts such as Director of Remounts at th
 The letter, which predates the publication of Churchill's war memoirs, was later affixed inside Volume I of the six-volume Cassell first edition set of "The Second World War" — likely by Fairfax himself or a family member as a keepsake. Fairfax died in Toronto in 1950, so the later volumes would have been assembled after his death.
 
 For a detailed biography and archival references, see his profile at the Imperial War Museum: [Bryan Charles Fairfax – Lives of the First World War](https://livesofthefirstworldwar.iwm.org.uk/lifestory/1187431)
+
+### CHAR 2/106 ff. 168–170 (1919): a Chartwell Papers draft, not the 1946 letter
+
+The note tipped into Volume I is Churchill’s signed letter of 6 December 1946, written at Chartwell. A separate Churchill Archive file, retrieved on 20 August 2026, is earlier and is not that letter.
+
+University of Alberta Ask Us (Elisabet, 20 August 2026) supplied Chartwell Papers **CHAR 2/106 ff. 168–170** (Churchill Archive file `CHAR2_106_168-170-en.pdf`). The file is a 1919 handwritten Churchill draft held among the Chartwell Papers. It is an archive copy. It is not the late-November 1946 incoming letter from Fairfax — that letter has not been found — and it is not the physical 1946 letter now affixed to Volume I.
+
+Folio 169 records Fairfax’s service in South Africa, China, and France; in the Flying Corps; and later in command of the King’s (Liverpool) Regiment. The draft states that honour is due to officers and men who, like the addressee, went in and out of the line with regimental units. Folio 170 continues the draft and closes “Yours faithfully / Winston S. Churchill.” The same folio mentions Sir John Simon in the Spen Valley context.
+
+The draft shows Churchill already writing Fairfax as a fighting soldier of the King’s Liverpool in 1919, twenty-seven years before the Chartwell note of 6 December 1946. Ledger entries #48–50.
+
+The Churchill Archive pages are copyright Chartwell Trust / Bloomsbury and marked for private study only. No scan from that download is kept in this repository.
 
 ---
 
@@ -166,7 +178,7 @@ Fairfax **commanded the Chinese Labour Corps in France, overseeing nearly 100,00
 
 ### 4. Conservative Political Circles
 
-Fairfax **stood as a Conservative candidate in the 1919 Spen Valley by-election**. Churchill was the most prominent Conservative statesman of his generation. The by-election circuit in 1919 was a small world of party networks, constituency associations, and mutual endorsements. Two men of their rank and background — both military officers, both Conservatives — would have crossed paths in this arena.
+Fairfax **stood as a Conservative candidate in the 1919 Spen Valley by-election**. Churchill was the most prominent Conservative statesman of his generation. A 1919 handwritten Churchill draft in CHAR 2/106 ff. 168–170 writes Fairfax as a fighting soldier of the King’s Liverpool and mentions Sir John Simon in the Spen Valley context (ledger #48–50). That archive file is a Chartwell Papers copy. It is not the 1946 letter tipped into Volume I.
 
 ### 5. The Commonwealth and Canadian Elite
 
