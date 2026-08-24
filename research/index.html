@@ -58,6 +58,22 @@
     text-transform: uppercase;
   }
 
+  .launch {
+    display: inline-block;
+    margin-top: 22px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2c2418;
+    background: #f5f0e6;
+    padding: 12px 18px;
+    border-radius: 4px;
+  }
+
+  .launch:hover { background: #fff8ec; }
+
   .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -210,6 +226,7 @@
   <h1>The Churchill&ndash;Fairfax<br>First Edition</h1>
   <div class="tagline">A signed letter, a battlefield, and thirty years of history</div>
   <div class="meta">Research Portal &middot; Interactive Visuals &middot; Ground Truth Documentation</div>
+  <a class="launch" href="adventure.html">Launch the Readme as a walk</a>
 </div>
 
 <div class="stats">
@@ -239,6 +256,19 @@
 </div>
 
 <div class="cards">
+
+  <a class="card" href="adventure.html">
+    <div class="card-color-bar bar-churchill"></div>
+    <div class="card-body">
+      <span class="card-icon">&#x1F4DC;</span>
+      <div class="card-title">Begin the dossier</div>
+      <div class="card-desc">
+        The Readme launched as a path: letter, Fairfax, the Somme, the Churchill threads,
+        the set, the vault, and what we still need before this package feels like an adventure.
+      </div>
+      <div class="card-cta">Start the walk</div>
+    </div>
+  </a>
 
   <a class="card" href="provenance-timeline.html">
     <div class="card-color-bar bar-military"></div>
