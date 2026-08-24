@@ -9,6 +9,8 @@
 
 # "The Second World War", including a note from Winston Churchill, First Edition, First Printing, Complete Set
 
+**Lot tracker.** The five-piece adventure kit is listed under [The Adventure Kit](#the-adventure-kit). The books are the relic. The work is to research and retrace Fairfax’s steps on Sheet 62C.NW.
+
 ### Purchased from the Canadian Federal Government at Auction
 
 Letter is addressed to Colonel Fairfax, a WWI officer Churchill knew through overlapping military service, War Office hierarchy, and Conservative political circles — and whose celebrated actions on the first day of the Battle of the Somme, July 1, 1916, were among the most famous episodes of Anglo-French solidarity in the entire war.
@@ -57,6 +59,49 @@ A first edition, first printing of Winston S. Churchill's "The Second World War"
 
 </div>
 
+## The Adventure Kit
+
+This README is the lot tracker. The Cassell set is the relic. The work is to research and retrace Colonel Bryan Fairfax’s steps on the British 1:20,000 trench map, Sheet 62C.NW (3 September 1916), using documentary sources only. The printed sheet with the route already marked is the answer key. The digital maps, Stanley, and the 1919 transcription are the research kit.
+
+### 1. The relic — Cassell UK first edition, first printing, six volumes
+
+Physical set of Winston S. Churchill, *The Second World War* (Cassell and Company Ltd., London): first edition, first printing, complete in six volumes, with first-issue dust jackets. Purchased from the Canadian Federal Government at auction; held in a federal vault in British Columbia and stored in Mylar. Churchill’s signed letter of 6 December 1946, written at Chartwell to Colonel Fairfax and thanking him for a “kind letter,” is tipped into Volume I. That physical insert is not CHAR 2/106.
+
+See [The First Edition](#the-first-edition) and [Provenance](#provenance).
+
+### 2. Digital documentary maps — Sheet 62C.NW crops
+
+Source-map crops from the National Library of Scotland 1:20,000 sheet, already in [`docs/assets/nls-source-maps/`](docs/assets/nls-source-maps/). These are archival tiles, not reconstructed routes. No Blender images, no flythrough, no 3D trench reconstructions.
+
+| Sector | File |
+|--------|------|
+| Maricourt | [`nls_1916_trench_map_maricourt_1july.jpg`](docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_1july.jpg) |
+| British–French line | [`nls_1916_trench_map_maricourt_british_french_line.jpg`](docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_british_french_line.jpg) |
+| Briqueterie | [`nls_1916_trench_map_briqueterie_1july.jpg`](docs/assets/nls-source-maps/nls_1916_trench_map_briqueterie_1july.jpg); [`nls_1916_trench_map_montauban_briqueterie.jpg`](docs/assets/nls-source-maps/nls_1916_trench_map_montauban_briqueterie.jpg) |
+| Bernafay–Trônes | [`nls_1916_trench_map_bernafay_trones_wood.jpg`](docs/assets/nls-source-maps/nls_1916_trench_map_bernafay_trones_wood.jpg) |
+| Trônes | [`nls_1916_trench_map_trones_wood.jpg`](docs/assets/nls-source-maps/nls_1916_trench_map_trones_wood.jpg) |
+| Guillemont | [`nls_1916_trench_map_guillemont_approach.jpg`](docs/assets/nls-source-maps/nls_1916_trench_map_guillemont_approach.jpg) |
+
+Sector overview (same tile set, not a reconstructed route): [`nls_1916_trench_map_maricourt_guillemont_overview.jpg`](docs/assets/nls-source-maps/nls_1916_trench_map_maricourt_guillemont_overview.jpg). NLS, CC-BY.
+
+### 3. Stanley, *The History of the 89th Brigade 1914–1918*
+
+In-repo copy: [`89thBrigadeStanley.pdf`](89thBrigadeStanley.pdf). Primary narrative of the 89th Brigade on the Somme; Fairfax commanded the 17th Battalion King’s Liverpool under Stanley. Quotations later in this README are cross-referenced in the [Ground Truth Ledger](research/ground-truth-ledger.md).
+
+### 4. Transcription — CHAR 2/106 ff. 168–170 (1919 Chartwell Papers draft)
+
+Working transcription of the known sense of folios 169–170. This is a 1919 handwritten Churchill draft among the Chartwell Papers, retrieved 20 August 2026 via University of Alberta Ask Us (Elisabet). It is not the 6 December 1946 letter tipped into Volume I. The late-November 1946 incoming Fairfax letter has not been found. Folio 168 is part of the cited file and is not transcribed here. No Churchill Archive scan or PDF is published in this repository.
+
+**Folio 169 (known sense).** In South Africa, China, and in France the addressee has borne his part as a fighting soldier. In the Flying Corps, and later in command of the King’s (Liverpool) Regiment during the present war, he has seen hard service. Honour is first of all due to the officers and men who, like him, were going in and out of the line with regimental units.
+
+**Folio 170 (known sense).** The draft continues, mentions Sir John Simon in the Spen Valley context, and closes “Yours faithfully / Winston S. Churchill.”
+
+Archival note and copyright boundary: [CHAR 2/106 ff. 168–170](#char-2-106). Ledger #48–50.
+
+### 5. The answer key — printed Sheet 62C.NW with the route traced
+
+A printed Sheet 62C.NW on which Fairfax’s route is already traced: **Maricourt → Briqueterie → Trônes → Guillemont**. That print is the answer key. Retrace the same axis from the digital crops, Stanley, and the 1919 transcription before consulting it.
+
 ## Who was Colonel Fairfax?
 
 <div align="center">
@@ -71,17 +116,22 @@ The letter, which predates the publication of Churchill's war memoirs, was later
 
 For a detailed biography and archival references, see his profile at the Imperial War Museum: [Bryan Charles Fairfax – Lives of the First World War](https://livesofthefirstworldwar.iwm.org.uk/lifestory/1187431)
 
+<a id="char-2-106"></a>
+
 ### CHAR 2/106 ff. 168–170 (1919): a Chartwell Papers draft, not the 1946 letter
 
 The note tipped into Volume I is Churchill’s signed letter of 6 December 1946, written at Chartwell. A separate Churchill Archive file, retrieved on 20 August 2026, is earlier and is not that letter.
 
 University of Alberta Ask Us (Elisabet, 20 August 2026) supplied Chartwell Papers **CHAR 2/106 ff. 168–170** (Churchill Archive file `CHAR2_106_168-170-en.pdf`). The file is a 1919 handwritten Churchill draft held among the Chartwell Papers. It is an archive copy. It is not the late-November 1946 incoming letter from Fairfax — that letter has not been found — and it is not the physical 1946 letter now affixed to Volume I.
 
-Folio 169 records Fairfax’s service in South Africa, China, and France; in the Flying Corps; and later in command of the King’s (Liverpool) Regiment. The draft states that honour is due to officers and men who, like the addressee, went in and out of the line with regimental units. Folio 170 continues the draft and closes “Yours faithfully / Winston S. Churchill.” The same folio mentions Sir John Simon in the Spen Valley context.
+Working transcription of the known sense (folios 169–170 only; folio 168 is not transcribed here):
+
+- **Folio 169.** In South Africa, China, and in France the addressee has borne his part as a fighting soldier. In the Flying Corps, and later in command of the King’s (Liverpool) Regiment during the present war, he has seen hard service. Honour is first of all due to the officers and men who, like him, were going in and out of the line with regimental units.
+- **Folio 170.** The draft continues, mentions Sir John Simon in the Spen Valley context, and closes “Yours faithfully / Winston S. Churchill.”
 
 The draft shows Churchill already writing Fairfax as a fighting soldier of the King’s Liverpool in 1919, twenty-seven years before the Chartwell note of 6 December 1946. Ledger entries #48–50.
 
-The Churchill Archive pages are copyright Chartwell Trust / Bloomsbury and marked for private study only. No scan from that download is kept in this repository.
+The Churchill Archive pages are copyright Chartwell Trust / Bloomsbury and marked for private study only. No scan from that download is kept in this repository. This repository publishes the known-sense transcription above, not a facsimile.
 
 ---
 
