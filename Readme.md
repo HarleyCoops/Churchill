@@ -33,7 +33,7 @@ Documentary closeups cut from the original British 1:20,000 trench map, only at 
 
 **Begin here**
 
-[**Launch the Readme as a walk**](research/adventure.html) · [**What the adventure still needs**](research/adventure-brief.md)
+[**Launch the Readme as a walk**](research/adventure.html) · [**What the adventure still needs**](research/adventure-brief.html)
 
 [**Provenance Timeline**](https://harleycoops.github.io/Churchill/research/provenance-timeline.html) · [**Artifact Gallery**](https://harleycoops.github.io/Churchill/research/artifact-gallery.html)
 

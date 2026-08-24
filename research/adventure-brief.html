@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seeing the package as an adventure</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --ink: #e8e0d4;
+    --muted: #8b7f6e;
+    --dim: #6b5d4a;
+    --gold: #c4a87c;
+    --paper: #f5f0e6;
+    --paper-ink: #2c2418;
+    --bg: #1a1714;
+    --line: rgba(196,168,124,0.28);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  a { color: var(--gold); }
+
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 36px 20px 64px;
+  }
+
+  .mark {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .nav {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 10px 0 28px;
+  }
+
+  .nav a {
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .nav a:hover { color: var(--ink); }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 6vw, 46px);
+    line-height: 1.15;
+    color: #f0e8d8;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin: 32px 0 12px;
+    color: #f0e8d8;
+  }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin: 20px 0 8px;
+    color: var(--gold);
+  }
+
+  p, li {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #d8cbb8;
+    margin-bottom: 12px;
+  }
+
+  ul { padding-left: 1.2em; }
+
+  .lede {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--muted);
+    line-height: 1.5;
+    margin-bottom: 22px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 13px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 8px;
+    border-bottom: 1px solid rgba(139,119,90,0.25);
+    vertical-align: top;
+    color: #d8cbb8;
+  }
+
+  th { color: var(--gold); font-weight: 600; letter-spacing: 0.04em; }
+
+  .note {
+    font-size: 12px;
+    color: var(--dim);
+    margin-top: 28px;
+  }
+
+  .exits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .exits a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--paper-ink);
+    background: var(--paper);
+    padding: 9px 12px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark">Adventure brief</div>
+  <nav class="nav" aria-label="Archive">
+    <a href="adventure.html">The walk</a>
+    <a href="index.html">Portal</a>
+    <a href="adventure-brief.md">Markdown source</a>
+    <a href="ground-truth-ledger.md">Ledger</a>
+  </nav>
+
+  <h1>Seeing the package as an adventure</h1>
+  <p class="lede">
+    The Readme already has a spine. The kit already has the rooms. What we still need
+    is a path a visitor can travel.
+  </p>
+  <p>
+    This brief starts from a launch of <a href="../Readme.md">Readme.md</a> as a sequential walk
+    (<a href="adventure.html">adventure.html</a>). It does not add historical claims. It asks
+    what a visitor still cannot do or feel, even though the evidence is already in the repository.
+  </p>
+  <p>
+    The rule does not change: every public sentence still traces to the
+    <a href="ground-truth-ledger.md">Ground Truth Ledger</a>.
+  </p>
+
+  <h2>What the Readme already is</h2>
+  <p>The Readme is not a file listing. It already has an adventure spine:</p>
+  <ul>
+    <li>An object — six Cassell volumes and a Chartwell note dated 6 December 1946.</li>
+    <li>A person — Colonel Bryan Charles Fairfax, C.M.G.</li>
+    <li>A route — five Somme phases the ledger can document.</li>
+    <li>A connection — five overlapping threads that explain why Churchill’s reply is not a stranger’s courtesy.</li>
+    <li>A physical test — first-edition marks the visitor can check against photographs.</li>
+    <li>Two open cases — Fairfax’s missing “kind letter,” and the thin Canadian-government provenance.</li>
+  </ul>
+  <p>
+    The problem is presentation. Those beats are published as a long scroll, then split again across
+    a portal of equal cards, a deck, a map, a gallery, and a flythrough. A visitor can graze. They
+    cannot yet travel.
+  </p>
+
+  <h2>What we already have</h2>
+  <table>
+    <thead>
+      <tr><th>Adventure job</th><th>Existing piece</th><th>Where it lives</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>The door</td><td>Letter in Volume I</td><td>Images/Signature2.JPG</td></tr>
+      <tr><td>The protagonist</td><td>Fairfax biography and portrait</td><td>Readme; Images/ColFairfax.jpeg</td></tr>
+      <tr><td>The ground</td><td>1916 source-map crops</td><td>docs/assets/nls-source-maps/</td></tr>
+      <tr><td>Occupying a place</td><td>Leaflet route + Chartwell jump</td><td>somme-battlefield-map.html</td></tr>
+      <tr><td>Years</td><td>1873–1950 milestones</td><td>provenance-timeline.html</td></tr>
+      <tr><td>Object ritual</td><td>Jacket, edges, set close-ups</td><td>artifact-gallery.html</td></tr>
+      <tr><td>Voice</td><td>Stanley, de Coutard, Congreve</td><td>TextExtract.md; 89th Brigade PDF</td></tr>
+      <tr><td>Rules</td><td>No claim without a source</td><td>ground-truth-ledger.md</td></tr>
+      <tr><td>Cinematic pacing</td><td>Travel / settle / card / orbit</td><td>terrain_data flythrough scripts</td></tr>
+      <tr><td>Told version</td><td>Reconstruction deck</td><td>presentations/fairfax-churchill-deck/</td></tr>
+      <tr><td>Live mystery</td><td>Archive search for Fairfax’s letter</td><td>fairfax_letter_finder.py</td></tr>
+      <tr><td>Afterlife of the object</td><td>Auction, vault, valuation</td><td>valuation-brief.html</td></tr>
+    </tbody>
+  </table>
+  <p>This is enough material for an adventure. It is not yet arranged as one.</p>
+
+  <h2>What we need to see</h2>
+  <h3>1. One door</h3>
+  <p>
+    The research portal currently offers six destinations of equal weight. An adventure has a start.
+    Needed: a first step that is always the letter, then a forced next beat.
+    <a href="adventure.html">adventure.html</a> is that door.
+  </p>
+  <h3>2. Memory between rooms</h3>
+  <p>
+    Map, gallery, timeline, and deck do not know which chapter sent you. Landing on the map from
+    Trones Wood should open on that pin. Every room needs a “return to the walk” that resumes
+    the next chapter.
+  </p>
+  <h3>3. Examine mode for the letter</h3>
+  <p>
+    The note is short enough to be seen whole: Chartwell stationery, handwritten “Dear Captain Fairfax,”
+    typed thanks, typed “Colonel Bryan Fairfax, C.M.G.,” punch hole, the 25s. NET flap in the same
+    photograph. Needed: a single-object lamp, not a gallery grid.
+  </p>
+  <h3>4. Stand on each Somme beat</h3>
+  <p>
+    The Readme already writes July 1916 as five phases. The flythrough already thinks in travel,
+    settle, hold, orbit. The HTML does not yet. Per beat, only where the ledger allows a place:
+    NLS crop, verbatim sentence, map pin, memorial only at Maricourt.
+  </p>
+  <h3>5. The missing letter as a quest</h3>
+  <p>
+    Fairfax’s letter to Churchill is the live unknown. The finder tool already queries archives.
+    Visitors never see a result or a silence from inside the story.
+  </p>
+  <h3>6. Return to the object</h3>
+  <p>
+    After Guillemont, the 1946 note has to be read again. That return is the destination: who
+    Fairfax was, why Churchill answering him is documented, what the volumes are, and what remains lost.
+  </p>
+
+  <h2>Recommended next build</h2>
+  <p>
+    Beat-aware exits from the walk into the map and the gallery. Somme chapters open the map on
+    the matching marker. The letter chapter opens an examine view. Each of those pages grows a
+    “continue the walk” link back to the next chapter.
+  </p>
+  <p>
+    Do not rebuild the deck, the flythrough, or the finder until the walk can hand a visitor from
+    chapter to place and back again. No new historical narrative. No reconstructed routes.
+  </p>
+
+  <p class="note">
+    If a future page needs a sentence that cannot point at a ledger row, it does not ship.
+    The adventure is a way of walking evidence, not a way of decorating it.
+  </p>
+
+  <div class="exits">
+    <a href="adventure.html">Return to the walk</a>
+  </div>
+</div>
+</body>
+</html>
