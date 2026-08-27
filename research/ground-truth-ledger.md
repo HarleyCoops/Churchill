@@ -6,7 +6,7 @@ Every provable claim about Colonel Bryan Charles Fairfax and the Churchill set, 
 
 ## Legend
 
-- **Source files**: TextExtract.md (TE), Readme.md (RM), Fairfax-Churchill.md (FC), FirstEditionChecklist.md (FEC), Images/ (IMG), MonumenImages/ (MON)
+- **Source files**: TextExtract.md (TE), Readme.md (RM), Fairfax-Churchill.md (FC), FirstEditionChecklist.md (FEC), Images/ (IMG), MonumenImages/ (MON), CHAR 2/106 (Churchill Archive / Chartwell Papers; accessed 20 Aug 2026 via University of Alberta Ask Us). No local scan of CHAR 2/106 is kept in this repository.
 - **Visualizable?**: Y = can be shown on timeline, map, or artifact close-up; N = supporting fact only
 
 ---
@@ -62,6 +62,9 @@ Every provable claim about Colonel Bryan Charles Fairfax and the Churchill set, 
 | 45 | Brigade moved to Huppy near Abbeville on 2 August after Guillemont | TE | line 47 | "After this we were taken out to rest, and were moved back, on August 2nd, to Huppy, in the neighbourhood and close to Abbeville." | 2 Aug 1916 | Huppy, nr Abbeville | N |
 | 46 | Churchill at 41 Cromwell Road, London on 1 July 1916 | RM | line 60 | "41 Cromwell Road, London SW7 (private residence)" | 1 Jul 1916 | London | Y |
 | 47 | Obituary image confirms Colonel rank and decorations | IMG/ColFairfax.jpeg | — | *[Visible text on obituary image]* | — | — | Y |
+| 48 | CHAR 2/106 ff. 168–170 is a 1919 handwritten Churchill draft in the Chartwell Papers; retrieved 20 Aug 2026 via University of Alberta Ask Us (Elisabet). It is not the 6 Dec 1946 letter tipped into Volume I, and it is not the still-unfound late-Nov 1946 incoming Fairfax letter. | CHAR 2/106 (Churchill Archive); RM | ff. 168–170 | *[Archive file CHAR2_106_168-170-en.pdf; Chartwell Papers CHAR 2/106 ff. 168–170. Folio 168 text not transcribed here.]* | 1919 | Chartwell Papers | N |
+| 49 | 1919 draft (folio 169) writes Fairfax’s service in South Africa, China, and France; the Flying Corps; and command of the King’s (Liverpool) Regiment; honour due to officers and men who went in and out of the line with regimental units | CHAR 2/106 (Churchill Archive) | f. 169 | "In South Africa, China and in France you have borne your part as a fighting soldier"; Flying Corps; "command of the King’s Liverpool Regiment"; honour due to those "going in and out of the line with Regimental units" | 1919 | — | N |
+| 50 | 1919 draft (folio 170) closes in Churchill’s hand and mentions Sir John Simon in the Spen Valley context | CHAR 2/106 (Churchill Archive) | f. 170 | "Yours faithfully / Winston S. Churchill"; Sir John Simon / Spen Valley context | 1919 | Spen Valley | N |
 
 ---
 
@@ -71,3 +74,4 @@ Every provable claim about Colonel Bryan Charles Fairfax and the Churchill set, 
 - Entries without a quote cite an image file whose visible content serves as the source.
 - Death year: Readme.md states 1950 (line 38); obituary image (ColFairfax.jpeg) shows death at age 76 from 1873 birth = 1950. Fairfax-Churchill.md incorrectly stated 1956 — corrected in that file.
 - The 89th Brigade PDF page numbers (p.119, p.121, p.129, p.131, p.134, p.143) refer to the original printed book; their text content is reproduced in TextExtract.md with line-level citations.
+- CHAR 2/106 ff. 168–170 was accessed 20 August 2026 via the University of Alberta Churchill Archive / Ask Us (Elisabet). The download is copyright Chartwell Trust / Bloomsbury and marked for private study only; no page scan is stored in this repository. Folio 168 is part of the cited file but is not transcribed here. The file is a 1919 draft. It does not replace the 6 December 1946 Chartwell letter affixed to Volume I.
