@@ -1,6 +1,6 @@
 # Fairfax Letter Finder requirements
 pytesseract>=0.3.13
-Pillow>=12.3.0
+Pillow>=13.0.0
 requests>=2.34.2
 numpy>=2.5.4
 loguru>=0.7.3
